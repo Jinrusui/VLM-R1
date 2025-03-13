@@ -93,34 +93,34 @@ class GRPOModelConfig(ModelConfig):
     freeze_vision_modules: bool = False
 
 
-# SYSTEM_PROMPT = (
-#     "A conversation between User and Assistant. The user asks a question, and the Assistant solves it. The assistant "
-#     "first thinks about the reasoning process in the mind and then provides the user with the answer. The reasoning "
-#     "process and answer are enclosed within <think> </think> and <answer> </answer> tags, respectively, i.e., "
-#     "<think> reasoning process here </think><answer> answer here </answer>"
-# )
-SYSTEM_PROMPT = """You are an assistant designed to perform visual reasoning tasks and provide structured, detailed responses to the user's questions. You should carefully read and understand the questions, and your responses must always include:
+SYSTEM_PROMPT = (
+    "A conversation between User and Assistant. The user asks a question, and the Assistant solves it. The assistant "
+    "first thinks about the reasoning process in the mind and then provides the user with the answer. The reasoning "
+    "process and answer are enclosed within <think> </think> and <answer> </answer> tags, respectively, i.e., "
+    "<think> reasoning process here </think><answer> answer here </answer>"
+)
+# SYSTEM_PROMPT = """You are an assistant designed to perform visual reasoning tasks and provide structured, detailed responses to the user's questions. You should carefully read and understand the questions, and your responses must always include:
 
-- A clear and high-level reasoning introduction enclosed within `<think>` tags that outlines your initial understanding of the problem without revealing the final solution.
-- A neutral and objective description of the visual information or graphical content enclosed within `<presentation>` tags inside the `<think>` section.
-- A detailed, step-by-step logical analysis enclosed within the `<think>` tags after `<presentation>`, clearly showing how you derive your conclusion from the presented visual or textual information.
-- Your concise final answer enclosed within `<answer>` tags.
+# - A clear and high-level reasoning introduction enclosed within `<think>` tags that outlines your initial understanding of the problem without revealing the final solution.
+# - A neutral and objective description of the visual information or graphical content enclosed within `<presentation>` tags inside the `<think>` section.
+# - A detailed, step-by-step logical analysis enclosed within the `<think>` tags after `<presentation>`, clearly showing how you derive your conclusion from the presented visual or textual information.
+# - Your concise final answer enclosed within `<answer>` tags.
 
-Always follow this general structure for your responses:
+# Always follow this general structure for your responses:
 
-<think>
-Begin with high-level reasoning, identifying the key aspects or considerations of the task, without directly stating your final solution yet.
+# <think>
+# Begin with high-level reasoning, identifying the key aspects or considerations of the task, without directly stating your final solution yet.
 
-<presentation>
-Clearly and objectively describe the visual information or graphical content, highlighting relevant features or key points necessary to understand the question or task, but without explicitly stating the final answer or solution.
-</presentation>
+# <presentation>
+# Clearly and objectively describe the visual information or graphical content, highlighting relevant features or key points necessary to understand the question or task, but without explicitly stating the final answer or solution.
+# </presentation>
 
-Now, carefully outline your detailed reasoning steps here. Provide clear, logical analysis, explicitly showing how you reach the conclusion from the presented visual or textual information.
-</think>
+# Now, carefully outline your detailed reasoning steps here. Provide clear, logical analysis, explicitly showing how you reach the conclusion from the presented visual or textual information.
+# </think>
 
-<answer>
-Present a concise, accurate, and final answer derived from your detailed reasoning.
-</answer>"""
+# <answer>
+# Present a concise, accurate, and final answer derived from your detailed reasoning.
+# </answer>"""
 
 class LazySupervisedDataset(Dataset):
     def __init__(self, data_path: str, script_args: GRPOScriptArguments):
@@ -319,21 +319,21 @@ def path_reward(completions, solution, **kwargs):
     return rewards
 
 
-# def format_reward(completions, **kwargs):
-#     """Reward function that checks if the completion has a specific format."""
-#     # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
-#     pattern = r"<think>.*?</think>\s*<answer>\s*\{\s*\"path\"\s*:\s*\[.*\]\s*\}.*?</answer>"
-#     completion_contents = [completion[0]["content"] for completion in completions]
-#     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
-#     return [1.0 if match else 0.0 for match in matches]
-
 def format_reward(completions, **kwargs):
     """Reward function that checks if the completion has a specific format."""
     # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
-    pattern = r"<think>.*?<presentation>.*?</presentation>.*?</think>\s*<answer>\s*\{\s*\"path\"\s*:\s*\[.*\]\s*\}.*?</answer>"
+    pattern = r"<think>.*?</think>\s*<answer>\s*\{\s*\"path\"\s*:\s*\[.*\]\s*\}.*?</answer>"
     completion_contents = [completion[0]["content"] for completion in completions]
     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
     return [1.0 if match else 0.0 for match in matches]
+
+# def format_reward(completions, **kwargs):
+#     """Reward function that checks if the completion has a specific format."""
+#     # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
+#     pattern = r"<think>.*?<presentation>.*?</presentation>.*?</think>\s*<answer>\s*\{\s*\"path\"\s*:\s*\[.*\]\s*\}.*?</answer>"
+#     completion_contents = [completion[0]["content"] for completion in completions]
+#     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
+#     return [1.0 if match else 0.0 for match in matches]
 
 
 reward_funcs_registry = {
