@@ -1,0 +1,2 @@
+datasets:
+    - json_path: /jinru/VLM-R1/samples/frozenlake_format_coordinates.json
