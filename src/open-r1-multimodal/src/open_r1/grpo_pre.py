@@ -210,7 +210,7 @@ class LazySupervisedDataset(Dataset):
     If the iou of the bbox predicted by the model and the ground truth is greater than 0.5, the reward is 1.0, otherwise 0.0 .
     This is a hard reward, maybe the soft reward is better and could be used in the future .
 '''
-
+####reward function####
 
 def path_reward(completions, solution, **kwargs):
     def path_verifier(env_config, path):
@@ -304,6 +304,65 @@ def path_reward(completions, solution, **kwargs):
 #     completion_contents = [completion[0]["content"] for completion in completions]
 #     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
 #     return [1.0 if match else 0.0 for match in matches]
+def frozenlake_reward(completions, solution, **kwargs):
+    """Reward function that checks if the completion's answer matches the solution for FrozenLake tasks."""
+    contents = [completion[0]["content"] for completion in completions]
+    rewards = []
+    current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
+    
+    # Extract answer from <answer> tags
+    answer_tag_pattern = r'<answer>(.*?)</answer>'
+    
+    for content, sol in zip(contents, solution):
+        reward = 0.0
+
+        try:
+            # Extract text from <answer> tags
+            content_answer_match = re.search(answer_tag_pattern, content, re.DOTALL)
+            
+            if content_answer_match:
+                answer_text = content_answer_match.group(1).strip()
+                
+                try:
+                    # Try to parse as JSON
+                    answer_json = json.loads(answer_text)
+                    model_answer = answer_json.get("answer", "")
+                except json.JSONDecodeError:
+                    # If not JSON, use the raw text
+                    model_answer = answer_text
+                
+                # Get the correct answer from solution
+                correct_answer = sol
+                
+                # Compare answers (case-insensitive for text)
+                if isinstance(model_answer, str) and isinstance(correct_answer, str):
+                    if model_answer.lower() == correct_answer.lower():
+                        reward = 1.0
+                elif model_answer == correct_answer:
+                    reward = 1.0
+        except Exception as e:
+            # Leave reward as 0.0 in case of errors
+            pass
+            
+        rewards.append(reward)
+        
+        # Log for debugging if needed
+        if os.getenv("DEBUG_MODE") == "true":
+            log_path = os.getenv("LOG_PATH")
+            with open(log_path, "a", encoding='utf-8') as f:
+                f.write(f"------------- {current_time} FrozenLake reward: {reward} -------------\n")
+                f.write(f"Content: {content}\n")
+                f.write(f"Solution: {json.dumps(sol)}\n")
+    
+    return rewards
+
+
+# def format_reward_frozenlake(completions, **kwargs):
+#     """Reward function that checks if the completion has the proper format for FrozenLake tasks."""
+#     pattern = r"<think>.*?</think>\s*<answer>\s*(\{.*?\}|[A-Za-z,]+)\s*</answer>"
+#     completion_contents = [completion[0]["content"] for completion in completions]
+#     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
+#     return [1.0 if match else 0.0 for match in matches]
 
 def format_reward(completions, **kwargs):
     """Reward function that checks if the completion has a specific format."""
@@ -315,7 +374,7 @@ def format_reward(completions, **kwargs):
 
 
 reward_funcs_registry = {
-    "accuracy": path_reward,
+    "accuracy": frozenlake_reward,
     "format": format_reward,
 }
 
