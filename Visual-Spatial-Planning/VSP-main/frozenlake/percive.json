@@ -772,7 +772,7 @@
         "level": "level3",
         "example_id": 0,
         "image": "frozenlake/task3/example/level3/img/0.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | _ | # |\n| Row 2 | _ | _ | # | _ | _ | # | # |\n| Row 3 | * | # | _ | # | _ | # | _ |\n| Row 4 | _ | _ | _ | _ | # | # | _ |\n| Row 5 | _ | _ | _ | _ | # | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ | # |\n| Row 7 | _ | _ | @ | # | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | @ | _ |\n| Row 2 | _ | _ | _ |\n| Row 3 | _ | * | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | # | _ | _ | # | _ | _ | _ |\n| Row 2 | _ | _ | # | _ | _ | _ | # | # |\n| Row 3 | # | _ | _ | _ | @ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | # | _ | _ | # | _ |\n| Row 7 | * | _ | _ | _ | _ | _ | _ | _ |\n| Row 8 | _ | _ | _ | _ | _ | # | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | @ | _ | _ |\n| Row 2 | _ | * | _ |\n| Row 3 | _ | # | # |",
         "solution": "D"
     },
     {
@@ -780,7 +780,7 @@
         "level": "level3",
         "example_id": 1,
         "image": "frozenlake/task3/example/level3/img/1.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | # | _ | _ | _ | # |\n| Row 2 | _ | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | * | # | # | _ | _ |\n| Row 5 | _ | # | @ | _ | _ | # |\n| Row 6 | _ | _ | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | @ |\n| Row 2 | * | _ | _ |\n| Row 3 | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | # | # | _ |\n| Row 2 | # | _ | * |\n| Row 3 | _ | @ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | # | # | _ | _ | _ | _ | _ |\n| Row 2 | _ | # | _ | * | _ | _ | _ |\n| Row 3 | _ | # | # | _ | # | _ | _ |\n| Row 4 | _ | # | _ | # | _ | # | _ |\n| Row 5 | _ | _ | _ | _ | # | # | _ |\n| Row 6 | _ | _ | _ | @ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | _ | # | _ |",
         "solution": "B"
     },
     {
@@ -788,7 +788,7 @@
         "level": "level3",
         "example_id": 2,
         "image": "frozenlake/task3/example/level3/img/2.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | * |\n| Row 2 | _ | _ | @ | # | _ |\n| Row 3 | _ | _ | _ | # | # |\n| Row 4 | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | _ | _ | * |\n| Row 3 | @ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | * | _ |\n| Row 2 | # | _ | @ |\n| Row 3 | # | # | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ |\n| Row 3 | @ | _ | # | _ |\n| Row 4 | _ | _ | # | * |",
         "solution": "B"
     },
     {
@@ -796,7 +796,7 @@
         "level": "level3",
         "example_id": 3,
         "image": "frozenlake/task3/example/level3/img/3.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | * | _ | _ |\n| Row 3 | _ | @ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | @ | _ |\n| Row 2 | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | * |\n| Row 4 | _ | _ | _ | # |\n\n(C)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | _ | @ | * |\n| Row 3 | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | _ | _ | _ | _ | _ | _ | # |\n| Row 2 | _ | _ | _ | # | _ | _ | _ | _ |\n| Row 3 | # | @ | _ | # | # | # | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 5 | # | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | # | # | _ | _ | _ |\n| Row 7 | # | _ | _ | * | _ | # | _ | _ |\n| Row 8 | _ | # | # | _ | _ | _ | # | _ |",
         "solution": "A"
     },
     {
@@ -804,7 +804,7 @@
         "level": "level3",
         "example_id": 4,
         "image": "frozenlake/task3/example/level3/img/4.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | # | _ | _ | # | _ | _ | # |\n| Row 2 | _ | # | _ | # | _ | _ | _ |\n| Row 3 | # | # | # | _ | _ | _ | # |\n| Row 4 | * | _ | _ | # | # | # | _ |\n| Row 5 | _ | _ | _ | # | _ | _ | _ |\n| Row 6 | _ | # | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | @ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | * | _ | _ |\n| Row 2 | _ | # | @ |\n| Row 3 | # | _ | # |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | _ | _ | _ |\n| Row 2 | _ | @ | # | # | _ | # |\n| Row 3 | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | _ | # | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | # | # |\n| Row 6 | _ | _ | _ | * | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | # | _ | _ |\n| Row 2 | # | @ | # |\n| Row 3 | _ | * | _ |",
         "solution": "D"
     },
     {
@@ -812,7 +812,7 @@
         "level": "level3",
         "example_id": 5,
         "image": "frozenlake/task3/example/level3/img/5.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | @ | _ | # |\n| Row 3 | _ | * | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | # | # | # | # | _ | _ | # |\n| Row 2 | # | _ | _ | _ | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | # | _ | _ | _ | _ | _ | # | # |\n| Row 7 | _ | # | _ | _ | _ | # | _ | _ |\n| Row 8 | * | _ | _ | @ | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | # | _ | # | _ | _ |\n| Row 2 | * | _ | # | _ | _ | @ |\n| Row 3 | # | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | # | # | _ | _ |\n| Row 5 | _ | _ | _ | # | _ | _ |\n| Row 6 | # | # | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | # | _ |\n| Row 2 | # | _ | * |\n| Row 3 | _ | @ | _ |",
         "solution": "A"
     },
     {
@@ -820,7 +820,7 @@
         "level": "level3",
         "example_id": 6,
         "image": "frozenlake/task3/example/level3/img/6.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | # | _ | _ | # | _ | _ | # |\n| Row 2 | _ | # | _ | # | _ | _ | _ |\n| Row 3 | # | # | # | _ | _ | _ | # |\n| Row 4 | * | _ | _ | # | # | # | _ |\n| Row 5 | _ | _ | _ | # | _ | _ | _ |\n| Row 6 | _ | # | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | @ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | * | # | _ |\n| Row 2 | _ | _ | _ |\n| Row 3 | # | @ | # |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | _ |\n| Row 3 | @ | # | _ | _ |\n| Row 4 | _ | _ | # | * |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | _ | @ | * |\n| Row 3 | _ | _ | _ |",
         "solution": "B"
     },
     {
@@ -828,7 +828,7 @@
         "level": "level3",
         "example_id": 7,
         "image": "frozenlake/task3/example/level3/img/7.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | * | _ | _ |\n| Row 2 | _ | _ | _ |\n| Row 3 | @ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | * | # |\n| Row 2 | _ | _ | @ |\n| Row 3 | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | _ | _ | _ |\n| Row 2 | # | # | # | _ | # | @ |\n| Row 3 | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | * | # | _ | # | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | # | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | _ | @ | _ | # |\n| Row 3 | * | _ | _ | _ |\n| Row 4 | _ | # | # | _ |",
         "solution": "B"
     },
     {
@@ -836,7 +836,7 @@
         "level": "level4",
         "example_id": 0,
         "image": "frozenlake/task3/example/level4/img/0.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | * | _ | _ | # |\n| Row 2 | _ | # | _ | _ |\n| Row 3 | _ | # | _ | _ |\n| Row 4 | @ | _ | _ | # |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | # | # | _ | _ | # |\n| Row 2 | _ | _ | _ | _ | _ | _ | # | # |\n| Row 3 | _ | _ | # | # | _ | # | # | _ |\n| Row 4 | _ | _ | _ | _ | # | _ | _ | _ |\n| Row 5 | _ | # | _ | _ | @ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | # | _ | _ | * |\n| Row 7 | _ | _ | _ | # | _ | _ | _ | # |\n| Row 8 | _ | _ | _ | _ | _ | # | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | _ | _ |\n| Row 2 | _ | * | # | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | # | _ | # | _ |\n| Row 4 | _ | # | _ | # | _ | _ | # |\n| Row 5 | _ | # | # | _ | _ | @ | _ |\n| Row 6 | _ | _ | _ | _ | _ | # | _ |\n| Row 7 | # | _ | _ | _ | _ | # | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | * | # | _ |\n| Row 2 | _ | _ | _ | _ |\n| Row 3 | @ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ |",
         "solution": "D"
     },
     {
@@ -844,7 +844,7 @@
         "level": "level4",
         "example_id": 1,
         "image": "frozenlake/task3/example/level4/img/1.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | * | _ | _ |\n| Row 2 | # | # | # | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | # | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | @ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | * | @ | _ | # | # | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | # | _ | _ | _ | _ | # |\n| Row 4 | _ | _ | _ | # | # | _ | _ | _ |\n| Row 5 | # | _ | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | # | # | # |\n| Row 7 | # | _ | _ | _ | _ | _ | # | _ |\n| Row 8 | _ | _ | _ | _ | _ | # | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | # |\n| Row 2 | # | _ | _ | @ |\n| Row 3 | # | * | # | _ |\n| Row 4 | _ | _ | # | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | # | _ | _ | # |\n| Row 2 | _ | # | # | _ |\n| Row 3 | _ | @ | * | _ |\n| Row 4 | _ | _ | # | # |",
         "solution": "C"
     },
     {
@@ -852,7 +852,7 @@
         "level": "level4",
         "example_id": 2,
         "image": "frozenlake/task3/example/level4/img/2.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | @ |\n| Row 2 | _ | * | _ | _ | _ |\n| Row 3 | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ |\n| Row 5 | # | _ | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | # | _ | _ | _ |\n| Row 2 | * | _ | _ | _ |\n| Row 3 | # | @ | _ | # |\n| Row 4 | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | # | _ | _ | _ | _ | * |\n| Row 4 | _ | _ | _ | _ | # | _ |\n| Row 5 | _ | @ | _ | # | _ | # |\n| Row 6 | _ | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | @ | # | _ | _ |\n| Row 2 | _ | # | _ | _ |\n| Row 3 | _ | * | # | _ |\n| Row 4 | _ | _ | _ | # |",
         "solution": "D"
     },
     {
@@ -860,7 +860,7 @@
         "level": "level4",
         "example_id": 3,
         "image": "frozenlake/task3/example/level4/img/3.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | * | _ | _ |\n| Row 2 | # | _ | @ | _ |\n| Row 3 | _ | _ | _ | _ |\n| Row 4 | _ | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | * | _ | _ | _ |\n| Row 3 | @ | _ | # | _ |\n| Row 4 | _ | _ | _ | # |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | # | _ | _ | _ | _ | # | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 3 | # | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | # | _ | _ | _ | _ |\n| Row 6 | * | _ | _ | # | _ | _ | # | _ |\n| Row 7 | @ | _ | # | _ | _ | _ | _ | _ |\n| Row 8 | _ | _ | _ | _ | _ | # | _ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | * | _ | _ |\n| Row 2 | _ | # | _ | _ | # |\n| Row 3 | _ | _ | _ | _ | _ |\n| Row 4 | @ | _ | _ | # | _ |\n| Row 5 | # | _ | # | _ | _ |",
         "solution": "B"
     },
     {
@@ -868,7 +868,7 @@
         "level": "level4",
         "example_id": 4,
         "image": "frozenlake/task3/example/level4/img/4.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | _ | * | # | # |\n| Row 3 | # | @ | _ | _ |\n| Row 4 | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | # | @ | _ |\n| Row 2 | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ |\n| Row 4 | _ | # | * | # |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | # | _ | _ | # | # |\n| Row 3 | _ | # | _ | @ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | # | _ | _ | # | _ | _ | * | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 8 | _ | _ | _ | _ | _ | _ | # | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | # |\n| Row 3 | # | @ | _ | * | _ | _ |\n| Row 4 | _ | # | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | # | _ | # |",
         "solution": "B"
     },
     {
@@ -876,7 +876,7 @@
         "level": "level4",
         "example_id": 5,
         "image": "frozenlake/task3/example/level4/img/5.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | # | _ | _ |\n| Row 3 | @ | _ | * |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | # | _ | _ | _ | # | _ | # |\n| Row 2 | _ | _ | _ | # | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | # | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | _ | * | _ | _ | _ |\n| Row 5 | # | # | _ | _ | _ | # | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 7 | # | _ | # | _ | _ | # | @ | # |\n| Row 8 | _ | # | _ | _ | _ | # | # | # |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | @ | _ |\n| Row 2 | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | * |\n| Row 4 | _ | _ | _ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | * |\n| Row 2 | _ | # | _ | _ |\n| Row 3 | # | _ | @ | # |\n| Row 4 | _ | _ | _ | _ |",
         "solution": "D"
     },
     {
@@ -884,7 +884,7 @@
         "level": "level4",
         "example_id": 6,
         "image": "frozenlake/task3/example/level4/img/6.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | # | # | _ | _ | # | _ |\n| Row 2 | _ | # | _ | * | _ | # | _ | _ |\n| Row 3 | _ | @ | _ | _ | _ | _ | # | _ |\n| Row 4 | # | _ | _ | _ | _ | # | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ | # | _ |\n| Row 7 | _ | # | # | _ | # | _ | _ | _ |\n| Row 8 | _ | _ | _ | _ | # | # | _ | # |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | # | _ | _ | * | @ |\n| Row 2 | _ | _ | # | _ | # | _ |\n| Row 3 | _ | # | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | # | # | _ |\n| Row 5 | # | # | _ | _ | # | _ |\n| Row 6 | # | # | # | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | * | _ | _ | _ |\n| Row 2 | _ | # | _ | # |\n| Row 3 | _ | # | _ | @ |\n| Row 4 | _ | _ | _ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | # | _ |\n| Row 2 | @ | _ | _ | _ |\n| Row 3 | _ | # | _ | * |\n| Row 4 | _ | _ | _ | _ |",
         "solution": "D"
     },
     {
@@ -892,7 +892,7 @@
         "level": "level4",
         "example_id": 7,
         "image": "frozenlake/task3/example/level4/img/7.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | # | # |\n| Row 2 | _ | _ | @ | # |\n| Row 3 | * | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | @ | _ | * |\n| Row 4 | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | # | _ |\n| Row 6 | _ | _ | _ | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | # |\n| Row 3 | _ | # | * | # |\n| Row 4 | @ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | # | _ |\n| Row 2 | _ | # | # | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | # | # | _ | # |\n| Row 4 | _ | # | _ | _ | _ | _ | _ |\n| Row 5 | _ | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | @ | _ | _ | # |\n| Row 7 | _ | _ | # | _ | * | # | _ |",
         "solution": "C"
     },
     {
@@ -900,7 +900,7 @@
         "level": "level5",
         "example_id": 0,
         "image": "frozenlake/task3/example/level5/img/0.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | # | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ |\n| Row 4 | # | _ | _ | _ | _ |\n| Row 5 | * | @ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | _ | @ |\n| Row 2 | _ | # | _ | * | _ | _ |\n| Row 3 | _ | _ | _ | # | # | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | # | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ |\n| Row 3 | _ | # | _ | _ | _ |\n| Row 4 | # | _ | * | _ | _ |\n| Row 5 | @ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | @ | _ | _ |\n| Row 2 | _ | _ | _ |\n| Row 3 | _ | * | _ |",
         "solution": "C"
     },
     {
@@ -908,7 +908,7 @@
         "level": "level5",
         "example_id": 1,
         "image": "frozenlake/task3/example/level5/img/1.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | @ | * |\n| Row 2 | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | # |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | @ | _ | # |\n| Row 2 | _ | _ | # | _ | _ |\n| Row 3 | _ | # | _ | _ | # |\n| Row 4 | * | _ | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | # | @ | _ |\n| Row 2 | _ | _ | # | * | _ |\n| Row 3 | _ | _ | _ | _ | _ |\n| Row 4 | # | _ | _ | # | _ |\n| Row 5 | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | # | * | _ |\n| Row 2 | _ | _ | _ |\n| Row 3 | @ | # | _ |",
         "solution": "B"
     },
     {
@@ -916,7 +916,7 @@
         "level": "level5",
         "example_id": 2,
         "image": "frozenlake/task3/example/level5/img/2.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | # | _ | # | _ |\n| Row 2 | _ | # | _ | # |\n| Row 3 | _ | _ | * | _ |\n| Row 4 | _ | @ | _ | # |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | _ |\n| Row 2 | _ | # | _ | _ | _ |\n| Row 3 | _ | # | * | _ | # |\n| Row 4 | _ | @ | _ | _ | _ |\n| Row 5 | _ | _ | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | _ | _ | @ |\n| Row 2 | _ | _ | # | _ | # | _ |\n| Row 3 | _ | _ | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | * | _ | # | _ | _ |\n| Row 6 | _ | _ | # | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | # | _ | # |\n| Row 2 | _ | _ | _ | _ | _ |\n| Row 3 | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | @ | _ | _ |\n| Row 5 | _ | * | _ | _ | _ |",
         "solution": "B"
     },
     {
@@ -924,7 +924,7 @@
         "level": "level5",
         "example_id": 3,
         "image": "frozenlake/task3/example/level5/img/3.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | * | _ | _ | # | _ |\n| Row 2 | # | # | _ | @ | # |\n| Row 3 | # | # | # | # | _ |\n| Row 4 | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | _ |\n| Row 2 | @ | _ | _ | _ | _ |\n| Row 3 | # | _ | _ | _ | _ |\n| Row 4 | _ | * | _ | _ | _ |\n| Row 5 | _ | _ | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | * | # | _ |\n| Row 2 | _ | # | _ | _ |\n| Row 3 | _ | @ | _ | _ |\n| Row 4 | _ | # | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | * | _ |\n| Row 2 | @ | _ | # |\n| Row 3 | _ | # | _ |",
         "solution": "A"
     },
     {
@@ -932,7 +932,7 @@
         "level": "level5",
         "example_id": 4,
         "image": "frozenlake/task3/example/level5/img/4.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | _ |\n| Row 2 | # | _ | _ | _ | @ |\n| Row 3 | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | # | _ | _ |\n| Row 5 | _ | _ | * | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | @ | * |\n| Row 2 | # | _ | _ |\n| Row 3 | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | * | # | _ |\n| Row 2 | _ | # | _ | _ |\n| Row 3 | _ | @ | _ | _ |\n| Row 4 | _ | # | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | # | _ | _ | _ |\n| Row 2 | _ | * | _ | _ | _ |\n| Row 3 | _ | _ | _ | # | # |\n| Row 4 | # | # | @ | _ | _ |\n| Row 5 | # | _ | _ | _ | _ |",
         "solution": "D"
     },
     {
@@ -940,7 +940,7 @@
         "level": "level5",
         "example_id": 5,
         "image": "frozenlake/task3/example/level5/img/5.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | # | # |\n| Row 3 | _ | _ | _ | _ | _ |\n| Row 4 | @ | # | _ | * | _ |\n| Row 5 | # | # | _ | _ | # |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | # | _ | _ | _ |\n| Row 2 | @ | _ | _ | # | * |\n| Row 3 | _ | _ | _ | _ | # |\n| Row 4 | # | _ | # | _ | _ |\n| Row 5 | # | # | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | * | _ | _ | _ | _ | _ |\n| Row 2 | _ | # | _ | @ | _ | _ |\n| Row 3 | _ | _ | _ | # | _ | # |\n| Row 4 | _ | _ | _ | # | _ | # |\n| Row 5 | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | @ | * |\n| Row 2 | # | _ | _ |\n| Row 3 | _ | _ | _ |",
         "solution": "B"
     },
     {
@@ -948,7 +948,7 @@
         "level": "level5",
         "example_id": 6,
         "image": "frozenlake/task3/example/level5/img/6.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | # | _ | _ | _ |\n| Row 2 | _ | @ | # | # | _ |\n| Row 3 | _ | _ | _ | _ | * |\n| Row 4 | # | _ | # | _ | _ |\n| Row 5 | _ | # | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | * | _ | _ |\n| Row 2 | _ | # | @ |\n| Row 3 | # | _ | # |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | # | _ | # | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | * | @ | _ | _ | _ | # |\n| Row 5 | _ | # | _ | # | _ | _ | _ |\n| Row 6 | _ | # | _ | _ | # | _ | # |\n| Row 7 | _ | # | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | * | _ |\n| Row 2 | _ | _ | @ | _ | _ |\n| Row 3 | _ | # | _ | # | _ |\n| Row 4 | # | # | _ | # | _ |\n| Row 5 | # | _ | _ | _ | # |",
         "solution": "A"
     },
     {
@@ -956,7 +956,7 @@
         "level": "level5",
         "example_id": 7,
         "image": "frozenlake/task3/example/level5/img/7.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | * | _ | # | _ | @ |\n| Row 2 | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | # | _ | _ | _ | _ | _ | _ |\n| Row 2 | # | _ | # | _ | * | # | _ |\n| Row 3 | @ | # | _ | _ | _ | # | _ |\n| Row 4 | _ | _ | _ | # | # | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | _ | # | _ | _ |\n| Row 7 | _ | _ | # | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | _ | @ | # |\n| Row 3 | _ | * | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | # |\n| Row 2 | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | @ |\n| Row 4 | _ | * | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ |",
         "solution": "A"
     },
     {
@@ -964,7 +964,7 @@
         "level": "level6",
         "example_id": 0,
         "image": "frozenlake/task3/example/level6/img/0.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | _ | _ | @ |\n| Row 2 | _ | _ | # | _ | # | _ |\n| Row 3 | _ | _ | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | * | _ | # | _ | _ |\n| Row 6 | _ | _ | # | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | * | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ |\n| Row 3 | # | _ | # | @ | _ |\n| Row 4 | _ | # | _ | # | _ |\n| Row 5 | _ | _ | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | _ | _ | _ | _ | _ | _ | # |\n| Row 2 | _ | _ | _ | _ | * | _ | _ | # |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 5 | # | _ | _ | _ | _ | _ | _ | # |\n| Row 6 | _ | _ | _ | @ | _ | _ | _ | _ |\n| Row 7 | _ | _ | # | _ | _ | _ | # | # |\n| Row 8 | _ | # | _ | _ | _ | _ | _ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | _ | # |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | # | # | _ | _ | _ | _ |\n| Row 4 | _ | @ | _ | _ | # | * |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ |",
         "solution": "D"
     },
     {
@@ -972,7 +972,7 @@
         "level": "level6",
         "example_id": 1,
         "image": "frozenlake/task3/example/level6/img/1.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | _ | _ | * | _ |\n| Row 2 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | # | _ | _ |\n| Row 4 | _ | # | _ | _ | _ | # | _ | _ |\n| Row 5 | # | # | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | @ | _ | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | # | _ | _ | # |\n| Row 8 | _ | # | # | _ | # | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | * | _ | @ | _ | _ |\n| Row 2 | _ | _ | # | # | _ | _ |\n| Row 3 | _ | # | # | # | _ | _ |\n| Row 4 | # | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | # | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | # |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | * | # | _ | _ | @ |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | # | # | _ | _ |\n| Row 5 | _ | # | _ | _ | _ | _ |\n| Row 6 | _ | _ | # | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | # | _ |\n| Row 2 | _ | * | @ |\n| Row 3 | # | _ | _ |",
         "solution": "C"
     },
     {
@@ -980,7 +980,7 @@
         "level": "level6",
         "example_id": 2,
         "image": "frozenlake/task3/example/level6/img/2.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | # | _ | _ | _ |\n| Row 2 | # | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | @ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | # | _ | _ | * |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | # | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | _ | _ | # | _ |\n| Row 3 | _ | _ | _ | _ | _ | # | _ |\n| Row 4 | @ | _ | _ | _ | # | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | # | _ |\n| Row 6 | _ | # | _ | _ | _ | _ | # |\n| Row 7 | _ | * | _ | _ | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | * | @ | _ | _ |\n| Row 2 | _ | _ | _ | _ |\n| Row 3 | # | _ | _ | _ |\n| Row 4 | _ | # | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | # | _ | # | # | * |\n| Row 2 | @ | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | # | _ | _ | # |\n| Row 4 | # | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | # | _ |",
         "solution": "A"
     },
     {
@@ -988,7 +988,7 @@
         "level": "level6",
         "example_id": 3,
         "image": "frozenlake/task3/example/level6/img/3.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | _ | # |\n| Row 2 | # | _ | _ | _ | _ | # |\n| Row 3 | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | # | _ | _ |\n| Row 5 | _ | _ | _ | * | _ | @ |\n| Row 6 | _ | _ | # | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | # | _ | _ | _ |\n| Row 3 | _ | @ | * | _ |\n| Row 4 | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | # | _ | # | _ | _ |\n| Row 3 | _ | # | # | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | # | _ | _ | _ | _ | # |\n| Row 5 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | # | # | * | _ | # | _ | _ |\n| Row 7 | _ | # | _ | _ | _ | # | _ | # |\n| Row 8 | _ | _ | _ | _ | # | _ | _ | @ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | # | _ |\n| Row 2 | * | _ | _ | _ | _ | # |\n| Row 3 | _ | _ | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | # | _ | _ |\n| Row 5 | _ | _ | @ | _ | _ | _ |\n| Row 6 | _ | _ | # | _ | _ | # |",
         "solution": "A"
     },
     {
@@ -996,7 +996,7 @@
         "level": "level6",
         "example_id": 4,
         "image": "frozenlake/task3/example/level6/img/4.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ | * |\n| Row 3 | _ | # | _ | _ | _ | _ | @ |\n| Row 4 | _ | _ | _ | _ | # | _ | _ |\n| Row 5 | _ | _ | # | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | # | # | _ | _ |\n| Row 7 | _ | _ | _ | # | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | # | @ |\n| Row 2 | # | _ | _ | _ |\n| Row 3 | _ | # | * | # |\n| Row 4 | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | # | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | * |\n| Row 3 | # | _ | _ | _ | _ | _ |\n| Row 4 | # | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | @ | # | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | * | _ | _ | _ | # | _ |\n| Row 2 | _ | _ | # | _ | _ | _ |\n| Row 3 | # | _ | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | # | _ | _ |\n| Row 5 | # | # | _ | _ | _ | # |\n| Row 6 | @ | _ | _ | _ | # | _ |",
         "solution": "D"
     },
     {
@@ -1004,7 +1004,7 @@
         "level": "level6",
         "example_id": 5,
         "image": "frozenlake/task3/example/level6/img/5.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | _ | _ |\n| Row 2 | # | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | @ | _ | * |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | # | # | _ | _ | _ | _ | _ |\n| Row 2 | # | _ | # | _ | @ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | # | _ | # | _ |\n| Row 4 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | # | # | # | _ | _ | * | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 8 | _ | _ | # | _ | _ | _ | _ | # |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | # | * | _ | # |\n| Row 2 | # | _ | _ | _ | _ | # |\n| Row 3 | _ | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ |\n| Row 5 | # | _ | _ | # | # | _ |\n| Row 6 | _ | _ | _ | _ | @ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | * | _ | _ |\n| Row 2 | _ | _ | _ | _ | @ |\n| Row 3 | _ | # | _ | _ | _ |\n| Row 4 | _ | # | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | # |",
         "solution": "C"
     },
     {
@@ -1012,7 +1012,7 @@
         "level": "level6",
         "example_id": 6,
         "image": "frozenlake/task3/example/level6/img/6.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | _ | # | _ | # |\n| Row 2 | @ | _ | _ | * | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | # | _ | # | _ |\n| Row 4 | # | _ | _ | _ | # | _ | # | # |\n| Row 5 | _ | _ | _ | _ | # | _ | _ | # |\n| Row 6 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 8 | _ | _ | _ | _ | # | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | # | # | # |\n| Row 2 | _ | _ | _ |\n| Row 3 | _ | * | @ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | # | _ | _ | _ |\n| Row 2 | _ | _ | _ | # | _ | _ |\n| Row 3 | _ | # | _ | # | _ | _ |\n| Row 4 | * | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | # | # |\n| Row 6 | _ | _ | # | _ | _ | @ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | * | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | _ | @ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | _ | # | _ |",
         "solution": "C"
     },
     {
@@ -1020,7 +1020,7 @@
         "level": "level6",
         "example_id": 7,
         "image": "frozenlake/task3/example/level6/img/7.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | @ | _ | * |\n| Row 3 | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | * | _ | _ | _ |\n| Row 2 | @ | # | _ | _ | _ | _ |\n| Row 3 | _ | # | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | # | _ | # |\n| Row 5 | # | # | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | # | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | # |\n| Row 4 | # | _ | _ | _ | * |\n| Row 5 | _ | _ | # | @ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | # | * | # | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | # | _ | _ | _ | @ | _ |",
         "solution": "D"
     },
     {
@@ -1028,7 +1028,7 @@
         "level": "level7",
         "example_id": 0,
         "image": "frozenlake/task3/example/level7/img/0.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | # | # | # | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | @ | # | # | _ |\n| Row 3 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | # | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | * | _ | _ |\n| Row 6 | # | # | _ | # | _ | _ | # | _ |\n| Row 7 | _ | _ | # | # | _ | _ | _ | _ |\n| Row 8 | _ | _ | _ | _ | _ | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | @ | _ | _ | # | _ | _ | _ |\n| Row 3 | _ | _ | # | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | * | # | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | # | # | _ | # | _ | _ | # |\n| Row 7 | _ | _ | _ | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | * | _ | _ |\n| Row 2 | _ | _ | _ | _ | @ |\n| Row 3 | _ | # | _ | _ | _ |\n| Row 4 | _ | # | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | _ | # |\n| Row 2 | # | _ | _ | _ | _ | # | _ |\n| Row 3 | _ | # | # | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | @ | _ | _ | _ |\n| Row 5 | _ | _ | _ | # | # | _ | _ |\n| Row 6 | # | # | _ | * | _ | _ | _ |\n| Row 7 | _ | _ | # | _ | _ | # | _ |",
         "solution": "B"
     },
     {
@@ -1036,7 +1036,7 @@
         "level": "level7",
         "example_id": 1,
         "image": "frozenlake/task3/example/level7/img/1.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | @ | _ | _ | _ | _ | # | _ |\n| Row 2 | # | _ | _ | _ | # | _ | # |\n| Row 3 | _ | _ | _ | # | # | _ | # |\n| Row 4 | # | _ | _ | _ | _ | _ | _ |\n| Row 5 | # | _ | _ | * | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | # | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | # | _ | # | _ | _ | _ | # |\n| Row 2 | _ | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | @ | # | _ | _ | _ | _ |\n| Row 4 | # | _ | _ | # | # | _ | _ |\n| Row 5 | _ | _ | # | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | # | # |\n| Row 7 | _ | _ | _ | _ | * | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | * | # | _ | _ | # |\n| Row 2 | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | @ | # |\n| Row 4 | _ | # | _ | _ | _ |\n| Row 5 | _ | _ | # | _ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | # | _ | # |\n| Row 5 | _ | _ | _ | @ | _ | _ |\n| Row 6 | # | _ | _ | # | * | _ |",
         "solution": "A"
     },
     {
@@ -1044,7 +1044,7 @@
         "level": "level7",
         "example_id": 2,
         "image": "frozenlake/task3/example/level7/img/2.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | # | _ | _ | _ | _ |\n| Row 2 | _ | @ | # | # | _ | _ | # |\n| Row 3 | * | _ | _ | # | _ | _ | _ |\n| Row 4 | # | _ | _ | _ | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | _ | # |\n| Row 6 | _ | _ | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | # | _ | # |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | _ | _ |\n| Row 2 | # | _ | # | _ | _ | _ | _ |\n| Row 3 | _ | * | # | _ | _ | @ | # |\n| Row 4 | _ | _ | _ | _ | # | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | # | _ | _ |\n| Row 7 | _ | _ | _ | _ | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | _ | _ | * | _ |\n| Row 2 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | # | _ | _ |\n| Row 4 | _ | # | _ | _ | _ | # | _ | _ |\n| Row 5 | # | # | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | @ | _ | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | # | _ | _ | # |\n| Row 8 | _ | # | # | _ | # | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | # | _ |\n| Row 2 | _ | _ | _ | _ |\n| Row 3 | _ | # | _ | * |\n| Row 4 | _ | @ | _ | _ |",
         "solution": "B"
     },
     {
@@ -1052,7 +1052,7 @@
         "level": "level7",
         "example_id": 3,
         "image": "frozenlake/task3/example/level7/img/3.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | # | _ | # | _ | # |\n| Row 2 | _ | # | * | _ | _ | # | # |\n| Row 3 | _ | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | _ | _ | @ | _ | _ | _ |\n| Row 5 | # | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | # | _ | _ | # | _ |\n| Row 7 | _ | _ | # | _ | # | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | * | _ | _ |\n| Row 2 | # | # | # | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | # | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | @ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | # | # | # | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | @ | # | # | _ |\n| Row 3 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | # | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | * | _ | _ |\n| Row 6 | # | # | _ | # | _ | _ | # | _ |\n| Row 7 | _ | _ | # | # | _ | _ | _ | _ |\n| Row 8 | _ | _ | _ | _ | _ | _ | # | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | # | _ | _ | _ |\n| Row 2 | # | @ | _ | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | * |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | # | _ | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | # | _ | _ | _ |",
         "solution": "D"
     },
     {
@@ -1060,7 +1060,7 @@
         "level": "level7",
         "example_id": 4,
         "image": "frozenlake/task3/example/level7/img/4.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | # | _ | _ | _ |\n| Row 2 | # | _ | _ | * | _ | _ | # |\n| Row 3 | # | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | # | _ | @ | _ |\n| Row 7 | _ | _ | # | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | _ | # |\n| Row 2 | * | # | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | @ | # | _ | _ | # | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ | _ |\n| Row 7 | # | # | _ | _ | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | # | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | @ |\n| Row 4 | _ | _ | * | # | # | _ |\n| Row 5 | # | _ | # | _ | _ | # |\n| Row 6 | _ | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | _ | _ | _ | _ | _ | _ | # |\n| Row 2 | * | _ | _ | # | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | # | _ | # | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | @ | _ |\n| Row 5 | _ | _ | _ | # | _ | _ | _ | _ |\n| Row 6 | # | _ | _ | _ | _ | # | _ | _ |\n| Row 7 | _ | _ | _ | _ | _ | # | _ | _ |\n| Row 8 | _ | # | _ | _ | _ | _ | _ | _ |",
         "solution": "A"
     },
     {
@@ -1068,7 +1068,7 @@
         "level": "level7",
         "example_id": 5,
         "image": "frozenlake/task3/example/level7/img/5.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | * | _ | _ | # | _ |\n| Row 2 | _ | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ |\n| Row 4 | # | _ | _ | _ | @ | _ |\n| Row 5 | # | _ | # | _ | _ | _ |\n| Row 6 | _ | _ | # | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | # | _ | _ |\n| Row 3 | @ | _ | * |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | # | _ | _ | _ | _ |\n| Row 2 | _ | @ | # | # | _ | _ | # |\n| Row 3 | * | _ | _ | # | _ | _ | _ |\n| Row 4 | # | _ | _ | _ | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | _ | # |\n| Row 6 | _ | _ | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | # | _ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | @ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ | _ |\n| Row 3 | # | _ | # | # | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | * | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | # | _ |\n| Row 6 | _ | _ | _ | # | _ | _ | _ |\n| Row 7 | _ | # | _ | _ | _ | _ | _ |",
         "solution": "D"
     },
     {
@@ -1076,7 +1076,7 @@
         "level": "level7",
         "example_id": 6,
         "image": "frozenlake/task3/example/level7/img/6.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | * | _ | _ | _ | _ | _ |\n| Row 2 | _ | # | _ | @ | _ | _ |\n| Row 3 | _ | _ | _ | # | _ | # |\n| Row 4 | _ | _ | _ | # | _ | # |\n| Row 5 | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | # | # | _ | # | _ | # | _ |\n| Row 2 | _ | _ | _ | _ | _ | * | _ |\n| Row 3 | _ | _ | _ | # | _ | _ | _ |\n| Row 4 | _ | # | _ | # | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | # | _ | # |\n| Row 6 | _ | _ | _ | _ | # | _ | _ |\n| Row 7 | # | _ | _ | # | _ | @ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | _ | _ |\n| Row 2 | _ | _ | # | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | # | _ | # |\n| Row 4 | _ | _ | _ | _ | _ | _ | # |\n| Row 5 | * | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | @ | _ | # | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | # | # | @ |\n| Row 2 | _ | _ | _ |\n| Row 3 | * | # | _ |",
         "solution": "C"
     },
     {
@@ -1084,7 +1084,7 @@
         "level": "level7",
         "example_id": 7,
         "image": "frozenlake/task3/example/level7/img/7.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | # | _ | _ | _ | _ | _ | _ |\n| Row 3 | # | _ | _ | _ | # | _ | @ |\n| Row 4 | # | _ | _ | _ | _ | # | _ |\n| Row 5 | _ | _ | * | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | # | # | _ | _ |\n| Row 7 | _ | # | _ | _ | _ | _ | # |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | * | _ |\n| Row 2 | _ | @ | _ |\n| Row 3 | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | # | _ | # | _ | _ |\n| Row 2 | * | _ | # | _ | _ | @ |\n| Row 3 | # | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | # | # | _ | _ |\n| Row 5 | _ | _ | _ | # | _ | _ |\n| Row 6 | # | # | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | @ | _ |\n| Row 2 | # | * | _ | _ | _ | _ | _ |\n| Row 3 | # | _ | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | _ | # | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | # | _ | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | _ |",
         "solution": "A"
     },
     {
@@ -1092,7 +1092,7 @@
         "level": "level8",
         "example_id": 0,
         "image": "frozenlake/task3/example/level8/img/0.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | _ | _ | @ | _ | # | # | # |\n| Row 2 | _ | _ | _ | # | _ | _ | _ | _ |\n| Row 3 | # | _ | _ | _ | _ | _ | _ | # |\n| Row 4 | # | _ | _ | # | _ | _ | _ | _ |\n| Row 5 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | # | # | * | _ | _ | _ |\n| Row 7 | _ | _ | _ | # | # | # | _ | _ |\n| Row 8 | _ | _ | _ | _ | _ | # | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | # | _ | # | _ |\n| Row 2 | _ | _ | # | _ |\n| Row 3 | _ | _ | @ | _ |\n| Row 4 | # | _ | _ | * |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | # | _ | _ | _ | * | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | @ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 7 | # | _ | _ | _ | _ | _ | _ | _ |\n| Row 8 | _ | _ | # | # | _ | # | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | * | _ | @ |\n| Row 2 | _ | _ | # |\n| Row 3 | # | _ | _ |",
         "solution": "C"
     },
     {
@@ -1100,7 +1100,7 @@
         "level": "level8",
         "example_id": 1,
         "image": "frozenlake/task3/example/level8/img/1.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ | # | # |\n| Row 3 | _ | _ | _ | # | # | _ | _ | _ |\n| Row 4 | # | _ | # | _ | _ | _ | # | _ |\n| Row 5 | # | # | _ | # | _ | _ | _ | _ |\n| Row 6 | # | # | _ | _ | _ | _ | _ | _ |\n| Row 7 | * | # | # | _ | _ | _ | _ | _ |\n| Row 8 | _ | @ | _ | # | _ | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | # | _ | _ | _ | _ | _ | # |\n| Row 2 | _ | _ | _ | # | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | @ | * | _ | _ | _ |\n| Row 5 | _ | # | # | # | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | # | _ | _ | _ | _ |\n| Row 7 | _ | _ | # | _ | # | # | _ | # |\n| Row 8 | _ | _ | _ | _ | _ | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | * | _ | _ |\n| Row 2 | _ | @ | _ | _ |\n| Row 3 | _ | _ | # | _ |\n| Row 4 | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | * | _ | _ |\n| Row 2 | @ | # | _ |\n| Row 3 | _ | _ | _ |",
         "solution": "A"
     },
     {
@@ -1108,7 +1108,7 @@
         "level": "level8",
         "example_id": 2,
         "image": "frozenlake/task3/example/level8/img/2.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | # | _ | _ | _ | _ |\n| Row 2 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | @ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | # | _ | _ | _ | _ |\n| Row 5 | _ | * | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | # | _ | # | _ | _ |\n| Row 7 | _ | _ | _ | _ | _ | # | _ | _ |\n| Row 8 | _ | # | _ | _ | _ | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | _ | _ | _ | _ | # | _ | # |\n| Row 2 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | # | _ | # | * |\n| Row 4 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | @ | _ | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 7 | # | _ | _ | _ | _ | _ | _ | _ |\n| Row 8 | # | _ | _ | _ | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | @ | * | _ |\n| Row 2 | _ | _ | _ |\n| Row 3 | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | # | _ | * | _ |\n| Row 2 | _ | @ | _ | _ |\n| Row 3 | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ |",
         "solution": "B"
     },
     {
@@ -1116,7 +1116,7 @@
         "level": "level8",
         "example_id": 3,
         "image": "frozenlake/task3/example/level8/img/3.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | # | _ | # | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | @ | _ |\n| Row 5 | _ | _ | _ | _ | _ | * |\n| Row 6 | _ | _ | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | # | _ | _ | _ | _ | # |\n| Row 2 | # | _ | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | # | * | _ | _ | # | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ | # | _ |\n| Row 7 | _ | _ | # | # | _ | _ | # | _ |\n| Row 8 | _ | _ | _ | # | # | _ | _ | @ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | _ | _ | # | _ | # | _ | * |\n| Row 2 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | # | _ | _ | _ | _ | # | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | # | @ | _ | _ | _ | # |\n| Row 6 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 7 | _ | _ | # | _ | _ | _ | # | _ |\n| Row 8 | _ | _ | _ | # | # | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | _ | _ |\n| Row 2 | _ | * | # | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | # | _ | # | _ |\n| Row 4 | _ | # | _ | # | _ | _ | # |\n| Row 5 | _ | # | # | _ | _ | @ | _ |\n| Row 6 | _ | _ | _ | _ | _ | # | _ |\n| Row 7 | # | _ | _ | _ | _ | # | _ |",
         "solution": "C"
     },
     {
@@ -1124,7 +1124,7 @@
         "level": "level8",
         "example_id": 4,
         "image": "frozenlake/task3/example/level8/img/4.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | # | # | _ | _ | # | _ |\n| Row 2 | _ | # | _ | * | _ | # | _ | _ |\n| Row 3 | _ | @ | _ | _ | _ | _ | # | _ |\n| Row 4 | # | _ | _ | _ | _ | # | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ | # | _ |\n| Row 7 | _ | # | # | _ | # | _ | _ | _ |\n| Row 8 | _ | _ | _ | _ | # | # | _ | # |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | @ | _ | * |\n| Row 3 | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | * | # | # | _ | _ | _ | # | # |\n| Row 5 | _ | # | _ | _ | _ | # | _ | _ |\n| Row 6 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 7 | # | _ | _ | _ | _ | _ | _ | # |\n| Row 8 | # | _ | @ | # | _ | _ | _ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | # | # | _ | _ |\n| Row 2 | # | _ | _ | # | _ |\n| Row 3 | _ | _ | _ | _ | _ |\n| Row 4 | * | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | @ | # |",
         "solution": "C"
     },
     {
@@ -1132,7 +1132,7 @@
         "level": "level8",
         "example_id": 5,
         "image": "frozenlake/task3/example/level8/img/5.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | _ | * | _ | _ |\n| Row 3 | _ | _ | _ | _ |\n| Row 4 | _ | @ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | # | _ | _ | _ |\n| Row 2 | _ | _ | _ | # | _ | _ | _ | # |\n| Row 3 | # | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 5 | # | # | _ | _ | _ | _ | _ | * |\n| Row 6 | _ | _ | _ | _ | _ | # | _ | @ |\n| Row 7 | _ | # | _ | _ | _ | _ | _ | # |\n| Row 8 | _ | # | _ | _ | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | # | _ | _ | _ |\n| Row 2 | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | # | _ |\n| Row 4 | _ | @ | _ | _ | _ |\n| Row 5 | _ | _ | _ | * | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | _ | _ | _ | _ | # | * | # |\n| Row 2 | _ | # | _ | _ | # | _ | _ | # |\n| Row 3 | # | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | _ | @ | _ |\n| Row 6 | _ | # | _ | _ | _ | # | _ | _ |\n| Row 7 | # | # | # | _ | _ | _ | _ | _ |\n| Row 8 | _ | # | _ | _ | _ | _ | _ | _ |",
         "solution": "B"
     },
     {
@@ -1140,7 +1140,7 @@
         "level": "level8",
         "example_id": 6,
         "image": "frozenlake/task3/example/level8/img/6.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | # | _ | _ |\n| Row 2 | @ | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ |\n| Row 4 | # | _ | # | _ | _ |\n| Row 5 | _ | * | # | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | # | _ | # | _ | # |\n| Row 2 | _ | # | * | _ | _ | # | # |\n| Row 3 | _ | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | _ | _ | @ | _ | _ | _ |\n| Row 5 | # | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | # | _ | _ | # | _ |\n| Row 7 | _ | _ | # | _ | # | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | # | _ | _ | _ | _ | # | * | # |\n| Row 2 | _ | # | _ | _ | # | _ | _ | # |\n| Row 3 | # | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | _ | @ | _ |\n| Row 6 | _ | # | _ | _ | _ | # | _ | _ |\n| Row 7 | # | # | # | _ | _ | _ | _ | _ |\n| Row 8 | _ | # | _ | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | # | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | # | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | # | # | # | _ | _ |\n| Row 7 | _ | _ | @ | _ | * | _ | _ | _ |\n| Row 8 | _ | # | _ | _ | # | # | _ | _ |",
         "solution": "D"
     },
     {
@@ -1148,7 +1148,7 @@
         "level": "level8",
         "example_id": 7,
         "image": "frozenlake/task3/example/level8/img/7.png",
-        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | # | _ |\n| Row 2 | _ | _ | @ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | # |\n| Row 4 | * | _ | _ | # | _ | _ |\n| Row 5 | _ | _ | _ | _ | # | _ |\n| Row 6 | _ | # | _ | # | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | _ | _ | # | _ |\n| Row 2 | _ | _ | _ | # | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | # | _ | # | _ | _ | _ | _ |\n| Row 5 | _ | _ | # | # | _ | * | # | _ |\n| Row 6 | _ | @ | # | # | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | # | # | # | # |\n| Row 8 | _ | _ | # | _ | _ | # | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | # | _ | # | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | # | _ | # | _ | _ | _ |\n| Row 5 | @ | _ | # | # | _ | _ | _ | _ |\n| Row 6 | * | # | _ | _ | _ | _ | # | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 8 | _ | _ | _ | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | @ | _ | _ | _ | # |\n| Row 2 | _ | _ | # | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | # | _ |\n| Row 6 | _ | _ | _ | _ | # | _ | _ |\n| Row 7 | _ | _ | * | # | _ | # | _ |",
         "solution": "B"
     },
     {
