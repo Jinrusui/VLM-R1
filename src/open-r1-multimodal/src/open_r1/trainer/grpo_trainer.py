@@ -374,7 +374,7 @@ class Qwen2VLGRPOTrainer(Trainer):
         self.generation_config = GenerationConfig(
             max_new_tokens=self.max_completion_length,
             do_sample=True,  
-            temperature=1,
+            temperature=1.0,
             pad_token_id=pad_token_id,
         )
         self.beta = args.beta
@@ -513,7 +513,8 @@ class Qwen2VLGRPOTrainer(Trainer):
         #samples = self.wandb_table
         for i in indices:
             prompt_text = maybe_apply_chat_template(inputs[i], self.processing_class)["prompt"]
-            
+            problem = inputs[i]["problem"]
+            solution = inputs[i]["solution"]
             # 处理不同格式的 completion
             completion_text = completions[i]
             if isinstance(completion_text, list):  # 适用于对话格式
@@ -527,7 +528,9 @@ class Qwen2VLGRPOTrainer(Trainer):
                 "step": step,
                 "prompt": prompt_text,
                 "completion": completion_text,
-                "reward": rewards[i].item()
+                "reward": rewards[i].item(),
+                "problem": problem,
+                "solution":solution,
             }
             if image_wandb:
                 sample["image"] = image_wandb  # 添加图片到 wandb 日志
@@ -538,9 +541,9 @@ class Qwen2VLGRPOTrainer(Trainer):
         # 记录到 wandb
         wandb.log({
             "samples": wandb.Table(
-                data=[[s["step"], s["prompt"], s["completion"], s["reward"], s.get("image")] 
+                data=[[s["step"], s["prompt"], s["problem"],s["completion"],s["solution"], s["reward"], s.get("image")] 
                       for s in self.wandb_table],
-                columns=["step", "prompt", "completion", "reward", "image"]
+                columns=["step", "prompt","problem", "completion", "solution","reward", "image"]
             )
         }, step=step)
     # def _log_samples_to_wandb(self, inputs, completions, rewards, step):
@@ -632,7 +635,7 @@ class Qwen2VLGRPOTrainer(Trainer):
     
     # import math
 
-    def update_temperature_by_reward(self, step, reward_avg, min_temp=0.5, max_temp=3.0, k=1.0, x0=1.5):
+    def update_temperature_by_reward(self, step, reward_avg, min_temp=0.5, max_temp=1.0, k=1.0, x0=0.5):
         """
         根据当前 reward 平均值更新生成温度，使用 sigmoid 函数进行非线性映射。
         不对 reward 进行裁切，假设 reward 的取值范围为 0 到 3。
@@ -654,12 +657,12 @@ class Qwen2VLGRPOTrainer(Trainer):
         # 更新生成配置
         self.generation_config.temperature = curr_temp
 
-        # 日志记录
-        if is_wandb_available() and wandb.run is not None and self.is_world_process_zero():
-            wandb.log({
-                "temperature": curr_temp, 
-                "reward_for_temp": reward_avg
-            }, step=step)
+        # # 日志记录
+        # if is_wandb_available() and wandb.run is not None and self.is_world_process_zero():
+        #     wandb.log({
+        #         "temperature": curr_temp, 
+        #         "reward_for_temp": reward_avg
+        #     }, step=step)
         
         return curr_temp
 
@@ -928,6 +931,7 @@ class Qwen2VLGRPOTrainer(Trainer):
         metrics = {key: sum(val) / len(val) for key, val in self._metrics.items()}  # average the metrics
         logs = {**logs, **metrics}
         #logs["samples"] = self.wandb_table
+        logs["temp"] = self.generation_config.temperature
         if version.parse(transformers.__version__) >= version.parse("4.47.0.dev0"):
             super().log(logs, start_time)
         else:  # transformers<=4.46

@@ -3,7 +3,7 @@ cd src/open-r1-multimodal
 export DEBUG_MODE="true"
 # export CUDA_VISIBLE_DEVICES=4,5,6,7
 
-RUN_NAME="Qwen2.5-VL-7B-GRPO-REC-lora"
+RUN_NAME="Qwen2.5-VL-3B-GRPO-PRE-lora"
 export LOG_PATH="./debug_log_$RUN_NAME.txt"
 
 torchrun --nproc_per_node="1" \
@@ -14,9 +14,9 @@ torchrun --nproc_per_node="1" \
     src/open_r1/grpo_pre.py \
     --deepspeed local_scripts/zero2.json \
     --output_dir output/$RUN_NAME \
-    --model_name_or_path Qwen/Qwen2.5-VL-7B-Instruct \
+    --model_name_or_path Qwen/Qwen2.5-VL-3B-Instruct \
     --dataset_name data_config/pre.yaml \
-    --image_root /jinru/VLM-R1/Visual-Spatial-Planning/VSP-main/frozenlake \
+    --image_root /jinru/VLM-R1/Visual-Spatial-Planning/VSP-main \
     --max_prompt_length 4096 \
     --num_generations 8 \
     --per_device_train_batch_size 64 \

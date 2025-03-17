@@ -307,6 +307,7 @@ def path_reward(completions, solution, **kwargs):
 def frozenlake_reward(completions, solution, **kwargs):
     """Reward function that checks if the completion's answer matches the solution for FrozenLake tasks."""
     contents = [completion[0]["content"] for completion in completions]
+    
     rewards = []
     current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
     
@@ -332,7 +333,7 @@ def frozenlake_reward(completions, solution, **kwargs):
                     model_answer = answer_text
                 
                 # Get the correct answer from solution
-                correct_answer = sol
+                correct_answer = sol["solution"]
                 
                 # Compare answers (case-insensitive for text)
                 if isinstance(model_answer, str) and isinstance(correct_answer, str):
@@ -367,7 +368,7 @@ def frozenlake_reward(completions, solution, **kwargs):
 def format_reward(completions, **kwargs):
     """Reward function that checks if the completion has a specific format."""
     # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
-    pattern = r"<think>.*?<presentation>.*?</presentation>.*?</think>\s*<answer>\s*\{\s*\"path\"\s*:\s*\[.*\]\s*\}.*?</answer>"
+    pattern = r"<think>.*?</think>\s*<answer>\s*\{\s*\"answer\"\s*:\s*(?:\[.*\]|\".*?\")\s*\}.*?</answer>"
     completion_contents = [completion[0]["content"] for completion in completions]
     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
     return [1.0 if match else 0.0 for match in matches]

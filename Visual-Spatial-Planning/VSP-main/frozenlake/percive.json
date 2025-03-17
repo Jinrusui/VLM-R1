@@ -3,1472 +3,1472 @@
         "task_name": "task1",
         "level": "level3",
         "example_id": 0,
-        "image_path": "frozenlake/task1/example/level3/img/0.png",
-        "question": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level3/img/0.png",
+        "problem": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level3",
         "example_id": 1,
-        "image_path": "frozenlake/task1/example/level3/img/1.png",
-        "question": "Is there a hole in row 1, column 3? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level3/img/1.png",
+        "problem": "Is there a hole in row 1, column 3? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level3",
         "example_id": 2,
-        "image_path": "frozenlake/task1/example/level3/img/2.png",
-        "question": "Is there a hole in row 2, column 1? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level3/img/2.png",
+        "problem": "Is there a hole in row 2, column 1? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level3",
         "example_id": 3,
-        "image_path": "frozenlake/task1/example/level3/img/3.png",
-        "question": "Is there a hole in row 1, column 1? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level3/img/3.png",
+        "problem": "Is there a hole in row 1, column 1? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level3",
         "example_id": 4,
-        "image_path": "frozenlake/task1/example/level3/img/4.png",
-        "question": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level3/img/4.png",
+        "problem": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level3",
         "example_id": 5,
-        "image_path": "frozenlake/task1/example/level3/img/5.png",
-        "question": "Is there a hole in row 3, column 3? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level3/img/5.png",
+        "problem": "Is there a hole in row 3, column 3? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level3",
         "example_id": 6,
-        "image_path": "frozenlake/task1/example/level3/img/6.png",
-        "question": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level3/img/6.png",
+        "problem": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level3",
         "example_id": 7,
-        "image_path": "frozenlake/task1/example/level3/img/7.png",
-        "question": "Is there a hole in row 3, column 2? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level3/img/7.png",
+        "problem": "Is there a hole in row 3, column 2? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level4",
         "example_id": 0,
-        "image_path": "frozenlake/task1/example/level4/img/0.png",
-        "question": "Is there a hole in row 1, column 1? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level4/img/0.png",
+        "problem": "Is there a hole in row 1, column 1? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level4",
         "example_id": 1,
-        "image_path": "frozenlake/task1/example/level4/img/1.png",
-        "question": "Is there a hole in row 1, column 2? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level4/img/1.png",
+        "problem": "Is there a hole in row 1, column 2? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level4",
         "example_id": 2,
-        "image_path": "frozenlake/task1/example/level4/img/2.png",
-        "question": "Is there a hole in row 2, column 1? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level4/img/2.png",
+        "problem": "Is there a hole in row 2, column 1? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level4",
         "example_id": 3,
-        "image_path": "frozenlake/task1/example/level4/img/3.png",
-        "question": "Is there a hole in row 2, column 4? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level4/img/3.png",
+        "problem": "Is there a hole in row 2, column 4? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level4",
         "example_id": 4,
-        "image_path": "frozenlake/task1/example/level4/img/4.png",
-        "question": "Is there a hole in row 2, column 4? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level4/img/4.png",
+        "problem": "Is there a hole in row 2, column 4? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level4",
         "example_id": 5,
-        "image_path": "frozenlake/task1/example/level4/img/5.png",
-        "question": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level4/img/5.png",
+        "problem": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level4",
         "example_id": 6,
-        "image_path": "frozenlake/task1/example/level4/img/6.png",
-        "question": "Is there a hole in row 2, column 4? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level4/img/6.png",
+        "problem": "Is there a hole in row 2, column 4? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level4",
         "example_id": 7,
-        "image_path": "frozenlake/task1/example/level4/img/7.png",
-        "question": "Is there a hole in row 3, column 3? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level4/img/7.png",
+        "problem": "Is there a hole in row 3, column 3? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level5",
         "example_id": 0,
-        "image_path": "frozenlake/task1/example/level5/img/0.png",
-        "question": "Is there a hole in row 2, column 2? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level5/img/0.png",
+        "problem": "Is there a hole in row 2, column 2? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level5",
         "example_id": 1,
-        "image_path": "frozenlake/task1/example/level5/img/1.png",
-        "question": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level5/img/1.png",
+        "problem": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level5",
         "example_id": 2,
-        "image_path": "frozenlake/task1/example/level5/img/2.png",
-        "question": "Is there a hole in row 1, column 4? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level5/img/2.png",
+        "problem": "Is there a hole in row 1, column 4? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level5",
         "example_id": 3,
-        "image_path": "frozenlake/task1/example/level5/img/3.png",
-        "question": "Is there a hole in row 1, column 3? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level5/img/3.png",
+        "problem": "Is there a hole in row 1, column 3? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level5",
         "example_id": 4,
-        "image_path": "frozenlake/task1/example/level5/img/4.png",
-        "question": "Is there a hole in row 3, column 5? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level5/img/4.png",
+        "problem": "Is there a hole in row 3, column 5? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level5",
         "example_id": 5,
-        "image_path": "frozenlake/task1/example/level5/img/5.png",
-        "question": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level5/img/5.png",
+        "problem": "Is there a hole in row 3, column 1? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level5",
         "example_id": 6,
-        "image_path": "frozenlake/task1/example/level5/img/6.png",
-        "question": "Is there a hole in row 4, column 5? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level5/img/6.png",
+        "problem": "Is there a hole in row 4, column 5? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level5",
         "example_id": 7,
-        "image_path": "frozenlake/task1/example/level5/img/7.png",
-        "question": "Is there a hole in row 1, column 4? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level5/img/7.png",
+        "problem": "Is there a hole in row 1, column 4? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level6",
         "example_id": 0,
-        "image_path": "frozenlake/task1/example/level6/img/0.png",
-        "question": "Is there a hole in row 1, column 5? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level6/img/0.png",
+        "problem": "Is there a hole in row 1, column 5? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level6",
         "example_id": 1,
-        "image_path": "frozenlake/task1/example/level6/img/1.png",
-        "question": "Is there a hole in row 3, column 6? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level6/img/1.png",
+        "problem": "Is there a hole in row 3, column 6? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level6",
         "example_id": 2,
-        "image_path": "frozenlake/task1/example/level6/img/2.png",
-        "question": "Is there a hole in row 5, column 3? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level6/img/2.png",
+        "problem": "Is there a hole in row 5, column 3? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level6",
         "example_id": 3,
-        "image_path": "frozenlake/task1/example/level6/img/3.png",
-        "question": "Is there a hole in row 5, column 2? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level6/img/3.png",
+        "problem": "Is there a hole in row 5, column 2? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level6",
         "example_id": 4,
-        "image_path": "frozenlake/task1/example/level6/img/4.png",
-        "question": "Is there a hole in row 6, column 1? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level6/img/4.png",
+        "problem": "Is there a hole in row 6, column 1? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level6",
         "example_id": 5,
-        "image_path": "frozenlake/task1/example/level6/img/5.png",
-        "question": "Is there a hole in row 1, column 6? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level6/img/5.png",
+        "problem": "Is there a hole in row 1, column 6? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level6",
         "example_id": 6,
-        "image_path": "frozenlake/task1/example/level6/img/6.png",
-        "question": "Is there a hole in row 2, column 3? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level6/img/6.png",
+        "problem": "Is there a hole in row 2, column 3? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level6",
         "example_id": 7,
-        "image_path": "frozenlake/task1/example/level6/img/7.png",
-        "question": "Is there a hole in row 1, column 2? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level6/img/7.png",
+        "problem": "Is there a hole in row 1, column 2? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level7",
         "example_id": 0,
-        "image_path": "frozenlake/task1/example/level7/img/0.png",
-        "question": "Is there a hole in row 7, column 1? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level7/img/0.png",
+        "problem": "Is there a hole in row 7, column 1? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level7",
         "example_id": 1,
-        "image_path": "frozenlake/task1/example/level7/img/1.png",
-        "question": "Is there a hole in row 4, column 3? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level7/img/1.png",
+        "problem": "Is there a hole in row 4, column 3? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level7",
         "example_id": 2,
-        "image_path": "frozenlake/task1/example/level7/img/2.png",
-        "question": "Is there a hole in row 4, column 6? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level7/img/2.png",
+        "problem": "Is there a hole in row 4, column 6? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level7",
         "example_id": 3,
-        "image_path": "frozenlake/task1/example/level7/img/3.png",
-        "question": "Is there a hole in row 7, column 3? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level7/img/3.png",
+        "problem": "Is there a hole in row 7, column 3? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level7",
         "example_id": 4,
-        "image_path": "frozenlake/task1/example/level7/img/4.png",
-        "question": "Is there a hole in row 2, column 3? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level7/img/4.png",
+        "problem": "Is there a hole in row 2, column 3? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level7",
         "example_id": 5,
-        "image_path": "frozenlake/task1/example/level7/img/5.png",
-        "question": "Is there a hole in row 3, column 2? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level7/img/5.png",
+        "problem": "Is there a hole in row 3, column 2? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level7",
         "example_id": 6,
-        "image_path": "frozenlake/task1/example/level7/img/6.png",
-        "question": "Is there a hole in row 6, column 3? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level7/img/6.png",
+        "problem": "Is there a hole in row 6, column 3? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level7",
         "example_id": 7,
-        "image_path": "frozenlake/task1/example/level7/img/7.png",
-        "question": "Is there a hole in row 6, column 6? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level7/img/7.png",
+        "problem": "Is there a hole in row 6, column 6? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level8",
         "example_id": 0,
-        "image_path": "frozenlake/task1/example/level8/img/0.png",
-        "question": "Is there a hole in row 2, column 3? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level8/img/0.png",
+        "problem": "Is there a hole in row 2, column 3? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level8",
         "example_id": 1,
-        "image_path": "frozenlake/task1/example/level8/img/1.png",
-        "question": "Is there a hole in row 4, column 3? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level8/img/1.png",
+        "problem": "Is there a hole in row 4, column 3? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level8",
         "example_id": 2,
-        "image_path": "frozenlake/task1/example/level8/img/2.png",
-        "question": "Is there a hole in row 8, column 7? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level8/img/2.png",
+        "problem": "Is there a hole in row 8, column 7? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level8",
         "example_id": 3,
-        "image_path": "frozenlake/task1/example/level8/img/3.png",
-        "question": "Is there a hole in row 5, column 4? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level8/img/3.png",
+        "problem": "Is there a hole in row 5, column 4? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level8",
         "example_id": 4,
-        "image_path": "frozenlake/task1/example/level8/img/4.png",
-        "question": "Is there a hole in row 6, column 1? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level8/img/4.png",
+        "problem": "Is there a hole in row 6, column 1? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level8",
         "example_id": 5,
-        "image_path": "frozenlake/task1/example/level8/img/5.png",
-        "question": "Is there a hole in row 4, column 1? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level8/img/5.png",
+        "problem": "Is there a hole in row 4, column 1? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task1",
         "level": "level8",
         "example_id": 6,
-        "image_path": "frozenlake/task1/example/level8/img/6.png",
-        "question": "Is there a hole in row 6, column 7? \noutput from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task1/example/level8/img/6.png",
+        "problem": "Is there a hole in row 6, column 7? \noutput from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task1",
         "level": "level8",
         "example_id": 7,
-        "image_path": "frozenlake/task1/example/level8/img/7.png",
-        "question": "Is there a hole in row 5, column 2? \noutput from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task1/example/level8/img/7.png",
+        "problem": "Is there a hole in row 5, column 2? \noutput from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task2",
         "level": "level3",
         "example_id": 0,
-        "image_path": "frozenlake/task2/example/level3/img/0.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level3/img/0.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level3",
         "example_id": 1,
-        "image_path": "frozenlake/task2/example/level3/img/1.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Above"
+        "image": "frozenlake/task2/example/level3/img/1.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Above"
     },
     {
         "task_name": "task2",
         "level": "level3",
         "example_id": 2,
-        "image_path": "frozenlake/task2/example/level3/img/2.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Below"
+        "image": "frozenlake/task2/example/level3/img/2.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Below"
     },
     {
         "task_name": "task2",
         "level": "level3",
         "example_id": 3,
-        "image_path": "frozenlake/task2/example/level3/img/3.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level3/img/3.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level3",
         "example_id": 4,
-        "image_path": "frozenlake/task2/example/level3/img/4.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Above"
+        "image": "frozenlake/task2/example/level3/img/4.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Above"
     },
     {
         "task_name": "task2",
         "level": "level3",
         "example_id": 5,
-        "image_path": "frozenlake/task2/example/level3/img/5.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level3/img/5.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level3",
         "example_id": 6,
-        "image_path": "frozenlake/task2/example/level3/img/6.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level3/img/6.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level3",
         "example_id": 7,
-        "image_path": "frozenlake/task2/example/level3/img/7.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level3/img/7.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level4",
         "example_id": 0,
-        "image_path": "frozenlake/task2/example/level4/img/0.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Below"
+        "image": "frozenlake/task2/example/level4/img/0.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Below"
     },
     {
         "task_name": "task2",
         "level": "level4",
         "example_id": 1,
-        "image_path": "frozenlake/task2/example/level4/img/1.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Above"
+        "image": "frozenlake/task2/example/level4/img/1.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Above"
     },
     {
         "task_name": "task2",
         "level": "level4",
         "example_id": 2,
-        "image_path": "frozenlake/task2/example/level4/img/2.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level4/img/2.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level4",
         "example_id": 3,
-        "image_path": "frozenlake/task2/example/level4/img/3.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Below"
+        "image": "frozenlake/task2/example/level4/img/3.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Below"
     },
     {
         "task_name": "task2",
         "level": "level4",
         "example_id": 4,
-        "image_path": "frozenlake/task2/example/level4/img/4.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Above"
+        "image": "frozenlake/task2/example/level4/img/4.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Above"
     },
     {
         "task_name": "task2",
         "level": "level4",
         "example_id": 5,
-        "image_path": "frozenlake/task2/example/level4/img/5.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Below"
+        "image": "frozenlake/task2/example/level4/img/5.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Below"
     },
     {
         "task_name": "task2",
         "level": "level4",
         "example_id": 6,
-        "image_path": "frozenlake/task2/example/level4/img/6.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level4/img/6.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level4",
         "example_id": 7,
-        "image_path": "frozenlake/task2/example/level4/img/7.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Below"
+        "image": "frozenlake/task2/example/level4/img/7.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Below"
     },
     {
         "task_name": "task2",
         "level": "level5",
         "example_id": 0,
-        "image_path": "frozenlake/task2/example/level5/img/0.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Below"
+        "image": "frozenlake/task2/example/level5/img/0.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Below"
     },
     {
         "task_name": "task2",
         "level": "level5",
         "example_id": 1,
-        "image_path": "frozenlake/task2/example/level5/img/1.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Above"
+        "image": "frozenlake/task2/example/level5/img/1.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Above"
     },
     {
         "task_name": "task2",
         "level": "level5",
         "example_id": 2,
-        "image_path": "frozenlake/task2/example/level5/img/2.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Below"
+        "image": "frozenlake/task2/example/level5/img/2.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Below"
     },
     {
         "task_name": "task2",
         "level": "level5",
         "example_id": 3,
-        "image_path": "frozenlake/task2/example/level5/img/3.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level5/img/3.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level5",
         "example_id": 4,
-        "image_path": "frozenlake/task2/example/level5/img/4.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level5/img/4.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level5",
         "example_id": 5,
-        "image_path": "frozenlake/task2/example/level5/img/5.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left"
+        "image": "frozenlake/task2/example/level5/img/5.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left"
     },
     {
         "task_name": "task2",
         "level": "level5",
         "example_id": 6,
-        "image_path": "frozenlake/task2/example/level5/img/6.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level5/img/6.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level5",
         "example_id": 7,
-        "image_path": "frozenlake/task2/example/level5/img/7.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right"
+        "image": "frozenlake/task2/example/level5/img/7.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right"
     },
     {
         "task_name": "task2",
         "level": "level6",
         "example_id": 0,
-        "image_path": "frozenlake/task2/example/level6/img/0.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left"
+        "image": "frozenlake/task2/example/level6/img/0.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left"
     },
     {
         "task_name": "task2",
         "level": "level6",
         "example_id": 1,
-        "image_path": "frozenlake/task2/example/level6/img/1.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right"
+        "image": "frozenlake/task2/example/level6/img/1.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right"
     },
     {
         "task_name": "task2",
         "level": "level6",
         "example_id": 2,
-        "image_path": "frozenlake/task2/example/level6/img/2.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level6/img/2.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level6",
         "example_id": 3,
-        "image_path": "frozenlake/task2/example/level6/img/3.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right"
+        "image": "frozenlake/task2/example/level6/img/3.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right"
     },
     {
         "task_name": "task2",
         "level": "level6",
         "example_id": 4,
-        "image_path": "frozenlake/task2/example/level6/img/4.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Below"
+        "image": "frozenlake/task2/example/level6/img/4.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Below"
     },
     {
         "task_name": "task2",
         "level": "level6",
         "example_id": 5,
-        "image_path": "frozenlake/task2/example/level6/img/5.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level6/img/5.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level6",
         "example_id": 6,
-        "image_path": "frozenlake/task2/example/level6/img/6.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level6/img/6.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level6",
         "example_id": 7,
-        "image_path": "frozenlake/task2/example/level6/img/7.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level6/img/7.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level7",
         "example_id": 0,
-        "image_path": "frozenlake/task2/example/level7/img/0.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level7/img/0.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level7",
         "example_id": 1,
-        "image_path": "frozenlake/task2/example/level7/img/1.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level7/img/1.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level7",
         "example_id": 2,
-        "image_path": "frozenlake/task2/example/level7/img/2.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right"
+        "image": "frozenlake/task2/example/level7/img/2.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right"
     },
     {
         "task_name": "task2",
         "level": "level7",
         "example_id": 3,
-        "image_path": "frozenlake/task2/example/level7/img/3.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level7/img/3.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level7",
         "example_id": 4,
-        "image_path": "frozenlake/task2/example/level7/img/4.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level7/img/4.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level7",
         "example_id": 5,
-        "image_path": "frozenlake/task2/example/level7/img/5.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left,Above"
+        "image": "frozenlake/task2/example/level7/img/5.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left,Above"
     },
     {
         "task_name": "task2",
         "level": "level7",
         "example_id": 6,
-        "image_path": "frozenlake/task2/example/level7/img/6.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Below"
+        "image": "frozenlake/task2/example/level7/img/6.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Below"
     },
     {
         "task_name": "task2",
         "level": "level7",
         "example_id": 7,
-        "image_path": "frozenlake/task2/example/level7/img/7.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Right,Above"
+        "image": "frozenlake/task2/example/level7/img/7.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Right,Above"
     },
     {
         "task_name": "task2",
         "level": "level8",
         "example_id": 0,
-        "image_path": "frozenlake/task2/example/level8/img/0.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Below"
+        "image": "frozenlake/task2/example/level8/img/0.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Below"
     },
     {
         "task_name": "task2",
         "level": "level8",
         "example_id": 1,
-        "image_path": "frozenlake/task2/example/level8/img/1.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Below,Right"
+        "image": "frozenlake/task2/example/level8/img/1.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Below,Right"
     },
     {
         "task_name": "task2",
         "level": "level8",
         "example_id": 2,
-        "image_path": "frozenlake/task2/example/level8/img/2.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Below,Left"
+        "image": "frozenlake/task2/example/level8/img/2.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Below,Left"
     },
     {
         "task_name": "task2",
         "level": "level8",
         "example_id": 3,
-        "image_path": "frozenlake/task2/example/level8/img/3.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Below,Left"
+        "image": "frozenlake/task2/example/level8/img/3.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Below,Left"
     },
     {
         "task_name": "task2",
         "level": "level8",
         "example_id": 4,
-        "image_path": "frozenlake/task2/example/level8/img/4.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Below,Right"
+        "image": "frozenlake/task2/example/level8/img/4.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Below,Right"
     },
     {
         "task_name": "task2",
         "level": "level8",
         "example_id": 5,
-        "image_path": "frozenlake/task2/example/level8/img/5.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Below"
+        "image": "frozenlake/task2/example/level8/img/5.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Below"
     },
     {
         "task_name": "task2",
         "level": "level8",
         "example_id": 6,
-        "image_path": "frozenlake/task2/example/level8/img/6.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Left"
+        "image": "frozenlake/task2/example/level8/img/6.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Left"
     },
     {
         "task_name": "task2",
         "level": "level8",
         "example_id": 7,
-        "image_path": "frozenlake/task2/example/level8/img/7.png",
-        "question": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
-        "answer": "Below,Left"
+        "image": "frozenlake/task2/example/level8/img/7.png",
+        "problem": "Determine the relative position of the player with respect to the goal using the directional indicators: {\"Above\", \"Below\", \"Left\", \"Right\"}.\n-Above / Below for row differences\n-Left / Right for column differences",
+        "solution": "Below,Left"
     },
     {
         "task_name": "task3",
         "level": "level3",
         "example_id": 0,
-        "image_path": "frozenlake/task3/example/level3/img/0.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level3/img/0.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level3",
         "example_id": 1,
-        "image_path": "frozenlake/task3/example/level3/img/1.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level3/img/1.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level3",
         "example_id": 2,
-        "image_path": "frozenlake/task3/example/level3/img/2.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level3/img/2.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level3",
         "example_id": 3,
-        "image_path": "frozenlake/task3/example/level3/img/3.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level3/img/3.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level3",
         "example_id": 4,
-        "image_path": "frozenlake/task3/example/level3/img/4.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level3/img/4.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level3",
         "example_id": 5,
-        "image_path": "frozenlake/task3/example/level3/img/5.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level3/img/5.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level3",
         "example_id": 6,
-        "image_path": "frozenlake/task3/example/level3/img/6.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level3/img/6.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level3",
         "example_id": 7,
-        "image_path": "frozenlake/task3/example/level3/img/7.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level3/img/7.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level4",
         "example_id": 0,
-        "image_path": "frozenlake/task3/example/level4/img/0.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level4/img/0.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level4",
         "example_id": 1,
-        "image_path": "frozenlake/task3/example/level4/img/1.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level4/img/1.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level4",
         "example_id": 2,
-        "image_path": "frozenlake/task3/example/level4/img/2.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level4/img/2.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level4",
         "example_id": 3,
-        "image_path": "frozenlake/task3/example/level4/img/3.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level4/img/3.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level4",
         "example_id": 4,
-        "image_path": "frozenlake/task3/example/level4/img/4.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level4/img/4.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level4",
         "example_id": 5,
-        "image_path": "frozenlake/task3/example/level4/img/5.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level4/img/5.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level4",
         "example_id": 6,
-        "image_path": "frozenlake/task3/example/level4/img/6.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level4/img/6.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level4",
         "example_id": 7,
-        "image_path": "frozenlake/task3/example/level4/img/7.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level4/img/7.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level5",
         "example_id": 0,
-        "image_path": "frozenlake/task3/example/level5/img/0.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level5/img/0.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level5",
         "example_id": 1,
-        "image_path": "frozenlake/task3/example/level5/img/1.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level5/img/1.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level5",
         "example_id": 2,
-        "image_path": "frozenlake/task3/example/level5/img/2.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level5/img/2.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level5",
         "example_id": 3,
-        "image_path": "frozenlake/task3/example/level5/img/3.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level5/img/3.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level5",
         "example_id": 4,
-        "image_path": "frozenlake/task3/example/level5/img/4.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level5/img/4.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level5",
         "example_id": 5,
-        "image_path": "frozenlake/task3/example/level5/img/5.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level5/img/5.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level5",
         "example_id": 6,
-        "image_path": "frozenlake/task3/example/level5/img/6.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level5/img/6.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level5",
         "example_id": 7,
-        "image_path": "frozenlake/task3/example/level5/img/7.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level5/img/7.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level6",
         "example_id": 0,
-        "image_path": "frozenlake/task3/example/level6/img/0.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level6/img/0.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level6",
         "example_id": 1,
-        "image_path": "frozenlake/task3/example/level6/img/1.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level6/img/1.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level6",
         "example_id": 2,
-        "image_path": "frozenlake/task3/example/level6/img/2.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level6/img/2.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level6",
         "example_id": 3,
-        "image_path": "frozenlake/task3/example/level6/img/3.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level6/img/3.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level6",
         "example_id": 4,
-        "image_path": "frozenlake/task3/example/level6/img/4.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level6/img/4.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level6",
         "example_id": 5,
-        "image_path": "frozenlake/task3/example/level6/img/5.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level6/img/5.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level6",
         "example_id": 6,
-        "image_path": "frozenlake/task3/example/level6/img/6.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level6/img/6.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level6",
         "example_id": 7,
-        "image_path": "frozenlake/task3/example/level6/img/7.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level6/img/7.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level7",
         "example_id": 0,
-        "image_path": "frozenlake/task3/example/level7/img/0.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level7/img/0.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level7",
         "example_id": 1,
-        "image_path": "frozenlake/task3/example/level7/img/1.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level7/img/1.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level7",
         "example_id": 2,
-        "image_path": "frozenlake/task3/example/level7/img/2.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level7/img/2.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level7",
         "example_id": 3,
-        "image_path": "frozenlake/task3/example/level7/img/3.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level7/img/3.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level7",
         "example_id": 4,
-        "image_path": "frozenlake/task3/example/level7/img/4.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level7/img/4.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level7",
         "example_id": 5,
-        "image_path": "frozenlake/task3/example/level7/img/5.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level7/img/5.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level7",
         "example_id": 6,
-        "image_path": "frozenlake/task3/example/level7/img/6.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level7/img/6.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level7",
         "example_id": 7,
-        "image_path": "frozenlake/task3/example/level7/img/7.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level7/img/7.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level8",
         "example_id": 0,
-        "image_path": "frozenlake/task3/example/level8/img/0.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level8/img/0.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level8",
         "example_id": 1,
-        "image_path": "frozenlake/task3/example/level8/img/1.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "A"
+        "image": "frozenlake/task3/example/level8/img/1.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "A"
     },
     {
         "task_name": "task3",
         "level": "level8",
         "example_id": 2,
-        "image_path": "frozenlake/task3/example/level8/img/2.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level8/img/2.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level8",
         "example_id": 3,
-        "image_path": "frozenlake/task3/example/level8/img/3.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level8/img/3.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level8",
         "example_id": 4,
-        "image_path": "frozenlake/task3/example/level8/img/4.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "C"
+        "image": "frozenlake/task3/example/level8/img/4.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "C"
     },
     {
         "task_name": "task3",
         "level": "level8",
         "example_id": 5,
-        "image_path": "frozenlake/task3/example/level8/img/5.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level8/img/5.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task3",
         "level": "level8",
         "example_id": 6,
-        "image_path": "frozenlake/task3/example/level8/img/6.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "D"
+        "image": "frozenlake/task3/example/level8/img/6.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "D"
     },
     {
         "task_name": "task3",
         "level": "level8",
         "example_id": 7,
-        "image_path": "frozenlake/task3/example/level8/img/7.png",
-        "question": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
-        "answer": "B"
+        "image": "frozenlake/task3/example/level8/img/7.png",
+        "problem": "From {A, B, C, D}, select the textual maze representation that exactly matches the given image.\n\nSymbols:\n- @ : Player\n- # : Hole\n- _ : Safe land\n- * : Goal",
+        "solution": "B"
     },
     {
         "task_name": "task4",
         "level": "step1",
         "example_id": 0,
-        "image_path": "frozenlake/task4/example/level_step1/img/0.png",
-        "question": "Determine if the action sequence R is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step1/img/0.png",
+        "problem": "Determine if the action sequence R is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step1",
         "example_id": 1,
-        "image_path": "frozenlake/task4/example/level_step1/img/1.png",
-        "question": "Determine if the action sequence R is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step1/img/1.png",
+        "problem": "Determine if the action sequence R is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step1",
         "example_id": 2,
-        "image_path": "frozenlake/task4/example/level_step1/img/2.png",
-        "question": "Determine if the action sequence U is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step1/img/2.png",
+        "problem": "Determine if the action sequence U is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step1",
         "example_id": 3,
-        "image_path": "frozenlake/task4/example/level_step1/img/3.png",
-        "question": "Determine if the action sequence L is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step1/img/3.png",
+        "problem": "Determine if the action sequence L is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step1",
         "example_id": 4,
-        "image_path": "frozenlake/task4/example/level_step1/img/4.png",
-        "question": "Determine if the action sequence D is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step1/img/4.png",
+        "problem": "Determine if the action sequence D is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step1",
         "example_id": 5,
-        "image_path": "frozenlake/task4/example/level_step1/img/5.png",
-        "question": "Determine if the action sequence U is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step1/img/5.png",
+        "problem": "Determine if the action sequence U is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step1",
         "example_id": 6,
-        "image_path": "frozenlake/task4/example/level_step1/img/6.png",
-        "question": "Determine if the action sequence D is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step1/img/6.png",
+        "problem": "Determine if the action sequence D is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step1",
         "example_id": 7,
-        "image_path": "frozenlake/task4/example/level_step1/img/7.png",
-        "question": "Determine if the action sequence R is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step1/img/7.png",
+        "problem": "Determine if the action sequence R is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step3",
         "example_id": 0,
-        "image_path": "frozenlake/task4/example/level_step3/img/0.png",
-        "question": "Determine if the action sequence RLD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step3/img/0.png",
+        "problem": "Determine if the action sequence RLD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step3",
         "example_id": 1,
-        "image_path": "frozenlake/task4/example/level_step3/img/1.png",
-        "question": "Determine if the action sequence RRD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step3/img/1.png",
+        "problem": "Determine if the action sequence RRD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step3",
         "example_id": 2,
-        "image_path": "frozenlake/task4/example/level_step3/img/2.png",
-        "question": "Determine if the action sequence UUR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step3/img/2.png",
+        "problem": "Determine if the action sequence UUR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step3",
         "example_id": 3,
-        "image_path": "frozenlake/task4/example/level_step3/img/3.png",
-        "question": "Determine if the action sequence DLD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step3/img/3.png",
+        "problem": "Determine if the action sequence DLD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step3",
         "example_id": 4,
-        "image_path": "frozenlake/task4/example/level_step3/img/4.png",
-        "question": "Determine if the action sequence LLL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step3/img/4.png",
+        "problem": "Determine if the action sequence LLL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step3",
         "example_id": 5,
-        "image_path": "frozenlake/task4/example/level_step3/img/5.png",
-        "question": "Determine if the action sequence DLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step3/img/5.png",
+        "problem": "Determine if the action sequence DLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step3",
         "example_id": 6,
-        "image_path": "frozenlake/task4/example/level_step3/img/6.png",
-        "question": "Determine if the action sequence DLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step3/img/6.png",
+        "problem": "Determine if the action sequence DLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step3",
         "example_id": 7,
-        "image_path": "frozenlake/task4/example/level_step3/img/7.png",
-        "question": "Determine if the action sequence DDD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step3/img/7.png",
+        "problem": "Determine if the action sequence DDD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step5",
         "example_id": 0,
-        "image_path": "frozenlake/task4/example/level_step5/img/0.png",
-        "question": "Determine if the action sequence DURRU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step5/img/0.png",
+        "problem": "Determine if the action sequence DURRU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step5",
         "example_id": 1,
-        "image_path": "frozenlake/task4/example/level_step5/img/1.png",
-        "question": "Determine if the action sequence DULRL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step5/img/1.png",
+        "problem": "Determine if the action sequence DULRL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step5",
         "example_id": 2,
-        "image_path": "frozenlake/task4/example/level_step5/img/2.png",
-        "question": "Determine if the action sequence RRURL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step5/img/2.png",
+        "problem": "Determine if the action sequence RRURL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step5",
         "example_id": 3,
-        "image_path": "frozenlake/task4/example/level_step5/img/3.png",
-        "question": "Determine if the action sequence DLULR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step5/img/3.png",
+        "problem": "Determine if the action sequence DLULR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step5",
         "example_id": 4,
-        "image_path": "frozenlake/task4/example/level_step5/img/4.png",
-        "question": "Determine if the action sequence LDUDD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step5/img/4.png",
+        "problem": "Determine if the action sequence LDUDD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step5",
         "example_id": 5,
-        "image_path": "frozenlake/task4/example/level_step5/img/5.png",
-        "question": "Determine if the action sequence RLDUU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step5/img/5.png",
+        "problem": "Determine if the action sequence RLDUU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step5",
         "example_id": 6,
-        "image_path": "frozenlake/task4/example/level_step5/img/6.png",
-        "question": "Determine if the action sequence DDULR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step5/img/6.png",
+        "problem": "Determine if the action sequence DDULR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step5",
         "example_id": 7,
-        "image_path": "frozenlake/task4/example/level_step5/img/7.png",
-        "question": "Determine if the action sequence UDLLU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step5/img/7.png",
+        "problem": "Determine if the action sequence UDLLU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step7",
         "example_id": 0,
-        "image_path": "frozenlake/task4/example/level_step7/img/0.png",
-        "question": "Determine if the action sequence RDRLUUD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step7/img/0.png",
+        "problem": "Determine if the action sequence RDRLUUD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step7",
         "example_id": 1,
-        "image_path": "frozenlake/task4/example/level_step7/img/1.png",
-        "question": "Determine if the action sequence RRDUDUL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step7/img/1.png",
+        "problem": "Determine if the action sequence RRDUDUL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step7",
         "example_id": 2,
-        "image_path": "frozenlake/task4/example/level_step7/img/2.png",
-        "question": "Determine if the action sequence UDURUDL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step7/img/2.png",
+        "problem": "Determine if the action sequence UDURUDL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step7",
         "example_id": 3,
-        "image_path": "frozenlake/task4/example/level_step7/img/3.png",
-        "question": "Determine if the action sequence DDDDLRR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step7/img/3.png",
+        "problem": "Determine if the action sequence DDDDLRR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step7",
         "example_id": 4,
-        "image_path": "frozenlake/task4/example/level_step7/img/4.png",
-        "question": "Determine if the action sequence LDDDUUD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step7/img/4.png",
+        "problem": "Determine if the action sequence LDDDUUD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step7",
         "example_id": 5,
-        "image_path": "frozenlake/task4/example/level_step7/img/5.png",
-        "question": "Determine if the action sequence LDURDLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step7/img/5.png",
+        "problem": "Determine if the action sequence LDURDLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step7",
         "example_id": 6,
-        "image_path": "frozenlake/task4/example/level_step7/img/6.png",
-        "question": "Determine if the action sequence DRDUDLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step7/img/6.png",
+        "problem": "Determine if the action sequence DRDUDLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step7",
         "example_id": 7,
-        "image_path": "frozenlake/task4/example/level_step7/img/7.png",
-        "question": "Determine if the action sequence RRDDUDU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step7/img/7.png",
+        "problem": "Determine if the action sequence RRDDUDU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step9",
         "example_id": 0,
-        "image_path": "frozenlake/task4/example/level_step9/img/0.png",
-        "question": "Determine if the action sequence UUDUDRLRD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step9/img/0.png",
+        "problem": "Determine if the action sequence UUDUDRLRD is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step9",
         "example_id": 1,
-        "image_path": "frozenlake/task4/example/level_step9/img/1.png",
-        "question": "Determine if the action sequence LRLDDLRLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step9/img/1.png",
+        "problem": "Determine if the action sequence LRLDDLRLR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step9",
         "example_id": 2,
-        "image_path": "frozenlake/task4/example/level_step9/img/2.png",
-        "question": "Determine if the action sequence URRRLRDDL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step9/img/2.png",
+        "problem": "Determine if the action sequence URRRLRDDL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step9",
         "example_id": 3,
-        "image_path": "frozenlake/task4/example/level_step9/img/3.png",
-        "question": "Determine if the action sequence LDRUDLRRL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step9/img/3.png",
+        "problem": "Determine if the action sequence LDRUDLRRL is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step9",
         "example_id": 4,
-        "image_path": "frozenlake/task4/example/level_step9/img/4.png",
-        "question": "Determine if the action sequence DLRULDDUR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step9/img/4.png",
+        "problem": "Determine if the action sequence DLRULDDUR is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     },
     {
         "task_name": "task4",
         "level": "step9",
         "example_id": 5,
-        "image_path": "frozenlake/task4/example/level_step9/img/5.png",
-        "question": "Determine if the action sequence UUDLURLDU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step9/img/5.png",
+        "problem": "Determine if the action sequence UUDLURLDU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step9",
         "example_id": 6,
-        "image_path": "frozenlake/task4/example/level_step9/img/6.png",
-        "question": "Determine if the action sequence LLDDRURUU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "Yes"
+        "image": "frozenlake/task4/example/level_step9/img/6.png",
+        "problem": "Determine if the action sequence LLDDRURUU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "Yes"
     },
     {
         "task_name": "task4",
         "level": "step9",
         "example_id": 7,
-        "image_path": "frozenlake/task4/example/level_step9/img/7.png",
-        "question": "Determine if the action sequence LLRUDRRRU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
-        "answer": "No"
+        "image": "frozenlake/task4/example/level_step9/img/7.png",
+        "problem": "Determine if the action sequence LLRUDRRRU is safe (avoids holes) in the maze shown in <TEST-IMAGE>, using the rules:\n - Player (@) moves via L/R/U/D but cannot enter holes (#).\n - Moving off-grid or into a hole fails.\n - Success requires reaching the goal (*).\n Output from {Yes,No}",
+        "solution": "No"
     }
 ]
