@@ -332,12 +332,9 @@ def frozenlake_reward(completions, solution, **kwargs):
                 
                 # Get the correct answer from solution
                 correct_answer = sol
-                #print("model_answer",model_answer)
-                #print("correct_answer",correct_answer)
                 # Compare answers (case-insensitive for text)
                 if isinstance(model_answer, str) and isinstance(correct_answer, str):
-                    if sol['task_name'] == 'task2':
-
+                    if "," in sol:
                         model_answer_list = sorted([item.strip() for item in model_answer.split(",")])
                         correct_answer_list = sorted([item.strip() for item in correct_answer.split(",")])
                 
@@ -346,6 +343,8 @@ def frozenlake_reward(completions, solution, **kwargs):
 
                     elif model_answer.strip().lower() == correct_answer.strip().lower():
                         reward = 1.0
+                    elif correct_answer.strip().lower() in model_answer.strip().lower():
+                        reward = 0.5
 
                 elif model_answer == correct_answer:
                     reward = 1.0
@@ -363,6 +362,10 @@ def frozenlake_reward(completions, solution, **kwargs):
                 f.write(f"------------- {current_time} FrozenLake reward: {reward} -------------\n")
                 f.write(f"Content: {content}\n")
                 f.write(f"Solution: {json.dumps(sol)}\n")
+    # print("model_answer:",model_answer)
+    # print("correct_answer:",correct_answer)
+    # print(model_answer == correct_answer)
+    print(rewards)
     return rewards
 
 
@@ -370,11 +373,10 @@ def frozenlake_reward(completions, solution, **kwargs):
 def format_reward(completions, **kwargs):
     """Reward function that checks if the completion has a specific format."""
     # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
-    pattern = r"<think>.*?</think>\s*<answer>\s*\{\s*\"answer\"\s*:\s*(?:\[.*\]|\".*?\")\s*\}.*?</answer>"
+    pattern = r"<think>[\s\S]*?</think>\s*<answer>\s*\{\s*\"answer\"\s*:\s*(?:\[[\s\S]*?\]|\"[\s\S]*?\")\s*\}[\s\S]*?</answer>"
     completion_contents = [completion[0]["content"] for completion in completions]
     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
     return [1.0 if match else 0.0 for match in matches]
-
 
 reward_funcs_registry = {
     "accuracy": frozenlake_reward,

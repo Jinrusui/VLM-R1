@@ -6,7 +6,7 @@ export DEBUG_MODE="true"
 RUN_NAME="Qwen2.5-VL-3B-GRPO-PRE-lora"
 export LOG_PATH="./debug_log_$RUN_NAME.txt"
 
-torchrun --nproc_per_node="2" \
+torchrun --nproc_per_node="4" \
     --nnodes="1" \
     --node_rank="0" \
     --master_addr="127.0.0.1" \
@@ -19,7 +19,7 @@ torchrun --nproc_per_node="2" \
     --image_root /jinru/VLM-R1/Visual-Spatial-Planning/VSP-main \
     --max_prompt_length 4096 \
     --num_generations 16 \
-    --per_device_train_batch_size 64 \
+    --per_device_train_batch_size 32 \
     --gradient_accumulation_steps 1 \
     --logging_steps 1 \
     --bf16 \

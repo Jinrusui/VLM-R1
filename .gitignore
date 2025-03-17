@@ -1,0 +1,17 @@
+# 忽略日志文件
+src/open-r1-multimodal/debug_log_Qwen2.5-VL-3B-GRPO-PRE-lora.txt
+
+# 忽略输出目录
+src/open-r1-multimodal/output/
+
+# 忽略 Jupyter Notebook 检查点
+src/open-r1-multimodal/run_scripts/.ipynb_checkpoints/
+src/open-r1-multimodal/src/open_r1/.ipynb_checkpoints/
+
+# 忽略 Python 缓存目录
+src/open-r1-multimodal/src/open_r1/__pycache__/
+src/open-r1-multimodal/src/open_r1/trainer/__pycache__/
+
+# 忽略 wandb 目录
+src/open-r1-multimodal/wandb/
+
