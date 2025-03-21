@@ -202,35 +202,79 @@ class LazySupervisedDataset(Dataset):
 
         example = self.list_data_dict[i]
         image_root = self.script_args.image_root
-        if 'image' in example:
+        # Check if example['image'] is a list first
+        if 'image' in example and isinstance(example['image'], list):
+            # Handle multi-image case
+            try:
+                return {
+                    'image1': Image.open(os.path.join(image_root, example['image'][0])).convert("RGB"),
+                    'image2': Image.open(os.path.join(image_root, example['image'][1])).convert("RGB"),
+                    'task_name': example["task_name"],
+                    'problem': example['problem'],
+                    'solution': example['solution'],
+                    'prompt': make_conversation_multi_image(example)['prompt'],
+                }
+            except Exception as e:
+                print(f"Error loading multi-image: {e}")
+                # Fallback to randomly selecting another example
+                return self.__getitem__(random.randint(0, len(self.list_data_dict)-1))
+        elif 'image' in example:
+            # Handle single image case
             image_path = os.path.join(image_root, example['image'])
             # In case the image is not found
             while not os.path.exists(image_path):
                 print(f"Warning: Image {image_path} not found, randomly selecting another image")
                 new_index = random.randint(0, len(self.list_data_dict)-1)
                 example = self.list_data_dict[new_index]
+                # Check again if the new example has a list of images
+                if isinstance(example['image'], list):
+                    return self.__getitem__(new_index)
                 image_path = os.path.join(image_root, example['image'])
             image = Image.open(image_path).convert("RGB")
-        else:
-            image = None
-        
-        if isinstance(example['image'], list):
-            return {
-                'image1': Image.open(os.path.join(image_root, example['image'][0])).convert("RGB"),
-                'image2': Image.open(os.path.join(image_root, example['image'][1])).convert("RGB"),
-                'task_name':example["task_name"],
-                'problem': example['problem'],
-                'solution': example['solution'],
-                'prompt': make_conversation_multi_image(example)['prompt'],
-            }
-        else:
             return {
                 'image': image,
-                'task_name':example["task_name"],
+                'task_name': example["task_name"],
                 'problem': example['problem'],
                 'solution': example['solution'],
-                'prompt': make_conversation_image(example)['prompt'] if 'image' in example else make_conversation(example)['prompt'],
+                'prompt': make_conversation_image(example)['prompt'],
             }
+        else:
+            # Handle text-only case
+            return {
+                'task_name': example["task_name"],
+                'problem': example['problem'],
+                'solution': example['solution'],
+                'prompt': make_conversation(example)['prompt'],
+            }
+        # if 'image' in example:
+        #     image_path = os.path.join(image_root, example['image'])
+        #     # In case the image is not found
+        #     while not os.path.exists(image_path):
+        #         print(f"Warning: Image {image_path} not found, randomly selecting another image")
+        #         new_index = random.randint(0, len(self.list_data_dict)-1)
+        #         example = self.list_data_dict[new_index]
+        #         image_path = os.path.join(image_root, example['image'])
+        #     image = Image.open(image_path).convert("RGB")
+        # else:
+        #     image = None
+        
+        # if isinstance(example['image'], list):
+        #     return {
+        #         'image1': Image.open(os.path.join(image_root, example['image'][0])).convert("RGB"),
+        #         'image2': Image.open(os.path.join(image_root, example['image'][1])).convert("RGB"),
+        #         'task_name':example["task_name"],
+        #         'problem': example['problem'],
+        #         'solution': example['solution'],
+        #         'prompt': make_conversation_multi_image(example)['prompt'],
+        #     }
+        # else:
+        #     return {
+        #         'image': image,
+        #         'task_name':example["task_name"],
+        #         'problem': example['problem'],
+        #         'solution': example['solution'],
+        #         'prompt': make_conversation_image(example)['prompt'] if 'image' in example else make_conversation(example)['prompt'],
+        #     }
 
 ####reward function####
 
