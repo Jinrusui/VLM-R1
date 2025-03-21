@@ -2,8 +2,8 @@ import json
 import os
 
 # Define input file paths
-input_file1 = 'b_percive_grpo.json'
-input_file2 = 'fl_percive_grpo.json'
+input_file1 = 'VSP-main/blocks/b_percive_grpo.json'
+input_file2 = 'VSP-main/frozenlake/fl_percive_grpo.json'
 output_file = 'percive_grpo.json'
 
 # Read the first JSON file
@@ -27,8 +27,8 @@ print(f"Total of {len(combined_data)} elements written to {output_file}")
 
 
 # Define input file paths
-input_file1 = 'b_plan_grpo.json'
-input_file2 = 'fl_plan_grpo.json'
+input_file1 = 'VSP-main/blocks/b_plan_grpo.json'
+input_file2 = 'VSP-main/frozenlake/fl_plan_grpo.json'
 output_file = 'plan_grpo.json'
 
 # Read the first JSON file
@@ -50,8 +50,8 @@ print(f"Successfully concatenated {len(data1)} elements from {input_file1} and {
 print(f"Total of {len(combined_data)} elements written to {output_file}")
 
 # Define input file paths
-input_file1 = 'b_plan_sft.json'
-input_file2 = 'fl_plan_sft.json'
+input_file1 = 'VSP-main/blocks/b_plan_sft.json'
+input_file2 = 'VSP-main/frozenlake/fl_plan_sft.json'
 output_file = 'plan_sft.json'
 
 # Read the first JSON file
@@ -73,8 +73,8 @@ print(f"Successfully concatenated {len(data1)} elements from {input_file1} and {
 print(f"Total of {len(combined_data)} elements written to {output_file}")
 
 # Define input file paths
-input_file1 = 'b_percive_sft.json'
-input_file2 = 'fl_percive_sft.json'
+input_file1 = 'VSP-main/blocks/b_percive_sft.json'
+input_file2 = 'VSP-main/frozenlake/fl_percive_sft.json'
 output_file = 'plan_percive.json'
 
 # Read the first JSON file

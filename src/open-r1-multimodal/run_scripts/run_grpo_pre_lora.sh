@@ -15,7 +15,7 @@ torchrun --nproc_per_node="4" \
     --deepspeed local_scripts/zero2.json \
     --output_dir output/$RUN_NAME \
     --model_name_or_path Qwen/Qwen2.5-VL-3B-Instruct \
-    --dataset_name data_config/pre.yaml \
+    --dataset_name data_config/b_pre.yaml \
     --image_root /jinru/VLM-R1/Visual-Spatial-Planning/VSP-main \
     --max_prompt_length 4096 \
     --num_generations 16 \
