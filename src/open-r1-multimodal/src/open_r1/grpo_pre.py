@@ -167,9 +167,10 @@ class LazySupervisedDataset(Dataset):
                     {"role": "user", "content": example["problem"]},
                 ],
             }
-        # FIXME
         # This is only for Grounding task
-        QUESTION_TEMPLATE = "{Question} First output the thinking process in <think> </think> tags and then output the final answer in <answer> </answer> tags. Output the final answer in JSON format."
+        QUESTION_TEMPLATE = "{Question} \n\nFirst output the thinking process in <think> </think> tags and then output the final answer in <answer> </answer> tags. Output the final answer in JSON format."
+        
+
         def make_conversation_image(example):
             return {
                 "prompt": [
@@ -183,6 +184,21 @@ class LazySupervisedDataset(Dataset):
                     },
                 ],
             }
+        
+
+
+        def make_conversation_multi_image(example):
+            return {
+                "prompt": [
+                    {
+                        "role": "user",
+                        "content": [
+                            {"type": "image1"},
+                            {"type": "image2"},
+                            {"type": "text", "text": QUESTION_TEMPLATE.format(Question=example["problem"])},
+                        ],
+                    },
+                ], }
 
         example = self.list_data_dict[i]
         image_root = self.script_args.image_root
@@ -198,14 +214,23 @@ class LazySupervisedDataset(Dataset):
         else:
             image = None
         
-
-        return {
-            'image': image,
-            'task_name':example["task_name"],
-            'problem': example['problem'],
-            'solution': example['solution'],
-            'prompt': make_conversation_image(example)['prompt'] if 'image' in example else make_conversation(example)['prompt'],
-        }
+        if isinstance(example['image'], list):
+            return {
+                'image1': Image.open(os.path.join(image_root, example['image'][0])).convert("RGB"),
+                'image2': Image.open(os.path.join(image_root, example['image'][1])).convert("RGB"),
+                'task_name':example["task_name"],
+                'problem': example['problem'],
+                'solution': example['solution'],
+                'prompt': make_conversation_multi_image(example)['prompt'],
+            }
+        else:
+            return {
+                'image': image,
+                'task_name':example["task_name"],
+                'problem': example['problem'],
+                'solution': example['solution'],
+                'prompt': make_conversation_image(example)['prompt'] if 'image' in example else make_conversation(example)['prompt'],
+            }
 
 ####reward function####
 

@@ -522,8 +522,12 @@ class Qwen2VLGRPOTrainer(Trainer):
     
             # 获取图片（如果有）
             image_data = inputs[i].get("image", None)
+            image_data1 = inputs[i].get("image1", None)
+            image_data2 = inputs[i].get("image2", None)
             image_wandb = wandb.Image(image_data) if image_data is not None else None
-                
+            image_wandb1 = wandb.Image(image_data1) if image_data1 is not None else None
+            image_wandb2 = wandb.Image(image_data2) if image_data2 is not None else None
+
             sample = {
                 "step": step,
                 "prompt": prompt_text,
@@ -534,6 +538,10 @@ class Qwen2VLGRPOTrainer(Trainer):
             }
             if image_wandb:
                 sample["image"] = image_wandb  # 添加图片到 wandb 日志
+            if image_wandb1:
+                sample["image1"] = image_wandb1
+            if image_wandb2:
+                sample["image2"] = image_wandb2
             
             #samples.append(sample)
             self.wandb_table.append(sample)
@@ -543,7 +551,7 @@ class Qwen2VLGRPOTrainer(Trainer):
             "samples": wandb.Table(
                 data=[[s["step"], s["prompt"], s["problem"],s["completion"],s["solution"], s["reward"], s.get("image")] 
                       for s in self.wandb_table],
-                columns=["step", "prompt","problem", "completion", "solution","reward", "image"]
+                columns=["step", "prompt","problem", "completion", "solution","reward", "image","image1","image2"]
             )
         }, step=step)
     # def _log_samples_to_wandb(self, inputs, completions, rewards, step):
