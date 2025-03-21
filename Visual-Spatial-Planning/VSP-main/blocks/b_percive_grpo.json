@@ -1,0 +1,386 @@
+[
+    {
+        "task_name": "task1",
+        "level": "3",
+        "example_id": 0,
+        "image": "VSP-main/blocks/task1/example/level3/image_input/0.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 3, level 1?",
+        "solution": "purple"
+    },
+    {
+        "task_name": "task1",
+        "level": "3",
+        "example_id": 1,
+        "image": "VSP-main/blocks/task1/example/level3/image_input/1.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "orange"
+    },
+    {
+        "task_name": "task1",
+        "level": "3",
+        "example_id": 2,
+        "image": "VSP-main/blocks/task1/example/level3/image_input/2.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 3?",
+        "solution": "orange"
+    },
+    {
+        "task_name": "task1",
+        "level": "3",
+        "example_id": 3,
+        "image": "VSP-main/blocks/task1/example/level3/image_input/3.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 3, level 1?",
+        "solution": "yellow"
+    },
+    {
+        "task_name": "task1",
+        "level": "3",
+        "example_id": 4,
+        "image": "VSP-main/blocks/task1/example/level3/image_input/4.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 3, level 1?",
+        "solution": "blue"
+    },
+    {
+        "task_name": "task1",
+        "level": "3",
+        "example_id": 5,
+        "image": "VSP-main/blocks/task1/example/level3/image_input/5.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 3, level 1?",
+        "solution": "green"
+    },
+    {
+        "task_name": "task1",
+        "level": "3",
+        "example_id": 6,
+        "image": "VSP-main/blocks/task1/example/level3/image_input/6.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 2, level 1?",
+        "solution": "blue"
+    },
+    {
+        "task_name": "task1",
+        "level": "3",
+        "example_id": 7,
+        "image": "VSP-main/blocks/task1/example/level3/image_input/7.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "orange"
+    },
+    {
+        "task_name": "task1",
+        "level": "4",
+        "example_id": 0,
+        "image": "VSP-main/blocks/task1/example/level4/image_input/0.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "green"
+    },
+    {
+        "task_name": "task1",
+        "level": "4",
+        "example_id": 1,
+        "image": "VSP-main/blocks/task1/example/level4/image_input/1.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 4, level 1?",
+        "solution": "purple"
+    },
+    {
+        "task_name": "task1",
+        "level": "4",
+        "example_id": 2,
+        "image": "VSP-main/blocks/task1/example/level4/image_input/2.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "yellow"
+    },
+    {
+        "task_name": "task1",
+        "level": "4",
+        "example_id": 3,
+        "image": "VSP-main/blocks/task1/example/level4/image_input/3.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "red"
+    },
+    {
+        "task_name": "task1",
+        "level": "4",
+        "example_id": 4,
+        "image": "VSP-main/blocks/task1/example/level4/image_input/4.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "red"
+    },
+    {
+        "task_name": "task1",
+        "level": "4",
+        "example_id": 5,
+        "image": "VSP-main/blocks/task1/example/level4/image_input/5.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 2, level 1?",
+        "solution": "red"
+    },
+    {
+        "task_name": "task1",
+        "level": "4",
+        "example_id": 6,
+        "image": "VSP-main/blocks/task1/example/level4/image_input/6.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 2, level 1?",
+        "solution": "yellow"
+    },
+    {
+        "task_name": "task1",
+        "level": "4",
+        "example_id": 7,
+        "image": "VSP-main/blocks/task1/example/level4/image_input/7.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "green"
+    },
+    {
+        "task_name": "task1",
+        "level": "5",
+        "example_id": 0,
+        "image": "VSP-main/blocks/task1/example/level5/image_input/0.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "blue"
+    },
+    {
+        "task_name": "task1",
+        "level": "5",
+        "example_id": 1,
+        "image": "VSP-main/blocks/task1/example/level5/image_input/1.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "orange"
+    },
+    {
+        "task_name": "task1",
+        "level": "5",
+        "example_id": 2,
+        "image": "VSP-main/blocks/task1/example/level5/image_input/2.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 3, level 1?",
+        "solution": "orange"
+    },
+    {
+        "task_name": "task1",
+        "level": "5",
+        "example_id": 3,
+        "image": "VSP-main/blocks/task1/example/level5/image_input/3.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 2?",
+        "solution": "yellow"
+    },
+    {
+        "task_name": "task1",
+        "level": "5",
+        "example_id": 4,
+        "image": "VSP-main/blocks/task1/example/level5/image_input/4.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 2, level 1?",
+        "solution": "red"
+    },
+    {
+        "task_name": "task1",
+        "level": "5",
+        "example_id": 5,
+        "image": "VSP-main/blocks/task1/example/level5/image_input/5.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 2?",
+        "solution": "orange"
+    },
+    {
+        "task_name": "task1",
+        "level": "5",
+        "example_id": 6,
+        "image": "VSP-main/blocks/task1/example/level5/image_input/6.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+        "solution": "blue"
+    },
+    {
+        "task_name": "task1",
+        "level": "5",
+        "example_id": 7,
+        "image": "VSP-main/blocks/task1/example/level5/image_input/7.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 4, level 2?",
+        "solution": "red"
+    },
+    {
+        "task_name": "task2",
+        "level": "3",
+        "example_id": 0,
+        "image": "VSP-main/blocks/task2/example/level3/image_input/0.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the blue block and the purple block?\n(A) The blue block is directly above the purple block, and they are in the same stack.\n(B) The blue block is directly below the purple block, and they are in the same stack.\n(C) The blue block and the purple block are at different stacks.\n(D) At least one of the blue block and the purple block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "3",
+        "example_id": 1,
+        "image": "VSP-main/blocks/task2/example/level3/image_input/1.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the blue block and the yellow block?\n(A) The blue block is directly above the yellow block, and they are in the same stack.\n(B) The blue block is directly below the yellow block, and they are in the same stack.\n(C) The blue block and the yellow block are at different stacks.\n(D) At least one of the blue block and the yellow block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "3",
+        "example_id": 2,
+        "image": "VSP-main/blocks/task2/example/level3/image_input/2.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the green block and the blue block?\n(A) The green block is directly above the blue block, and they are in the same stack.\n(B) The green block is directly below the blue block, and they are in the same stack.\n(C) The green block and the blue block are at different stacks.\n(D) At least one of the green block and the blue block does not exist in the presented configurations.",
+        "solution": "C"
+    },
+    {
+        "task_name": "task2",
+        "level": "3",
+        "example_id": 3,
+        "image": "VSP-main/blocks/task2/example/level3/image_input/3.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the green block and the blue block?\n(A) The green block is directly above the blue block, and they are in the same stack.\n(B) The green block is directly below the blue block, and they are in the same stack.\n(C) The green block and the blue block are at different stacks.\n(D) At least one of the green block and the blue block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "3",
+        "example_id": 4,
+        "image": "VSP-main/blocks/task2/example/level3/image_input/4.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the green block and the purple block?\n(A) The green block is directly above the purple block, and they are in the same stack.\n(B) The green block is directly below the purple block, and they are in the same stack.\n(C) The green block and the purple block are at different stacks.\n(D) At least one of the green block and the purple block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "3",
+        "example_id": 5,
+        "image": "VSP-main/blocks/task2/example/level3/image_input/5.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the blue block and the green block?\n(A) The blue block is directly above the green block, and they are in the same stack.\n(B) The blue block is directly below the green block, and they are in the same stack.\n(C) The blue block and the green block are at different stacks.\n(D) At least one of the blue block and the green block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "3",
+        "example_id": 6,
+        "image": "VSP-main/blocks/task2/example/level3/image_input/6.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the red block and the yellow block?\n(A) The red block is directly above the yellow block, and they are in the same stack.\n(B) The red block is directly below the yellow block, and they are in the same stack.\n(C) The red block and the yellow block are at different stacks.\n(D) At least one of the red block and the yellow block does not exist in the presented configurations.",
+        "solution": "D"
+    },
+    {
+        "task_name": "task2",
+        "level": "3",
+        "example_id": 7,
+        "image": "VSP-main/blocks/task2/example/level3/image_input/7.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the yellow block and the blue block?\n(A) The yellow block is directly above the blue block, and they are in the same stack.\n(B) The yellow block is directly below the blue block, and they are in the same stack.\n(C) The yellow block and the blue block are at different stacks.\n(D) At least one of the yellow block and the blue block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "4",
+        "example_id": 0,
+        "image": "VSP-main/blocks/task2/example/level4/image_input/0.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the red block and the green block?\n(A) The red block is directly above the green block, and they are in the same stack.\n(B) The red block is directly below the green block, and they are in the same stack.\n(C) The red block and the green block are at different stacks.\n(D) At least one of the red block and the green block does not exist in the presented configurations.",
+        "solution": "C"
+    },
+    {
+        "task_name": "task2",
+        "level": "4",
+        "example_id": 1,
+        "image": "VSP-main/blocks/task2/example/level4/image_input/1.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the orange block and the purple block?\n(A) The orange block is directly above the purple block, and they are in the same stack.\n(B) The orange block is directly below the purple block, and they are in the same stack.\n(C) The orange block and the purple block are at different stacks.\n(D) At least one of the orange block and the purple block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "4",
+        "example_id": 2,
+        "image": "VSP-main/blocks/task2/example/level4/image_input/2.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the green block and the orange block?\n(A) The green block is directly above the orange block, and they are in the same stack.\n(B) The green block is directly below the orange block, and they are in the same stack.\n(C) The green block and the orange block are at different stacks.\n(D) At least one of the green block and the orange block does not exist in the presented configurations.",
+        "solution": "A"
+    },
+    {
+        "task_name": "task2",
+        "level": "4",
+        "example_id": 3,
+        "image": "VSP-main/blocks/task2/example/level4/image_input/3.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the yellow block and the purple block?\n(A) The yellow block is directly above the purple block, and they are in the same stack.\n(B) The yellow block is directly below the purple block, and they are in the same stack.\n(C) The yellow block and the purple block are at different stacks.\n(D) At least one of the yellow block and the purple block does not exist in the presented configurations.",
+        "solution": "C"
+    },
+    {
+        "task_name": "task2",
+        "level": "4",
+        "example_id": 4,
+        "image": "VSP-main/blocks/task2/example/level4/image_input/4.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the orange block and the blue block?\n(A) The orange block is directly above the blue block, and they are in the same stack.\n(B) The orange block is directly below the blue block, and they are in the same stack.\n(C) The orange block and the blue block are at different stacks.\n(D) At least one of the orange block and the blue block does not exist in the presented configurations.",
+        "solution": "A"
+    },
+    {
+        "task_name": "task2",
+        "level": "4",
+        "example_id": 5,
+        "image": "VSP-main/blocks/task2/example/level4/image_input/5.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the blue block and the purple block?\n(A) The blue block is directly above the purple block, and they are in the same stack.\n(B) The blue block is directly below the purple block, and they are in the same stack.\n(C) The blue block and the purple block are at different stacks.\n(D) At least one of the blue block and the purple block does not exist in the presented configurations.",
+        "solution": "D"
+    },
+    {
+        "task_name": "task2",
+        "level": "4",
+        "example_id": 6,
+        "image": "VSP-main/blocks/task2/example/level4/image_input/6.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the red block and the purple block?\n(A) The red block is directly above the purple block, and they are in the same stack.\n(B) The red block is directly below the purple block, and they are in the same stack.\n(C) The red block and the purple block are at different stacks.\n(D) At least one of the red block and the purple block does not exist in the presented configurations.",
+        "solution": "C"
+    },
+    {
+        "task_name": "task2",
+        "level": "4",
+        "example_id": 7,
+        "image": "VSP-main/blocks/task2/example/level4/image_input/7.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the yellow block and the red block?\n(A) The yellow block is directly above the red block, and they are in the same stack.\n(B) The yellow block is directly below the red block, and they are in the same stack.\n(C) The yellow block and the red block are at different stacks.\n(D) At least one of the yellow block and the red block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "5",
+        "example_id": 0,
+        "image": "VSP-main/blocks/task2/example/level5/image_input/0.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the purple block and the yellow block?\n(A) The purple block is directly above the yellow block, and they are in the same stack.\n(B) The purple block is directly below the yellow block, and they are in the same stack.\n(C) The purple block and the yellow block are at different stacks.\n(D) At least one of the purple block and the yellow block does not exist in the presented configurations.",
+        "solution": "A"
+    },
+    {
+        "task_name": "task2",
+        "level": "5",
+        "example_id": 1,
+        "image": "VSP-main/blocks/task2/example/level5/image_input/1.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the orange block and the yellow block?\n(A) The orange block is directly above the yellow block, and they are in the same stack.\n(B) The orange block is directly below the yellow block, and they are in the same stack.\n(C) The orange block and the yellow block are at different stacks.\n(D) At least one of the orange block and the yellow block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "5",
+        "example_id": 2,
+        "image": "VSP-main/blocks/task2/example/level5/image_input/2.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the yellow block and the blue block?\n(A) The yellow block is directly above the blue block, and they are in the same stack.\n(B) The yellow block is directly below the blue block, and they are in the same stack.\n(C) The yellow block and the blue block are at different stacks.\n(D) At least one of the yellow block and the blue block does not exist in the presented configurations.",
+        "solution": "A"
+    },
+    {
+        "task_name": "task2",
+        "level": "5",
+        "example_id": 3,
+        "image": "VSP-main/blocks/task2/example/level5/image_input/3.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the yellow block and the blue block?\n(A) The yellow block is directly above the blue block, and they are in the same stack.\n(B) The yellow block is directly below the blue block, and they are in the same stack.\n(C) The yellow block and the blue block are at different stacks.\n(D) At least one of the yellow block and the blue block does not exist in the presented configurations.",
+        "solution": "A"
+    },
+    {
+        "task_name": "task2",
+        "level": "5",
+        "example_id": 4,
+        "image": "VSP-main/blocks/task2/example/level5/image_input/4.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the yellow block and the red block?\n(A) The yellow block is directly above the red block, and they are in the same stack.\n(B) The yellow block is directly below the red block, and they are in the same stack.\n(C) The yellow block and the red block are at different stacks.\n(D) At least one of the yellow block and the red block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "5",
+        "example_id": 5,
+        "image": "VSP-main/blocks/task2/example/level5/image_input/5.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the green block and the red block?\n(A) The green block is directly above the red block, and they are in the same stack.\n(B) The green block is directly below the red block, and they are in the same stack.\n(C) The green block and the red block are at different stacks.\n(D) At least one of the green block and the red block does not exist in the presented configurations.",
+        "solution": "B"
+    },
+    {
+        "task_name": "task2",
+        "level": "5",
+        "example_id": 6,
+        "image": "VSP-main/blocks/task2/example/level5/image_input/6.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the yellow block and the orange block?\n(A) The yellow block is directly above the orange block, and they are in the same stack.\n(B) The yellow block is directly below the orange block, and they are in the same stack.\n(C) The yellow block and the orange block are at different stacks.\n(D) At least one of the yellow block and the orange block does not exist in the presented configurations.",
+        "solution": "D"
+    },
+    {
+        "task_name": "task2",
+        "level": "5",
+        "example_id": 7,
+        "image": "VSP-main/blocks/task2/example/level5/image_input/7.jpg",
+        "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the blue block and the yellow block?\n(A) The blue block is directly above the yellow block, and they are in the same stack.\n(B) The blue block is directly below the yellow block, and they are in the same stack.\n(C) The blue block and the yellow block are at different stacks.\n(D) At least one of the blue block and the yellow block does not exist in the presented configurations.",
+        "solution": "B"
+    }
+]

@@ -5,7 +5,7 @@ def extract_answer(text, tag="<Output>"):
     """Extract answer after specified tag"""
     match = re.search(f'{tag}\\s*(.*?)(?:\\n|$|")', text, re.IGNORECASE)
     if match:
-        return "<answer>" + str({"Answer": match.group(1).strip()}) + "</answer>"
+        return "<answer>" + json.dumps({"Answer": match.group(1).strip()}).replace("'",'"') + "</answer>"
     return ""
 
 def convert_to_standard_format(text, task_type=None):
@@ -105,7 +105,7 @@ def convert_to_standard_format(text, task_type=None):
         answer_json = {"path": action_plan}
     
     # Format the answer part as JSON
-    answer_part = f"""<answer>\n{str(answer_json).replace("'", '"')}</answer>"""
+    answer_part =  "<answer>" + json.dumps(answer_json) + "</answer>"
     
     # Combine the parts
     result = think_part + "\n" + answer_part
@@ -167,7 +167,7 @@ for item in data:
         new_data.append(new_item)
 
 # Write the new JSON file
-with open("percive_sft.json", "w", encoding="utf-8") as file:
+with open("fl_percive_sft.json", "w", encoding="utf-8") as file:
     json.dump(new_data, file, indent=4)
 
 print("Conversion completed successfully!")
