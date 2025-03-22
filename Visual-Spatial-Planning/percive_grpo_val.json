@@ -1,0 +1,290 @@
+[
+  {
+    "task_name": "task1",
+    "level": "3",
+    "example_id": 7,
+    "image": "blocks/task1/example/level3/image_input/7.jpg",
+    "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+    "solution": "orange"
+  },
+  {
+    "task_name": "task1",
+    "level": "4",
+    "example_id": 7,
+    "image": "blocks/task1/example/level4/image_input/7.jpg",
+    "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 1, level 1?",
+    "solution": "green"
+  },
+  {
+    "task_name": "task1",
+    "level": "5",
+    "example_id": 7,
+    "image": "blocks/task1/example/level5/image_input/7.jpg",
+    "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the color of blocks in a specific place. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- In the questions, the position of the blocks is represented as \"Stack s, Level l\". The stack number is counted from left to right, and the level number is counted from bottom to top.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Color>, where <Color> is one of (blue, yellow, purple, orange, red, green). For example, \"red\".\n\nNow please answer the following question based on the given image:\n\nWhat is the color of the block at stack 4, level 2?",
+    "solution": "red"
+  },
+  {
+    "task_name": "task1",
+    "level": "level3",
+    "example_id": 7,
+    "image": "frozenlake/task1/example/level3/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine if there is a hole in a specific position.\nThe given figure illustrates the appearances of the player, holes, lands, and the goal within the maze. You will need to focus on the appearance of the hole.\n\nYour output should be: \"No\" or \"Yes\", depending on whether there is a hole at the specified position.\n\nNow you will analyze the given maze and answer the question:\n\n Is there a hole in row 3, column 2?",
+    "solution": "Yes"
+  },
+  {
+    "task_name": "task1",
+    "level": "level4",
+    "example_id": 7,
+    "image": "frozenlake/task1/example/level4/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine if there is a hole in a specific position.\nThe given figure illustrates the appearances of the player, holes, lands, and the goal within the maze. You will need to focus on the appearance of the hole.\n\nYour output should be: \"No\" or \"Yes\", depending on whether there is a hole at the specified position.\n\nNow you will analyze the given maze and answer the question:\n\n Is there a hole in row 3, column 3?",
+    "solution": "Yes"
+  },
+  {
+    "task_name": "task1",
+    "level": "level5",
+    "example_id": 7,
+    "image": "frozenlake/task1/example/level5/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine if there is a hole in a specific position.\nThe given figure illustrates the appearances of the player, holes, lands, and the goal within the maze. You will need to focus on the appearance of the hole.\n\nYour output should be: \"No\" or \"Yes\", depending on whether there is a hole at the specified position.\n\nNow you will analyze the given maze and answer the question:\n\n Is there a hole in row 1, column 4?",
+    "solution": "Yes"
+  },
+  {
+    "task_name": "task1",
+    "level": "level6",
+    "example_id": 7,
+    "image": "frozenlake/task1/example/level6/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine if there is a hole in a specific position.\nThe given figure illustrates the appearances of the player, holes, lands, and the goal within the maze. You will need to focus on the appearance of the hole.\n\nYour output should be: \"No\" or \"Yes\", depending on whether there is a hole at the specified position.\n\nNow you will analyze the given maze and answer the question:\n\n Is there a hole in row 1, column 2?",
+    "solution": "No"
+  },
+  {
+    "task_name": "task1",
+    "level": "level7",
+    "example_id": 7,
+    "image": "frozenlake/task1/example/level7/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine if there is a hole in a specific position.\nThe given figure illustrates the appearances of the player, holes, lands, and the goal within the maze. You will need to focus on the appearance of the hole.\n\nYour output should be: \"No\" or \"Yes\", depending on whether there is a hole at the specified position.\n\nNow you will analyze the given maze and answer the question:\n\n Is there a hole in row 6, column 6?",
+    "solution": "Yes"
+  },
+  {
+    "task_name": "task1",
+    "level": "level8",
+    "example_id": 7,
+    "image": "frozenlake/task1/example/level8/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine if there is a hole in a specific position.\nThe given figure illustrates the appearances of the player, holes, lands, and the goal within the maze. You will need to focus on the appearance of the hole.\n\nYour output should be: \"No\" or \"Yes\", depending on whether there is a hole at the specified position.\n\nNow you will analyze the given maze and answer the question:\n\n Is there a hole in row 5, column 2?",
+    "solution": "No"
+  },
+  {
+    "task_name": "task2",
+    "level": "3",
+    "example_id": 7,
+    "image": "blocks/task2/example/level3/image_input/7.jpg",
+    "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the yellow block and the blue block?\n(A) The yellow block is directly above the blue block, and they are in the same stack.\n(B) The yellow block is directly below the blue block, and they are in the same stack.\n(C) The yellow block and the blue block are at different stacks.\n(D) At least one of the yellow block and the blue block does not exist in the presented configurations.",
+    "solution": "B"
+  },
+  {
+    "task_name": "task2",
+    "level": "4",
+    "example_id": 7,
+    "image": "blocks/task2/example/level4/image_input/7.jpg",
+    "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the yellow block and the red block?\n(A) The yellow block is directly above the red block, and they are in the same stack.\n(B) The yellow block is directly below the red block, and they are in the same stack.\n(C) The yellow block and the red block are at different stacks.\n(D) At least one of the yellow block and the red block does not exist in the presented configurations.",
+    "solution": "B"
+  },
+  {
+    "task_name": "task2",
+    "level": "5",
+    "example_id": 7,
+    "image": "blocks/task2/example/level5/image_input/7.jpg",
+    "problem": "In this task, you will see a photo of blocks. You will analyze the block configuration and then answer a question regarding the spatial relation of two specified blocks. Since coding is not within your skill set, your approach relies on logical reasoning.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- The possible relations of two blocks include: (A) One block is directly above another block, and they are at the same stack; (B) One block is directly below another block, and they are at the same stack; (C) Two blocks are at different blocks; (D) At least one of the asked blocks does not exist in the image.\n\n## Procedure and Output\nYour output should follow this format: \n1. First, analyze the block configuration;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please answer the following question based on the given image:\n\nWhat is the spatial relation betweeen the blue block and the yellow block?\n(A) The blue block is directly above the yellow block, and they are in the same stack.\n(B) The blue block is directly below the yellow block, and they are in the same stack.\n(C) The blue block and the yellow block are at different stacks.\n(D) At least one of the blue block and the yellow block does not exist in the presented configurations.",
+    "solution": "B"
+  },
+  {
+    "task_name": "task2",
+    "level": "level3",
+    "example_id": 7,
+    "image": "frozenlake/task2/example/level3/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine the relative positions of the player and the goal.\n\nTo describe their relative positions, use the directional indicators from {\"Above\", \"Below\", \"Left\", \"Right\"}. Remember that we should answer the player's position with respect to the goal, not the opposite.\n\nYour output should be two parts:\n1. Analyze the rows and columns of the player and the goal. \n2. Following your analysis, output answer as \"<Position>\". For example,\"Above,Left\" means the player is above and to the left of the goal, and \"Below\" means the player is below the goal. \nNote that you should not output \"Left\" or \"Right\" if the plyaer and the goal are at the same column, and similarly, you should not output \"Above\" or \"Below\" if the player and the goal are at the same row.\n\nNow you will analyze the given maze and determine the relative position of the player in relation to the goal.\n\n",
+    "solution": "Right,Below"
+  },
+  {
+    "task_name": "task2",
+    "level": "level4",
+    "example_id": 7,
+    "image": "frozenlake/task2/example/level4/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine the relative positions of the player and the goal.\n\nTo describe their relative positions, use the directional indicators from {\"Above\", \"Below\", \"Left\", \"Right\"}. Remember that we should answer the player's position with respect to the goal, not the opposite.\n\nYour output should be two parts:\n1. Analyze the rows and columns of the player and the goal. \n2. Following your analysis, output answer as \"<Position>\". For example,\"Above,Left\" means the player is above and to the left of the goal, and \"Below\" means the player is below the goal. \nNote that you should not output \"Left\" or \"Right\" if the plyaer and the goal are at the same column, and similarly, you should not output \"Above\" or \"Below\" if the player and the goal are at the same row.\n\nNow you will analyze the given maze and determine the relative position of the player in relation to the goal.\n\n",
+    "solution": "Left,Below"
+  },
+  {
+    "task_name": "task2",
+    "level": "level5",
+    "example_id": 7,
+    "image": "frozenlake/task2/example/level5/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine the relative positions of the player and the goal.\n\nTo describe their relative positions, use the directional indicators from {\"Above\", \"Below\", \"Left\", \"Right\"}. Remember that we should answer the player's position with respect to the goal, not the opposite.\n\nYour output should be two parts:\n1. Analyze the rows and columns of the player and the goal. \n2. Following your analysis, output answer as \"<Position>\". For example,\"Above,Left\" means the player is above and to the left of the goal, and \"Below\" means the player is below the goal. \nNote that you should not output \"Left\" or \"Right\" if the plyaer and the goal are at the same column, and similarly, you should not output \"Above\" or \"Below\" if the player and the goal are at the same row.\n\nNow you will analyze the given maze and determine the relative position of the player in relation to the goal.\n\n",
+    "solution": "Right"
+  },
+  {
+    "task_name": "task2",
+    "level": "level6",
+    "example_id": 7,
+    "image": "frozenlake/task2/example/level6/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine the relative positions of the player and the goal.\n\nTo describe their relative positions, use the directional indicators from {\"Above\", \"Below\", \"Left\", \"Right\"}. Remember that we should answer the player's position with respect to the goal, not the opposite.\n\nYour output should be two parts:\n1. Analyze the rows and columns of the player and the goal. \n2. Following your analysis, output answer as \"<Position>\". For example,\"Above,Left\" means the player is above and to the left of the goal, and \"Below\" means the player is below the goal. \nNote that you should not output \"Left\" or \"Right\" if the plyaer and the goal are at the same column, and similarly, you should not output \"Above\" or \"Below\" if the player and the goal are at the same row.\n\nNow you will analyze the given maze and determine the relative position of the player in relation to the goal.\n\n",
+    "solution": "Right,Below"
+  },
+  {
+    "task_name": "task2",
+    "level": "level7",
+    "example_id": 7,
+    "image": "frozenlake/task2/example/level7/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine the relative positions of the player and the goal.\n\nTo describe their relative positions, use the directional indicators from {\"Above\", \"Below\", \"Left\", \"Right\"}. Remember that we should answer the player's position with respect to the goal, not the opposite.\n\nYour output should be two parts:\n1. Analyze the rows and columns of the player and the goal. \n2. Following your analysis, output answer as \"<Position>\". For example,\"Above,Left\" means the player is above and to the left of the goal, and \"Below\" means the player is below the goal. \nNote that you should not output \"Left\" or \"Right\" if the plyaer and the goal are at the same column, and similarly, you should not output \"Above\" or \"Below\" if the player and the goal are at the same row.\n\nNow you will analyze the given maze and determine the relative position of the player in relation to the goal.\n\n",
+    "solution": "Right,Above"
+  },
+  {
+    "task_name": "task2",
+    "level": "level8",
+    "example_id": 7,
+    "image": "frozenlake/task2/example/level8/img/7.png",
+    "problem": "In this task, you will analyze a maze to determine the relative positions of the player and the goal.\n\nTo describe their relative positions, use the directional indicators from {\"Above\", \"Below\", \"Left\", \"Right\"}. Remember that we should answer the player's position with respect to the goal, not the opposite.\n\nYour output should be two parts:\n1. Analyze the rows and columns of the player and the goal. \n2. Following your analysis, output answer as \"<Position>\". For example,\"Above,Left\" means the player is above and to the left of the goal, and \"Below\" means the player is below the goal. \nNote that you should not output \"Left\" or \"Right\" if the plyaer and the goal are at the same column, and similarly, you should not output \"Above\" or \"Below\" if the player and the goal are at the same row.\n\nNow you will analyze the given maze and determine the relative position of the player in relation to the goal.\n\n",
+    "solution": "Below,Left"
+  },
+  {
+    "task_name": "task3",
+    "level": "3",
+    "example_id": 7,
+    "image": "blocks/task3/example/level3/image_input/7.jpg",
+    "problem": "In this task, you will analyze an image containing several stacks of blocks. Later, you will be presented with four choices, each offering a textual representation of a block configuration. You will need to choose the configuration that exactly reflects the contents of the given image.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n\n## Procedure and Output\nYour output should follow this format:\n1. First, analyze the block configuration in the image and candidates;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please choose the correct textual representation based on the given image and here are the textual candidates:\n\n(A)\n- Stack with orange block\n- Stack with green block, blue block, from bottom to top\n\n(B)\n- Stack with orange block\n- Stack with blue block, green block, from bottom to top\n\n(C)\n- Stack with purple block\n- Stack with green block\n- Stack with yellow block\n- Stack with orange block, blue block, from bottom to top\n\n(D)\n- Stack with orange block\n- Stack with blue block, yellow block, green block, from bottom to top",
+    "solution": "A"
+  },
+  {
+    "task_name": "task3",
+    "level": "4",
+    "example_id": 7,
+    "image": "blocks/task3/example/level4/image_input/7.jpg",
+    "problem": "In this task, you will analyze an image containing several stacks of blocks. Later, you will be presented with four choices, each offering a textual representation of a block configuration. You will need to choose the configuration that exactly reflects the contents of the given image.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n\n## Procedure and Output\nYour output should follow this format:\n1. First, analyze the block configuration in the image and candidates;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please choose the correct textual representation based on the given image and here are the textual candidates:\n\n(A)\n- Stack with purple block, blue block, orange block, green block, yellow block, from bottom to top\n\n(B)\n- Stack with yellow block\n- Stack with purple block, blue block, red block, from bottom to top\n\n(C)\n- Stack with red block, blue block, yellow block, purple block, from bottom to top\n\n(D)\n- Stack with purple block, orange block, from bottom to top\n- Stack with blue block, red block, from bottom to top",
+    "solution": "C"
+  },
+  {
+    "task_name": "task3",
+    "level": "5",
+    "example_id": 7,
+    "image": "blocks/task3/example/level5/image_input/7.jpg",
+    "problem": "In this task, you will analyze an image containing several stacks of blocks. Later, you will be presented with four choices, each offering a textual representation of a block configuration. You will need to choose the configuration that exactly reflects the contents of the given image.\n\n## Game Setup\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n\n## Procedure and Output\nYour output should follow this format:\n1. First, analyze the block configuration in the image and candidates;\n2. Then, answer the question with the format <Choice>, where <Choice> is one of {A,B,C,D}. For example, \"A\".\n\nNow please choose the correct textual representation based on the given image and here are the textual candidates:\n\n(A)\n- Stack with red block\n- Stack with yellow block, purple block, from bottom to top\n- Stack with green block, orange block, from bottom to top\n\n(B)\n- Stack with blue block\n- Stack with red block\n- Stack with purple block\n- Stack with green block, orange block, from bottom to top\n\n(C)\n- Stack with orange block\n- Stack with green block, blue block, purple block, yellow block, from bottom to top\n\n(D)\n- Stack with purple block\n- Stack with orange block\n- Stack with blue block\n- Stack with green block, yellow block, from bottom to top",
+    "solution": "C"
+  },
+  {
+    "task_name": "task3",
+    "level": "level3",
+    "example_id": 7,
+    "image": "frozenlake/task3/example/level3/img/7.png",
+    "problem": "In this task, you will analyze a maze presented in an image. Later, you will be presented with four choices, each offering a textual representation of a candidate maze. You will need to choose the representation that exactly reflects the contents of the given image.\n\nThis is how the player, the holes (non-safe grid), the lands (safe grids), and the goals look like in a map:\n- The player is represented as \"@\"\n- The hole is represented as \"#\"\n- The safe grid is represented as \"_\"\n- The goal is represented as \"*\"\n- If the player is at the goal (at this case the game is solved), that grid is represented as \"%\"\n\nYour output should consist of two parts:\n1. First, analysis the input image and candidates.\n2. Following the reasoning process, output answer as \"<Choice>\", where \"<Choice>\" is one of {A,B,C,D}.\nImportant: Note that there will be only one correct answer. If you find no answer or multiple answers, you must go back and recheck your reasoning process. You are not allowed to provide 0 or more than 1 answer.\n\nNow answer the question below. Here are the image input and the textual candidates:\n\n(A)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | * | _ | _ |\n| Row 2 | _ | _ | _ |\n| Row 3 | @ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | * | # |\n| Row 2 | _ | _ | @ |\n| Row 3 | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | _ | _ | _ |\n| Row 2 | # | # | # | _ | # | @ |\n| Row 3 | _ | _ | _ | _ | _ | # |\n| Row 4 | _ | * | # | _ | # | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | # | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | _ | @ | _ | # |\n| Row 3 | * | _ | _ | _ |\n| Row 4 | _ | # | # | _ |",
+    "solution": "B"
+  },
+  {
+    "task_name": "task3",
+    "level": "level4",
+    "example_id": 7,
+    "image": "frozenlake/task3/example/level4/img/7.png",
+    "problem": "In this task, you will analyze a maze presented in an image. Later, you will be presented with four choices, each offering a textual representation of a candidate maze. You will need to choose the representation that exactly reflects the contents of the given image.\n\nThis is how the player, the holes (non-safe grid), the lands (safe grids), and the goals look like in a map:\n- The player is represented as \"@\"\n- The hole is represented as \"#\"\n- The safe grid is represented as \"_\"\n- The goal is represented as \"*\"\n- If the player is at the goal (at this case the game is solved), that grid is represented as \"%\"\n\nYour output should consist of two parts:\n1. First, analysis the input image and candidates.\n2. Following the reasoning process, output answer as \"<Choice>\", where \"<Choice>\" is one of {A,B,C,D}.\nImportant: Note that there will be only one correct answer. If you find no answer or multiple answers, you must go back and recheck your reasoning process. You are not allowed to provide 0 or more than 1 answer.\n\nNow answer the question below. Here are the image input and the textual candidates:\n\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | # | # |\n| Row 2 | _ | _ | @ | # |\n| Row 3 | * | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | @ | _ | * |\n| Row 4 | _ | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | # | _ |\n| Row 6 | _ | _ | _ | _ | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 |\n| Row 1 | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | # |\n| Row 3 | _ | # | * | # |\n| Row 4 | @ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | # | _ |\n| Row 2 | _ | # | # | # | _ | _ | _ |\n| Row 3 | _ | _ | _ | # | # | _ | # |\n| Row 4 | _ | # | _ | _ | _ | _ | _ |\n| Row 5 | _ | # | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | @ | _ | _ | # |\n| Row 7 | _ | _ | # | _ | * | # | _ |",
+    "solution": "C"
+  },
+  {
+    "task_name": "task3",
+    "level": "level5",
+    "example_id": 7,
+    "image": "frozenlake/task3/example/level5/img/7.png",
+    "problem": "In this task, you will analyze a maze presented in an image. Later, you will be presented with four choices, each offering a textual representation of a candidate maze. You will need to choose the representation that exactly reflects the contents of the given image.\n\nThis is how the player, the holes (non-safe grid), the lands (safe grids), and the goals look like in a map:\n- The player is represented as \"@\"\n- The hole is represented as \"#\"\n- The safe grid is represented as \"_\"\n- The goal is represented as \"*\"\n- If the player is at the goal (at this case the game is solved), that grid is represented as \"%\"\n\nYour output should consist of two parts:\n1. First, analysis the input image and candidates.\n2. Following the reasoning process, output answer as \"<Choice>\", where \"<Choice>\" is one of {A,B,C,D}.\nImportant: Note that there will be only one correct answer. If you find no answer or multiple answers, you must go back and recheck your reasoning process. You are not allowed to provide 0 or more than 1 answer.\n\nNow answer the question below. Here are the image input and the textual candidates:\n\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | * | _ | # | _ | @ |\n| Row 2 | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ |\n| Row 5 | _ | _ | _ | # | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | # | _ | _ | _ | _ | _ | _ |\n| Row 2 | # | _ | # | _ | * | # | _ |\n| Row 3 | @ | # | _ | _ | _ | # | _ |\n| Row 4 | _ | _ | _ | # | # | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | _ | # | _ | _ |\n| Row 7 | _ | _ | # | _ | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | _ | @ | # |\n| Row 3 | _ | * | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | # |\n| Row 2 | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | @ |\n| Row 4 | _ | * | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ |",
+    "solution": "A"
+  },
+  {
+    "task_name": "task3",
+    "level": "level6",
+    "example_id": 7,
+    "image": "frozenlake/task3/example/level6/img/7.png",
+    "problem": "In this task, you will analyze a maze presented in an image. Later, you will be presented with four choices, each offering a textual representation of a candidate maze. You will need to choose the representation that exactly reflects the contents of the given image.\n\nThis is how the player, the holes (non-safe grid), the lands (safe grids), and the goals look like in a map:\n- The player is represented as \"@\"\n- The hole is represented as \"#\"\n- The safe grid is represented as \"_\"\n- The goal is represented as \"*\"\n- If the player is at the goal (at this case the game is solved), that grid is represented as \"%\"\n\nYour output should consist of two parts:\n1. First, analysis the input image and candidates.\n2. Following the reasoning process, output answer as \"<Choice>\", where \"<Choice>\" is one of {A,B,C,D}.\nImportant: Note that there will be only one correct answer. If you find no answer or multiple answers, you must go back and recheck your reasoning process. You are not allowed to provide 0 or more than 1 answer.\n\nNow answer the question below. Here are the image input and the textual candidates:\n\n(A)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | _ | _ |\n| Row 2 | @ | _ | * |\n| Row 3 | _ | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | * | _ | _ | _ |\n| Row 2 | @ | # | _ | _ | _ | _ |\n| Row 3 | _ | # | _ | # | _ | _ |\n| Row 4 | _ | _ | _ | # | _ | # |\n| Row 5 | # | # | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | # | # | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |\n| Row 1 | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | # |\n| Row 4 | # | _ | _ | _ | * |\n| Row 5 | _ | _ | # | @ | # |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | # | _ | _ | _ | _ | _ |\n| Row 2 | _ | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | # | * | # | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ |\n| Row 6 | # | _ | _ | _ | @ | _ |",
+    "solution": "D"
+  },
+  {
+    "task_name": "task3",
+    "level": "level7",
+    "example_id": 7,
+    "image": "frozenlake/task3/example/level7/img/7.png",
+    "problem": "In this task, you will analyze a maze presented in an image. Later, you will be presented with four choices, each offering a textual representation of a candidate maze. You will need to choose the representation that exactly reflects the contents of the given image.\n\nThis is how the player, the holes (non-safe grid), the lands (safe grids), and the goals look like in a map:\n- The player is represented as \"@\"\n- The hole is represented as \"#\"\n- The safe grid is represented as \"_\"\n- The goal is represented as \"*\"\n- If the player is at the goal (at this case the game is solved), that grid is represented as \"%\"\n\nYour output should consist of two parts:\n1. First, analysis the input image and candidates.\n2. Following the reasoning process, output answer as \"<Choice>\", where \"<Choice>\" is one of {A,B,C,D}.\nImportant: Note that there will be only one correct answer. If you find no answer or multiple answers, you must go back and recheck your reasoning process. You are not allowed to provide 0 or more than 1 answer.\n\nNow answer the question below. Here are the image input and the textual candidates:\n\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | _ | _ | _ |\n| Row 2 | # | _ | _ | _ | _ | _ | _ |\n| Row 3 | # | _ | _ | _ | # | _ | @ |\n| Row 4 | # | _ | _ | _ | _ | # | _ |\n| Row 5 | _ | _ | * | _ | _ | _ | _ |\n| Row 6 | _ | # | _ | # | # | _ | _ |\n| Row 7 | _ | # | _ | _ | _ | _ | # |\n\n(B)\n| | Col 1 | Col 2 | Col 3 |\n| Row 1 | _ | * | _ |\n| Row 2 | _ | @ | _ |\n| Row 3 | _ | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | # | _ | # | _ | _ |\n| Row 2 | * | _ | # | _ | _ | @ |\n| Row 3 | # | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | # | # | _ | _ |\n| Row 5 | _ | _ | _ | # | _ | _ |\n| Row 6 | # | # | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | _ | _ | # | @ | _ |\n| Row 2 | # | * | _ | _ | _ | _ | _ |\n| Row 3 | # | _ | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | _ | # | _ | _ | _ |\n| Row 5 | _ | _ | _ | _ | _ | _ | _ |\n| Row 6 | _ | _ | _ | _ | # | _ | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | _ |",
+    "solution": "A"
+  },
+  {
+    "task_name": "task3",
+    "level": "level8",
+    "example_id": 7,
+    "image": "frozenlake/task3/example/level8/img/7.png",
+    "problem": "In this task, you will analyze a maze presented in an image. Later, you will be presented with four choices, each offering a textual representation of a candidate maze. You will need to choose the representation that exactly reflects the contents of the given image.\n\nThis is how the player, the holes (non-safe grid), the lands (safe grids), and the goals look like in a map:\n- The player is represented as \"@\"\n- The hole is represented as \"#\"\n- The safe grid is represented as \"_\"\n- The goal is represented as \"*\"\n- If the player is at the goal (at this case the game is solved), that grid is represented as \"%\"\n\nYour output should consist of two parts:\n1. First, analysis the input image and candidates.\n2. Following the reasoning process, output answer as \"<Choice>\", where \"<Choice>\" is one of {A,B,C,D}.\nImportant: Note that there will be only one correct answer. If you find no answer or multiple answers, you must go back and recheck your reasoning process. You are not allowed to provide 0 or more than 1 answer.\n\nNow answer the question below. Here are the image input and the textual candidates:\n\n(A)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 |\n| Row 1 | _ | _ | _ | _ | # | _ |\n| Row 2 | _ | _ | @ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | # |\n| Row 4 | * | _ | _ | # | _ | _ |\n| Row 5 | _ | _ | _ | _ | # | _ |\n| Row 6 | _ | # | _ | # | _ | _ |\n\n(B)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | _ | _ | _ | _ | _ | # | _ |\n| Row 2 | _ | _ | _ | # | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | # | _ | # | _ | _ | _ | _ |\n| Row 5 | _ | _ | # | # | _ | * | # | _ |\n| Row 6 | _ | @ | # | # | _ | _ | _ | _ |\n| Row 7 | _ | _ | _ | _ | # | # | # | # |\n| Row 8 | _ | _ | # | _ | _ | # | _ | _ |\n\n(C)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 | Col 8 |\n| Row 1 | _ | # | _ | # | _ | _ | _ | _ |\n| Row 2 | _ | _ | # | _ | _ | _ | _ | _ |\n| Row 3 | _ | _ | _ | _ | _ | _ | _ | _ |\n| Row 4 | _ | _ | # | _ | # | _ | _ | _ |\n| Row 5 | @ | _ | # | # | _ | _ | _ | _ |\n| Row 6 | * | # | _ | _ | _ | _ | # | _ |\n| Row 7 | _ | _ | _ | _ | _ | _ | _ | # |\n| Row 8 | _ | _ | _ | _ | _ | _ | _ | _ |\n\n(D)\n| | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 | Col 6 | Col 7 |\n| Row 1 | _ | _ | @ | _ | _ | _ | # |\n| Row 2 | _ | _ | # | _ | # | _ | _ |\n| Row 3 | _ | _ | _ | # | _ | _ | _ |\n| Row 4 | _ | _ | _ | _ | _ | _ | # |\n| Row 5 | _ | _ | _ | _ | _ | # | _ |\n| Row 6 | _ | _ | _ | _ | # | _ | _ |\n| Row 7 | _ | _ | * | # | _ | # | _ |",
+    "solution": "B"
+  },
+  {
+    "task_name": "task4",
+    "level": "1",
+    "example_id": 7,
+    "image": "blocks/task4/example/level1/image_input/7.jpg",
+    "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see a photo of blocks. This photo shows the beginning state of the blocks. You will see a photo of blocks. This photo shows the beginning state of the blocks. Meanwhile, you will be provided an action sequence about moving blocks. Your task is to determine if the provided action plan can be successfully executed. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The block configuration is presented in the image. You must view and interpret the image in order to determine which blocks are in which stack and determine the consequence of moving.\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- A valid action can only move the top block of any stacks. Attempting to move lower blocks is considered an invalid move.\n- For the destination, a valid move can either (a) move the top block to the top of another stack, or (b) place the top block on the table, creating a new stack with just one block.\n\n## Procedure and Output\nYour output should follow this format:\n1. First, briefly analyze the block configuration, and check each action step by step to see if the provided step is valid.\n2. Then, answer the question with the format \"Yes\" or \"No\" to indicate if the action sequence is valid.\n\nNow please determine if the provided action sequence is valid given the input state.\n\nThe action sequence is:\n\n1. move(blue,green)",
+    "solution": "No"
+  },
+  {
+    "task_name": "task4",
+    "level": "3",
+    "example_id": 7,
+    "image": "blocks/task4/example/level3/image_input/7.jpg",
+    "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see a photo of blocks. This photo shows the beginning state of the blocks. You will see a photo of blocks. This photo shows the beginning state of the blocks. Meanwhile, you will be provided an action sequence about moving blocks. Your task is to determine if the provided action plan can be successfully executed. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The block configuration is presented in the image. You must view and interpret the image in order to determine which blocks are in which stack and determine the consequence of moving.\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- A valid action can only move the top block of any stacks. Attempting to move lower blocks is considered an invalid move.\n- For the destination, a valid move can either (a) move the top block to the top of another stack, or (b) place the top block on the table, creating a new stack with just one block.\n\n## Procedure and Output\nYour output should follow this format:\n1. First, briefly analyze the block configuration, and check each action step by step to see if the provided step is valid.\n2. Then, answer the question with the format \"Yes\" or \"No\" to indicate if the action sequence is valid.\n\nNow please determine if the provided action sequence is valid given the input state.\n\nThe action sequence is:\n\n1. move(green,table)\n2. move(red,purple)\n3. move(purple,table)",
+    "solution": "No"
+  },
+  {
+    "task_name": "task4",
+    "level": "5",
+    "example_id": 7,
+    "image": "blocks/task4/example/level5/image_input/7.jpg",
+    "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see a photo of blocks. This photo shows the beginning state of the blocks. You will see a photo of blocks. This photo shows the beginning state of the blocks. Meanwhile, you will be provided an action sequence about moving blocks. Your task is to determine if the provided action plan can be successfully executed. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The block configuration is presented in the image. You must view and interpret the image in order to determine which blocks are in which stack and determine the consequence of moving.\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- A valid action can only move the top block of any stacks. Attempting to move lower blocks is considered an invalid move.\n- For the destination, a valid move can either (a) move the top block to the top of another stack, or (b) place the top block on the table, creating a new stack with just one block.\n\n## Procedure and Output\nYour output should follow this format:\n1. First, briefly analyze the block configuration, and check each action step by step to see if the provided step is valid.\n2. Then, answer the question with the format \"Yes\" or \"No\" to indicate if the action sequence is valid.\n\nNow please determine if the provided action sequence is valid given the input state.\n\nThe action sequence is:\n\n1. move(blue,table)\n2. move(green,table)\n3. move(orange,blue)\n4. move(red,green)\n5. move(yellow,red)",
+    "solution": "No"
+  },
+  {
+    "task_name": "task4",
+    "level": "7",
+    "example_id": 7,
+    "image": "blocks/task4/example/level7/image_input/7.jpg",
+    "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see a photo of blocks. This photo shows the beginning state of the blocks. You will see a photo of blocks. This photo shows the beginning state of the blocks. Meanwhile, you will be provided an action sequence about moving blocks. Your task is to determine if the provided action plan can be successfully executed. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The block configuration is presented in the image. You must view and interpret the image in order to determine which blocks are in which stack and determine the consequence of moving.\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically in a stack, forming multiple stacks.\n- A valid action can only move the top block of any stacks. Attempting to move lower blocks is considered an invalid move.\n- For the destination, a valid move can either (a) move the top block to the top of another stack, or (b) place the top block on the table, creating a new stack with just one block.\n\n## Procedure and Output\nYour output should follow this format:\n1. First, briefly analyze the block configuration, and check each action step by step to see if the provided step is valid.\n2. Then, answer the question with the format \"Yes\" or \"No\" to indicate if the action sequence is valid.\n\nNow please determine if the provided action sequence is valid given the input state.\n\nThe action sequence is:\n\n1. move(orange,table)\n2. move(green,table)\n3. move(red,green)\n4. move(purple,blue)\n5. move(orange,purple)\n6. move(orange,green)\n7. move(red,orange)",
+    "solution": "No"
+  },
+  {
+    "task_name": "task4",
+    "level": "step1",
+    "example_id": 7,
+    "image": "frozenlake/task4/example/level_step1/img/7.png",
+    "problem": "You are a maze-solving agent playing a pixelated maze videogame.\nMazes are presented on grid maps, where each tile can be empty land, or contain a player, hole, or goal.\nEach of the above tile types are represented as square pixel art images.\n\nIn this task, you will analyze a grid-based map and determine if a provided action plan is safe. A safe action plan avoids stepping into holes in the map.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\n## Procedure and Output\nYour output should include the following parts:\n1. First, interpret map. List where the player is at now, where is the goal, and where are the holes.\n2. Then, reasoning by following the given action plan. At each step, you should check:\n    (a) Where the current move leads the player to (the row and column);\n    (b) What is in that grid. Is it a hole? Is it the goal? Is it an empty space?\n    (c) Determine if that is a safe action.\n3. Output if the action sequence is safe using \"Yes\" or \"No\". A safe action sequence should not include any unsafe actions.\n\nNow please determine if the action sequence is safe for the given maze and action sequence:\n\n R",
+    "solution": "Yes"
+  },
+  {
+    "task_name": "task4",
+    "level": "step3",
+    "example_id": 7,
+    "image": "frozenlake/task4/example/level_step3/img/7.png",
+    "problem": "You are a maze-solving agent playing a pixelated maze videogame.\nMazes are presented on grid maps, where each tile can be empty land, or contain a player, hole, or goal.\nEach of the above tile types are represented as square pixel art images.\n\nIn this task, you will analyze a grid-based map and determine if a provided action plan is safe. A safe action plan avoids stepping into holes in the map.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\n## Procedure and Output\nYour output should include the following parts:\n1. First, interpret map. List where the player is at now, where is the goal, and where are the holes.\n2. Then, reasoning by following the given action plan. At each step, you should check:\n    (a) Where the current move leads the player to (the row and column);\n    (b) What is in that grid. Is it a hole? Is it the goal? Is it an empty space?\n    (c) Determine if that is a safe action.\n3. Output if the action sequence is safe using \"Yes\" or \"No\". A safe action sequence should not include any unsafe actions.\n\nNow please determine if the action sequence is safe for the given maze and action sequence:\n\n DDD",
+    "solution": "Yes"
+  },
+  {
+    "task_name": "task4",
+    "level": "step5",
+    "example_id": 7,
+    "image": "frozenlake/task4/example/level_step5/img/7.png",
+    "problem": "You are a maze-solving agent playing a pixelated maze videogame.\nMazes are presented on grid maps, where each tile can be empty land, or contain a player, hole, or goal.\nEach of the above tile types are represented as square pixel art images.\n\nIn this task, you will analyze a grid-based map and determine if a provided action plan is safe. A safe action plan avoids stepping into holes in the map.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\n## Procedure and Output\nYour output should include the following parts:\n1. First, interpret map. List where the player is at now, where is the goal, and where are the holes.\n2. Then, reasoning by following the given action plan. At each step, you should check:\n    (a) Where the current move leads the player to (the row and column);\n    (b) What is in that grid. Is it a hole? Is it the goal? Is it an empty space?\n    (c) Determine if that is a safe action.\n3. Output if the action sequence is safe using \"Yes\" or \"No\". A safe action sequence should not include any unsafe actions.\n\nNow please determine if the action sequence is safe for the given maze and action sequence:\n\n UDLLU",
+    "solution": "No"
+  },
+  {
+    "task_name": "task4",
+    "level": "step7",
+    "example_id": 7,
+    "image": "frozenlake/task4/example/level_step7/img/7.png",
+    "problem": "You are a maze-solving agent playing a pixelated maze videogame.\nMazes are presented on grid maps, where each tile can be empty land, or contain a player, hole, or goal.\nEach of the above tile types are represented as square pixel art images.\n\nIn this task, you will analyze a grid-based map and determine if a provided action plan is safe. A safe action plan avoids stepping into holes in the map.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\n## Procedure and Output\nYour output should include the following parts:\n1. First, interpret map. List where the player is at now, where is the goal, and where are the holes.\n2. Then, reasoning by following the given action plan. At each step, you should check:\n    (a) Where the current move leads the player to (the row and column);\n    (b) What is in that grid. Is it a hole? Is it the goal? Is it an empty space?\n    (c) Determine if that is a safe action.\n3. Output if the action sequence is safe using \"Yes\" or \"No\". A safe action sequence should not include any unsafe actions.\n\nNow please determine if the action sequence is safe for the given maze and action sequence:\n\n RRDDUDU",
+    "solution": "Yes"
+  },
+  {
+    "task_name": "task4",
+    "level": "step9",
+    "example_id": 7,
+    "image": "frozenlake/task4/example/level_step9/img/7.png",
+    "problem": "You are a maze-solving agent playing a pixelated maze videogame.\nMazes are presented on grid maps, where each tile can be empty land, or contain a player, hole, or goal.\nEach of the above tile types are represented as square pixel art images.\n\nIn this task, you will analyze a grid-based map and determine if a provided action plan is safe. A safe action plan avoids stepping into holes in the map.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\n## Procedure and Output\nYour output should include the following parts:\n1. First, interpret map. List where the player is at now, where is the goal, and where are the holes.\n2. Then, reasoning by following the given action plan. At each step, you should check:\n    (a) Where the current move leads the player to (the row and column);\n    (b) What is in that grid. Is it a hole? Is it the goal? Is it an empty space?\n    (c) Determine if that is a safe action.\n3. Output if the action sequence is safe using \"Yes\" or \"No\". A safe action sequence should not include any unsafe actions.\n\nNow please determine if the action sequence is safe for the given maze and action sequence:\n\n LLRUDRRRU",
+    "solution": "No"
+  }
+]

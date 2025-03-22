@@ -168,7 +168,7 @@ class LazySupervisedDataset(Dataset):
                 ],
             }
         # This is only for Grounding task
-        QUESTION_TEMPLATE = "{Question} \n\nFirst output the thinking process in <think> </think> tags and then output the final answer in <answer> </answer> tags. Output the final answer in JSON format."
+        QUESTION_TEMPLATE = "{Question} \n\nFirst output the thinking or analyzing process in <think> </think> tags and then output the final answer in <answer> </answer> tags. Output the final answer in JSON format."
         
 
         def make_conversation_image(example):
@@ -370,7 +370,7 @@ class LazySupervisedDataset(Dataset):
 #     completion_contents = [completion[0]["content"] for completion in completions]
 #     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
 #     return [1.0 if match else 0.0 for match in matches]
-def frozenlake_reward(completions, solution, **kwargs):
+def percive_reward(completions, solution, **kwargs):
     """Reward function that checks if the completion's answer matches the solution for FrozenLake tasks."""
     contents = [completion[0]["content"] for completion in completions]
     
@@ -486,6 +486,7 @@ def main(script_args, training_args, model_args):
 
 
 if __name__ == "__main__":
+
     parser = TrlParser((GRPOScriptArguments, GRPOConfig, GRPOModelConfig))
     script_args, training_args, model_args = parser.parse_args_and_config()
     main(script_args, training_args, model_args)

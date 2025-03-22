@@ -4,7 +4,7 @@ import re
 from datetime import datetime
 
 # Import reward functions from grpo_pre
-from rewards import path_reward, format_reward, frozenlake_reward
+#from rewards import path_reward, format_reward, frozenlake_reward
 
 # def test_path_reward():
 #     """Test the path_reward function with different scenarios."""
@@ -217,7 +217,10 @@ The given action sequence R moves the player right, which is a safe move in this
 if __name__ == "__main__":
     # Run all tests
     #test_path_reward()
-    test_format_reward()
+    #test_format_reward()
+    j = "{\"a\":\"A\"}"
+    j = json.loads(j)
+    print(j.get("a"))
     #test_frozenlake_reward()
 
 # completions = [

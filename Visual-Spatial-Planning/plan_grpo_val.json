@@ -1,0 +1,94 @@
+[
+  {
+    "task_name": "task-main",
+    "level": "1",
+    "example_id": 7,
+    "image": [
+      "blocks/task-main/example/level1/begin/7.jpg",
+      "blocks/task-main/example/level1/end/7.jpg"
+    ],
+    "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+    "solution": "1. move(orange,yellow)"
+  },
+  {
+    "task_name": "task-main",
+    "level": "3",
+    "example_id": 7,
+    "image": [
+      "blocks/task-main/example/level3/begin/7.jpg",
+      "blocks/task-main/example/level3/end/7.jpg"
+    ],
+    "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+    "solution": "1. move(red,blue)\n2. move(yellow,green)\n3. move(purple,yellow)"
+  },
+  {
+    "task_name": "task-main",
+    "level": "5",
+    "example_id": 7,
+    "image": [
+      "blocks/task-main/example/level5/begin/7.jpg",
+      "blocks/task-main/example/level5/end/7.jpg"
+    ],
+    "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+    "solution": "1. move(red,table)\n2. move(purple,table)\n3. move(orange,blue)\n4. move(yellow,orange)\n5. move(red,yellow)"
+  },
+  {
+    "task_name": "task-main",
+    "level": "7",
+    "example_id": 7,
+    "image": [
+      "blocks/task-main/example/level7/begin/7.jpg",
+      "blocks/task-main/example/level7/end/7.jpg"
+    ],
+    "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+    "solution": "1. move(purple,table)\n2. move(green,table)\n3. move(blue,table)\n4. move(red,blue)\n5. move(orange,red)\n6. move(green,orange)\n7. move(purple,green)"
+  },
+  {
+    "task_name": "task-main",
+    "level": "level3",
+    "example_id": 7,
+    "image": "frozenlake/task-main/example/level3/img/7.png",
+    "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "solution": "Action plan: L,U"
+  },
+  {
+    "task_name": "task-main",
+    "level": "level4",
+    "example_id": 7,
+    "image": "frozenlake/task-main/example/level4/img/7.png",
+    "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "solution": "Action plan: R,R,U"
+  },
+  {
+    "task_name": "task-main",
+    "level": "level5",
+    "example_id": 7,
+    "image": "frozenlake/task-main/example/level5/img/7.png",
+    "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "solution": "Action plan: L,D,D,L,L,L,U,U"
+  },
+  {
+    "task_name": "task-main",
+    "level": "level6",
+    "example_id": 7,
+    "image": "frozenlake/task-main/example/level6/img/7.png",
+    "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "solution": "Action plan: L,L,U,U"
+  },
+  {
+    "task_name": "task-main",
+    "level": "level7",
+    "example_id": 7,
+    "image": "frozenlake/task-main/example/level7/img/7.png",
+    "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "solution": "Action plan: D,D,L,L,L,L"
+  },
+  {
+    "task_name": "task-main",
+    "level": "level8",
+    "example_id": 7,
+    "image": "frozenlake/task-main/example/level8/img/7.png",
+    "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "solution": "Action plan: L,U,U,U,R,R,R,R,R,D,D"
+  }
+]
