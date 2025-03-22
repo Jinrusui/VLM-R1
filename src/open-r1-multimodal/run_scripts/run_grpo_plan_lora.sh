@@ -3,7 +3,7 @@ cd src/open-r1-multimodal
 export DEBUG_MODE="true"
 # export CUDA_VISIBLE_DEVICES=4,5,6,7
 
-RUN_NAME="Qwen2.5-VL-7B-GRPO-REC-lora"
+RUN_NAME="Qwen2.5-VL-3B-GRPO-PRE-lora-continued"
 export LOG_PATH="./debug_log_$RUN_NAME.txt"
 
 torchrun --nproc_per_node="1" \
@@ -14,12 +14,12 @@ torchrun --nproc_per_node="1" \
     src/open_r1/grpo_plan.py \
     --deepspeed local_scripts/zero2.json \
     --output_dir output/$RUN_NAME \
-    --model_name_or_path Qwen/Qwen2.5-VL-7B-Instruct \
-    --dataset_name data_config/rec.yaml \
-    --image_root /jinru/VLM-R1/samples \
-    --max_prompt_length 2048 \
-    --num_generations 8 \
-    --per_device_train_batch_size 64 \
+    --model_name_or_path Qwen/Qwen2.5-VL-3B-Instruct \
+    --dataset_name data_config/plan.yaml \
+    --image_root /jinru/VLM-R1/Visual-Spatial-Planning/VSP-main \
+    --max_prompt_length 4096 \
+    --num_generations 2 \
+    --per_device_train_batch_size 2 \
     --gradient_accumulation_steps 1 \
     --logging_steps 1 \
     --bf16 \
@@ -28,14 +28,15 @@ torchrun --nproc_per_node="1" \
     --report_to wandb \
     --gradient_checkpointing true \
     --attn_implementation flash_attention_2 \
-    --num_train_epochs 2 \
+    --num_train_epochs 5 \
     --run_name $RUN_NAME \
     --save_steps 100 \
     --save_only_model true \
     --learning_rate 1e-5 \
     --use_peft true \
-    --lora_r 32 \
-    --lora_alpha 128 \
+    --lora_r 16 \
+    --lora_alpha 32 \
     --lora_dropout 0.05 \
     --lora_task_type CAUSAL_LM \
-    --freeze_vision_modules false
+    --freeze_vision_modules false \
+    --adapter_path path/to/your/existing/adapter

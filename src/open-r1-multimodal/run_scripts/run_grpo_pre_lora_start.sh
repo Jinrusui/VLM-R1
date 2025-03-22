@@ -15,11 +15,11 @@ torchrun --nproc_per_node="1" \
     --deepspeed local_scripts/zero2.json \
     --output_dir output/$RUN_NAME \
     --model_name_or_path Qwen/Qwen2.5-VL-3B-Instruct \
-    --dataset_name data_config/b_pre.yaml \
+    --dataset_name data_config/pre.yaml \
     --image_root /jinru/VLM-R1/Visual-Spatial-Planning/VSP-main \
     --max_prompt_length 4096 \
-    --num_generations 2 \
-    --per_device_train_batch_size 2 \
+    --num_generations 4 \
+    --per_device_train_batch_size 32 \
     --gradient_accumulation_steps 1 \
     --logging_steps 1 \
     --bf16 \
@@ -30,7 +30,7 @@ torchrun --nproc_per_node="1" \
     --attn_implementation flash_attention_2 \
     --num_train_epochs 5 \
     --run_name $RUN_NAME \
-    --save_steps 100 \
+    --save_steps 50 \
     --save_only_model true \
     --learning_rate 1e-5 \
     --use_peft true \
@@ -39,4 +39,4 @@ torchrun --nproc_per_node="1" \
     --lora_dropout 0.05 \
     --lora_task_type CAUSAL_LM \
     --freeze_vision_modules false \
-    --adapter_path path/to/your/existing/adapter
+    --adapter_path /jinru/VLM-R1/cold_start_qwen

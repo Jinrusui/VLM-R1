@@ -246,10 +246,10 @@ def path_reward(completions, solution, **kwargs):
         position = tuple(start_position)
         
         moves = {
-            "Left": (0, -1),
-            "Right": (0, 1),
-            "Up": (-1, 0),
-            "Down": (1, 0)
+            "L": (0, -1),
+            "R": (0, 1),
+            "U": (-1, 0),
+            "D": (1, 0)
         }
         
         for move in path:
@@ -293,14 +293,14 @@ def path_reward(completions, solution, **kwargs):
                 result = path_verifier(sol, path)
                 if result == "success":
                     reward = 1.0
-                elif result == "failed":
-                    reward = -0.1
-                elif result == "out_of_bounds":
-                    reward = -0.1
-                elif result == "incomplete":
-                    reward = -0.1
-                elif result == "invalid_move":
-                    reward = -0.1
+                # elif result == "failed":
+                #     reward = -0.1
+                # elif result == "out_of_bounds":
+                #     reward = -0.1
+                # elif result == "incomplete":
+                #     reward = -0.1
+                # elif result == "invalid_move":
+                #     reward = -0.1
         except Exception as e:
             # 调试时可打印错误信息
             #print(f"Error parsing path: {e}")

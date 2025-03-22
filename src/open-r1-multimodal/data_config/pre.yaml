@@ -1,5 +1,2 @@
-train_datasets:
+datasets:
   - json_path: /jinru/VLM-R1/Visual-Spatial-Planning/percive_grpo_train.json
-
-eval_datasets:
-  - json_path: /jinru/VLM-R1/Visual-Spatial-Planning/percive_grpo_val.json
