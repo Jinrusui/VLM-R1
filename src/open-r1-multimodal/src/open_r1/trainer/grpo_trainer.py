@@ -282,9 +282,48 @@ class Qwen2VLGRPOTrainer(Trainer):
                     if "embed_tokens" in m:
                         lora_module_names.remove(m)
                 return list(lora_module_names)
-            target_modules = find_all_linear_names(model, self.vision_modules_keywords)
-            peft_config.target_modules = target_modules
-            model = get_peft_model(model, peft_config)
+            
+            # Check if we should resume from an existing adapter
+            # Check if we should resume from an existing adapter
+            if hasattr(peft_config, "adapter_path") and peft_config.adapter_path:
+                print(f"🚀 Loading existing adapter from {peft_config.adapter_path}")
+                from peft import PeftModel, PeftConfig
+                adapter_path = peft_config.adapter_path
+
+                peft_config = PeftConfig.from_pretrained(adapter_path)
+                peft_config.inference_mode = False
+                model = PeftModel.from_pretrained(model, adapter_path, config=peft_config)
+                
+
+                for name, param in model.named_parameters():
+                    if "lora" in name or "adapter" in name:
+                        param.requires_grad = True
+            
+                model.print_trainable_parameters()
+                print(f"🚀Loaded existing adapter from {adapter_path}")
+            else:
+                # Create new adapter
+                target_modules = find_all_linear_names(model, self.vision_modules_keywords)
+                peft_config.target_modules = target_modules
+                model = get_peft_model(model, peft_config)
+                print(f"🚀Created new adapter for {model_id}")
+        # if peft_config is not None:
+        #     def find_all_linear_names(model, multimodal_keywords):
+        #         cls = torch.nn.Linear
+        #         lora_module_names = set()
+        #         for name, module in model.named_modules():
+        #             # LoRA is not applied to the vision modules
+        #             if any(mm_keyword in name for mm_keyword in multimodal_keywords):
+        #                 continue
+        #             if isinstance(module, cls):
+        #                 lora_module_names.add(name)
+        #         for m in lora_module_names:  # needed for 16-bit
+        #             if "embed_tokens" in m:
+        #                 lora_module_names.remove(m)
+        #         return list(lora_module_names)
+        #     target_modules = find_all_linear_names(model, self.vision_modules_keywords)
+        #     peft_config.target_modules = target_modules
+        #     model = get_peft_model(model, peft_config)
 
         if freeze_vision_modules:
             print("Freezing vision modules...")
@@ -520,41 +559,6 @@ class Qwen2VLGRPOTrainer(Trainer):
             if isinstance(completion_text, list):  # 适用于对话格式
                 completion_text = completion_text[0]["content"] if completion_text else ""
     
-        #     # 获取图片（如果有）
-        #     image_data = inputs[i].get("image", None)
-        #     image_data1 = inputs[i].get("image1", None)
-        #     image_data2 = inputs[i].get("image2", None)
-        #     image_wandb = wandb.Image(image_data) if image_data is not None else None
-        #     image_wandb1 = wandb.Image(image_data1) if image_data1 is not None else None
-        #     image_wandb2 = wandb.Image(image_data2) if image_data2 is not None else None
-
-        #     sample = {
-        #         "step": step,
-        #         "prompt": prompt_text,
-        #         "completion": completion_text,
-        #         "reward": rewards[i].item(),
-        #         "problem": problem,
-        #         "solution":solution,
-        #     }
-        #     if image_wandb:
-        #         sample["image"] = image_wandb  # 添加图片到 wandb 日志
-        #     if image_wandb1:
-        #         sample["image1"] = image_wandb1
-        #     if image_wandb2:
-        #         sample["image2"] = image_wandb2
-            
-        #     #samples.append(sample)
-        #     self.wandb_table.append(sample)
-        
-        # # 记录到 wandb
-        # wandb.log({
-        #     "samples": wandb.Table(
-        #         data=[[s["step"], s["prompt"], s["problem"],s["completion"],s["solution"], s["reward"], s.get("image")] 
-        #               for s in self.wandb_table],
-        #         columns=["step", "prompt","problem", "completion", "solution","reward", "image","image1","image2"]
-        #     )
-        # }, step=step)
-                    # Dynamically handle multiple images (if available)
             images = []
             for key in ["image", "image1", "image2"]:
                 image_data = inputs[i].get(key, None)
@@ -587,95 +591,6 @@ class Qwen2VLGRPOTrainer(Trainer):
             )
         }, step=step)
 
-    # def _log_samples_to_wandb(self, inputs, completions, rewards, step):
-    #     """Log sample prompts, completions, images (if available), and rewards to wandb."""
-    #     if not is_wandb_available() or wandb.run is None:
-    #         return
-        
-    #     # 只在主进程上记录
-    #     if not self.is_world_process_zero():
-    #         return
-        
-    #     # 选择最多 5 个样本记录
-    #     num_to_log = min(2, len(completions))
-    #     indices = torch.randperm(len(completions))[:num_to_log].tolist()
-    #     current_temp = self.generation_config.temperature
-
-    #     for i in indices:
-    #         prompt_text = maybe_apply_chat_template(inputs[i], self.processing_class)["prompt"]
-            
-    #         # 处理不同格式的 completion
-    #         completion_text = completions[i]
-    #         if isinstance(completion_text, list):  # 适用于对话格式
-    #             completion_text = completion_text[0]["content"] if completion_text else ""
-    
-    #         # 获取图片（如果有）
-    #         image_data = inputs[i].get("image", None)
-    #         image_wandb = wandb.Image(image_data) if image_data is not None else None
-                
-    #         sample = {
-    #             "step": step,
-    #             "prompt": prompt_text,
-    #             "completion": completion_text,
-    #             "reward": rewards[i].item(),
-    #             "temperature": current_temp,
-    #         }
-    #         if image_wandb:
-    #             sample["image"] = image_wandb  # 添加图片到 wandb 日志
-            
-    #         self.wandb_table.add_data(sample["step"], sample["prompt"], sample["completion"], sample["reward"], sample.get("image"), sample["temperature"])
-    #         wandb.log({"completion": sample["completion"], "image":sample.get("image"),"temp":sample["temperature"] }, step=step)
-    #         wandb.log({"completion":wandb.Table([sample["completion"]],['c'])})
-        
-    #     # 记录到 wandb
-    #     # wandb.log({
-    #     #     "samples": self.wandb_table
-    #     # }, step=step)
-        
-    #     print(f"[DEBUG] step={step}, wandb_table rows = {len(self.wandb_table.data)}")
-
-
-
-
-
-    # def _log_samples_to_wandb(self, inputs, completions, rewards, step):
-    #     """Log sample prompts, completions, and rewards to wandb."""
-    #     if not is_wandb_available() or wandb.run is None:
-    #         return
-        
-    #     # Only log from the main process
-    #     if not self.is_world_process_zero():
-    #         return
-        
-    #     # Choose a subset of samples to log (e.g., up to 5)
-    #     num_to_log = min(10, len(completions))
-    #     indices = torch.randperm(len(completions))[:num_to_log].tolist()
-        
-    #     samples = []
-    #     for i in indices:
-    #         prompt_text = maybe_apply_chat_template(inputs[i], self.processing_class)["prompt"]
-            
-    #         # Handle different completion formats
-    #         completion_text = completions[i]
-    #         if isinstance(completion_text, list):  # For conversational format
-    #             completion_text = completion_text[0]["content"] if completion_text else ""
-                
-    #         sample = {
-    #             "step": step,
-    #             "prompt": prompt_text,
-    #             "completion": completion_text,
-    #             "reward": rewards[i].item()
-    #         }
-    #         samples.append(sample)
-        
-    #     # Log to wandb
-    #     wandb.log({"samples": wandb.Table(data=[[s["step"], s["prompt"], s["completion"], s["reward"]] 
-    #                                 for s in samples],
-    #                         columns=["step", "prompt", "completion", "reward"])}, 
-    #             step=step)
-    
-    # import math
-
     def update_temperature_by_reward(self, step, reward_avg, min_temp=0.5, max_temp=1.0, k=1.0, x0=0.5):
         """
         根据当前 reward 平均值更新生成温度，使用 sigmoid 函数进行非线性映射。
@@ -697,13 +612,6 @@ class Qwen2VLGRPOTrainer(Trainer):
 
         # 更新生成配置
         self.generation_config.temperature = curr_temp
-
-        # # 日志记录
-        # if is_wandb_available() and wandb.run is not None and self.is_world_process_zero():
-        #     wandb.log({
-        #         "temperature": curr_temp, 
-        #         "reward_for_temp": reward_avg
-        #     }, step=step)
         
         return curr_temp
 

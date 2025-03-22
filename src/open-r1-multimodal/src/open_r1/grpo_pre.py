@@ -87,10 +87,18 @@ class GRPOScriptArguments(ScriptArguments):
         default=None,
         metadata={"help": "Root directory of the image"},
     )
+    
 
+# @dataclass
+# class GRPOModelConfig(ModelConfig):
+#     freeze_vision_modules: bool = False
 @dataclass
 class GRPOModelConfig(ModelConfig):
     freeze_vision_modules: bool = False
+    adapter_path: Optional[str] = field(
+        default=None,
+        metadata={"help": "Path to pre-trained adapter to resume training from"},
+    )
 
 
 SYSTEM_PROMPT = (
@@ -478,6 +486,14 @@ def main(script_args, training_args, model_args):
 
     # Load the dataset
     dataset = LazySupervisedDataset(script_args.dataset_name, script_args)
+    
+    # Create PEFT config once and reuse it
+    peft_config = None
+    if model_args.use_peft:
+        peft_config = get_peft_config(model_args)
+        if model_args.adapter_path:
+            print(f"Will load adapter from: {model_args.adapter_path}")
+            peft_config.adapter_path = model_args.adapter_path
 
     trainer_cls = Qwen2VLGRPOTrainer
     # Initialize the GRPO trainer
@@ -487,7 +503,7 @@ def main(script_args, training_args, model_args):
         args=training_args,
         train_dataset=dataset,
         eval_dataset=None,
-        peft_config=get_peft_config(model_args),
+        peft_config=peft_config,  # Use the previously created peft_config
         freeze_vision_modules=model_args.freeze_vision_modules,
         attn_implementation=model_args.attn_implementation,
         max_pixels=script_args.max_pixels,
