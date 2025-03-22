@@ -218,9 +218,10 @@ if __name__ == "__main__":
     # Run all tests
     #test_path_reward()
     #test_format_reward()
-    j = "{\"a\":\"A\"}"
+    j = "{\"a\":\"left,ok,k\"}"
     j = json.loads(j)
     print(j.get("a"))
+    print(list(j.values())[0])
     #test_frozenlake_reward()
 
 # completions = [

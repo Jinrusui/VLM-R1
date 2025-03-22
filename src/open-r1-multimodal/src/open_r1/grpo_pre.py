@@ -378,7 +378,8 @@ def percive_reward(completions, solution, **kwargs):
     current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
     
     # Extract answer from <answer> tags
-    answer_tag_pattern = r'<answer>(.*?)</answer>'
+    #answer_tag_pattern = r'<answer>(.*?)</answer>'
+    answer_tag_pattern = r'<answer>.*?(\{[\s\S]*?\}).*?</answer>'
     
     for content, sol in zip(contents, solution):
         
@@ -395,6 +396,8 @@ def percive_reward(completions, solution, **kwargs):
                     # Try to parse as JSON
                     answer_json = json.loads(answer_text)
                     model_answer = answer_json.get("answer", "")
+                    if model_answer =="":
+                        model_answer = list(answer_json.values())[0]
                 except json.JSONDecodeError:
                     # If not JSON, use the raw text
                     model_answer = answer_text
@@ -413,7 +416,7 @@ def percive_reward(completions, solution, **kwargs):
                     elif model_answer.strip().lower() == correct_answer.strip().lower():
                         reward = 1.0
                     elif correct_answer.strip().lower() in model_answer.strip().lower():
-                        reward = 0.5
+                        reward = 0.2
 
                 elif model_answer == correct_answer:
                     reward = 1.0
@@ -439,16 +442,32 @@ def percive_reward(completions, solution, **kwargs):
 
 
 
+# def format_reward(completions, **kwargs):
+#     """Reward function that checks if the completion has a specific format."""
+#     # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
+#     pattern = r"<think>[\s\S]*?</think>\s*<answer>\s*\{\s*\"answer\"\s*:\s*(?:\[[\s\S]*?\]|\"[\s\S]*?\")\s*\}[\s\S]*?</answer>"
+#     completion_contents = [completion[0]["content"] for completion in completions]
+#     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
+#     return [1.0 if match else 0.0 for match in matches]
+
+
 def format_reward(completions, **kwargs):
-    """Reward function that checks if the completion has a specific format."""
-    # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
+    """Reward function that checks if the completion has a specific format.
+    It is compatible with both escaped and unescaped answer strings.
+    """
+    # Regular expression matches <think>...</think> followed by <answer>{ "answer": ... }</answer>
     pattern = r"<think>[\s\S]*?</think>\s*<answer>\s*\{\s*\"answer\"\s*:\s*(?:\[[\s\S]*?\]|\"[\s\S]*?\")\s*\}[\s\S]*?</answer>"
+    
+    # Extract content and replace escaped quotes (replace \" with ")
     completion_contents = [completion[0]["content"] for completion in completions]
-    matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
+    processed_contents = [content.replace('\\"', '"') for content in completion_contents]
+    
+    matches = [re.fullmatch(pattern, content, re.DOTALL) for content in processed_contents]
     return [1.0 if match else 0.0 for match in matches]
 
+
 reward_funcs_registry = {
-    "accuracy": frozenlake_reward,
+    "accuracy": percive_reward,
     "format": format_reward,
 }
 
