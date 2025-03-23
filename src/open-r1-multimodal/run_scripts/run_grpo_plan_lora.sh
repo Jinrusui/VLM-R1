@@ -15,8 +15,9 @@ torchrun --nproc_per_node="1" \
     --deepspeed local_scripts/zero2.json \
     --output_dir output/$RUN_NAME \
     --model_name_or_path Qwen/Qwen2.5-VL-3B-Instruct \
-    --dataset_name data_config/plan.yaml \
-    --image_root /jinru/VLM-R1/Visual-Spatial-Planning/VSP-main \
+    --dataset_name none\
+    --data_file_paths /jinru/VLM-R1/Visual-Spatial-Planning\plan_grpo_train.jsonl \
+    --image_folders /jinru/VLM-R1/Visual-Spatial-Planning/VSP-main \
     --max_prompt_length 4096 \
     --num_generations 2 \
     --per_device_train_batch_size 2 \
