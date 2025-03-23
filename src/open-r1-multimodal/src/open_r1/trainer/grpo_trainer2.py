@@ -611,79 +611,36 @@ class Qwen2VLGRPOTrainer(Trainer):
         device = self.accelerator.device
         prompts = [x["prompt"] for x in inputs]
         prompts_text = [maybe_apply_chat_template(example, self.processing_class)["prompt"] for example in inputs]
-        # Handle both pre-loaded images and image paths for single and multiple images
+        # Handle both pre-loaded images and image paths
         images = []
-        images1 = []
-        images2 = []
-        has_multiple_images = any("image1" in x for x in inputs)
-        
         for x in inputs:
-            if has_multiple_images:
-                # Handle multi-image case
-                if "image1" in x and "image2" in x:
-                    img1 = x["image1"]
-                    img2 = x["image2"]
-                else:
-                    # Fallback if some samples don't have multiple images
-                    print("Warning: Missing expected multiple images")
-                    img1 = PIL.Image.new('RGB', (28, 28), color='white')
-                    img2 = PIL.Image.new('RGB', (28, 28), color='white')
-                
-                # Apply resizing logic to both images
-                for img in [img1, img2]:
-                    w, h = img.size
-                    if w < 28 or h < 28:
-                        if w < h:
-                            new_w = 28
-                            new_h = int(h * (28/w))
-                        else:
-                            new_h = 28
-                            new_w = int(w * (28/h))
-                        img = img.resize((new_w, new_h), PIL.Image.Resampling.LANCZOS)
-                
-                images1.append(img1)
-                images2.append(img2)
+            if "image" in x:
+                img = x["image"]
             else:
-                # Handle single image case (existing code)
-                if "image" in x:
-                    img = x["image"]
+                img = PIL.Image.open(x["image_path"])
+
+            # Ensure minimum dimensions of 28 pixels
+            w, h = img.size
+            if w < 28 or h < 28:
+                # Calculate new dimensions maintaining aspect ratio
+                if w < h:
+                    new_w = 28
+                    new_h = int(h * (28/w))
                 else:
-                    img = PIL.Image.open(x["image_path"])
+                    new_h = 28
+                    new_w = int(w * (28/h))
+                img = img.resize((new_w, new_h), PIL.Image.Resampling.LANCZOS)
+            
+            images.append(img)
 
-                # Ensure minimum dimensions of 28 pixels
-                w, h = img.size
-                if w < 28 or h < 28:
-                    if w < h:
-                        new_w = 28
-                        new_h = int(h * (28/w))
-                    else:
-                        new_h = 28
-                        new_w = int(w * (28/h))
-                    img = img.resize((new_w, new_h), PIL.Image.Resampling.LANCZOS)
-                
-                images.append(img)
-
-        prompt_inputs = None
-        if has_multiple_images:
-            # Process multiple images case
-            prompt_inputs = self.processing_class(
-                text=prompts_text,
-                images=[images1, images2],  # Pass lists of images for each position
-                return_tensors="pt",
-                padding=True,
-                padding_side="left",
-                add_special_tokens=False,
-            )
-        else:
-            # Process single image case (existing code)
-            prompt_inputs = self.processing_class(
-                text=prompts_text,
-                images=images,
-                return_tensors="pt",
-                padding=True,
-                padding_side="left",
-                add_special_tokens=False,
-            )
+        prompt_inputs = self.processing_class(
+            text=prompts_text,
+            images=images,
+            return_tensors="pt",
+            padding=True,
+            padding_side="left",
+            add_special_tokens=False,
+        )
         prompt_inputs = super()._prepare_inputs(prompt_inputs)
 
         prompt_ids, prompt_mask = prompt_inputs["input_ids"], prompt_inputs["attention_mask"]
