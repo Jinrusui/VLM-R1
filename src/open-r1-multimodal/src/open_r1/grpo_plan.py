@@ -234,7 +234,49 @@ class LazySupervisedDataset(Dataset):
 '''
 
 
-def path_reward(completions, solution, **kwargs):
+
+def plan_reward(completions, solution, **kwargs):
+    def block_verifier(env_config, plan):
+        # This function verifies if a block movement plan correctly transforms
+        # the initial state to the desired end state
+        
+        # For block tasks, the solution is typically a string with step-by-step moves
+        # We'll parse the solution and the predicted plan, then check if they achieve the same result
+        
+        if isinstance(solution, str):
+            # If solution is directly provided as a string of moves
+            correct_solution = solution.strip()
+            
+            # Compare directly if the plans match
+            if plan.strip() == correct_solution:
+                return "success"
+            
+            # For more advanced verification, we could implement state simulation
+            # to check if different plans achieve the same end state
+            return "failed"
+        else:
+            # If solution is given as a number of steps
+            try:
+                # Parse the predicted plan steps
+                plan_steps = re.findall(r'move\(([^,]+),([^)]+)\)', plan)
+                
+                # If solution specifies the number of steps or exact moves
+                if isinstance(solution, int) or hasattr(solution, '__len__'):
+                    expected_length = solution if isinstance(solution, int) else len(solution)
+                    
+                    # Check if the plan has the expected number of steps
+                    if len(plan_steps) == expected_length:
+                        return "success"
+                    return "failed"
+                
+                # If we have a specific solution to compare with
+                if solution == plan:
+                    return "success"
+                
+                return "failed"
+            except Exception as e:
+                return "invalid_format"
+
     def path_verifier(env_config, path):
         # 保持原有验证逻辑不变
 
@@ -272,72 +314,177 @@ def path_reward(completions, solution, **kwargs):
         
         return "incomplete"
 
-    # 保持与iou_reward一致的输入处理
+    # Handle different types of tasks
     contents = [completion[0]["content"] for completion in completions]
     rewards = []
     current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
     
-    # 解析<answer>标签中的路径
+    # Extract answers from the completions
     answer_tag_pattern = r'<answer>(.*?)</answer>'
    
     for content, sol in zip(contents, solution):
         reward = 0.0
+        task_type = "path"  # Default task type
+        
+        # Check if this is a block task by looking at the solution format
+        if isinstance(sol, str) and "move" in sol:
+            task_type = "block"
+        elif isinstance(sol, dict) and "task_name" in sol and "task-main" in sol["task_name"]:
+            task_type = "block"
+            sol = sol.get("solution", "")
 
         try:
-
             content_answer_match = re.search(answer_tag_pattern, content, re.DOTALL)
-
+            
             if content_answer_match:
-                answer_json = json.loads(content_answer_match.group(1).strip())
-                path = answer_json.get("path", [])
-                result = path_verifier(sol, path)
-                if result == "success":
-                    reward = 1.0
-                # elif result == "failed":
-                #     reward = -0.1
-                # elif result == "out_of_bounds":
-                #     reward = -0.1
-                # elif result == "incomplete":
-                #     reward = -0.1
-                # elif result == "invalid_move":
-                #     reward = -0.1
+                answer_text = content_answer_match.group(1).strip()
+                
+                if task_type == "path":
+                    # Handle path planning tasks
+                    try:
+                        answer_json = json.loads(answer_text)
+                        path = answer_json.get("path", [])
+                        result = path_verifier(sol, path)
+                        if result == "success":
+                            reward = 1.0
+                    except json.JSONDecodeError:
+                        # Not a valid JSON, try to extract path directly
+                        pass
+                
+                elif task_type == "block":
+                    # Handle block movement tasks
+                    try:
+                        # Try parsing as JSON first
+                        answer_json = json.loads(answer_text)
+                        plan = answer_json.get("answer", "")
+                    except json.JSONDecodeError:
+                        # If not valid JSON, use the text directly
+                        plan = answer_text
+                    
+                    # Verify the block movement plan
+                    result = block_verifier(sol, plan)
+                    if result == "success":
+                        reward = 1.0
+                        
         except Exception as e:
-            # 调试时可打印错误信息
-            #print(f"Error parsing path: {e}")
+            # Error in parsing or verification
             pass
 
         rewards.append(reward)
         
-        # 保持与iou_reward一致的日志格式
+        # Log debugging information if enabled
         if os.getenv("DEBUG_MODE") == "true":
             log_path = os.getenv("LOG_PATH")
             with open(log_path, "a", encoding='utf-8') as f:
-                f.write(f"------------- {current_time} Path reward: {reward} -------------\n")
+                f.write(f"------------- {current_time} Task reward: {reward} -------------\n")
                 f.write(f"Content: {content}\n")
-                f.write(f"Solution: {json.dumps(sol)}\n")
+                f.write(f"Solution: {json.dumps(sol) if isinstance(sol, dict) else sol}\n")
     
     return rewards
+# def plan_reward(completions, solution, **kwargs):
+
+#     def path_verifier(env_config, path):
+#         # 保持原有验证逻辑不变
+
+#         map_size = env_config["map_size"]
+#         start_position = env_config["start_position"]
+#         lake_positions = set(map(tuple, env_config["lake_positions"]))
+#         gift_position = tuple(env_config["gift_position"])
+        
+#         position = tuple(start_position)
+
+#         moves = {
+#             "L": (0, -1),
+#             "R": (0, 1),
+#             "U": (-1, 0),
+#             "D": (1, 0)
+#         }
+        
+#         for move in path:
+#             if move not in moves:
+#                 return "invalid_move"
+            
+#             dx, dy = moves[move]
+#             new_position = (position[0] + dx, position[1] + dy)
+            
+#             if not (0 <= new_position[0] < map_size and 0 <= new_position[1] < map_size):
+#                 return "out_of_bounds"
+            
+#             position = new_position
+            
+#             if position in lake_positions:
+#                 return "failed"
+            
+#             if position == gift_position:
+#                 return "success"
+        
+#         return "incomplete"
+
+#     # 保持与iou_reward一致的输入处理
+#     contents = [completion[0]["content"] for completion in completions]
+#     rewards = []
+#     current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
+    
+#     # 解析<answer>标签中的路径
+#     answer_tag_pattern = r'<answer>(.*?)</answer>'
+   
+#     for content, sol in zip(contents, solution):
+#         reward = 0.0
+
+#         try:
+
+#             content_answer_match = re.search(answer_tag_pattern, content, re.DOTALL)
+
+#             if content_answer_match:
+#                 answer_json = json.loads(content_answer_match.group(1).strip())
+#                 path = answer_json.get("path", [])
+#                 result = path_verifier(sol, path)
+#                 if result == "success":
+#                     reward = 1.0
+#         except Exception as e:
+#             # 调试时可打印错误信息
+#             #print(f"Error parsing path: {e}")
+#             pass
+
+#         rewards.append(reward)
+        
+#         # 保持与iou_reward一致的日志格式
+#         if os.getenv("DEBUG_MODE") == "true":
+#             log_path = os.getenv("LOG_PATH")
+#             with open(log_path, "a", encoding='utf-8') as f:
+#                 f.write(f"------------- {current_time} Path reward: {reward} -------------\n")
+#                 f.write(f"Content: {content}\n")
+#                 f.write(f"Solution: {json.dumps(sol)}\n")
+    
+#     return rewards
 
 
-def format_reward(completions, **kwargs):
-    """Reward function that checks if the completion has a specific format."""
-    # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
-    pattern = r"<think>.*?</think>\s*<answer>\s*\{\s*\"path\"\s*:\s*\[.*\]\s*\}.*?</answer>"
-    completion_contents = [completion[0]["content"] for completion in completions]
-    matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
-    return [1.0 if match else 0.0 for match in matches]
 
 # def format_reward(completions, **kwargs):
 #     """Reward function that checks if the completion has a specific format."""
 #     # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
-#     pattern = r"<think>.*?<presentation>.*?</presentation>.*?</think>\s*<answer>\s*\{\s*\"path\"\s*:\s*\[.*\]\s*\}.*?</answer>"
+#     pattern = r"<think>.*?</think>\s*<answer>\s*\{\s*\"path\"\s*:\s*\[.*\]\s*\}.*?</answer>"
 #     completion_contents = [completion[0]["content"] for completion in completions]
 #     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
 #     return [1.0 if match else 0.0 for match in matches]
 
+def format_reward(completions, **kwargs):
+    """Reward function that checks if the completion has a specific format.
+    It is compatible with both escaped and unescaped answer strings.
+    """
+    # Regular expression matches <think>...</think> followed by <answer>{ "answer": ... }</answer>
+    pattern = r"<think>[\s\S]*?</think>\s*<answer>\s*\{\s*\"answer\"\s*:\s*(?:\[[\s\S]*?\]|\"[\s\S]*?\")\s*\}[\s\S]*?</answer>"
+    
+    # Extract content and replace escaped quotes (replace \" with ")
+    completion_contents = [completion[0]["content"] for completion in completions]
+    processed_contents = [content.replace('\\"', '"') for content in completion_contents]
+    
+    matches = [re.fullmatch(pattern, content, re.DOTALL) for content in processed_contents]
+    return [1.0 if match else 0.0 for match in matches]
+
 
 reward_funcs_registry = {
-    "accuracy": path_reward,
+    "accuracy": plan_reward,
     "format": format_reward,
 }
 
