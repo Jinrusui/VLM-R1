@@ -519,60 +519,60 @@ class Qwen2VLGRPOTrainer(Trainer):
     def _prepare_inputs(self, inputs):
         # Simple pass-through, just like original
         return inputs
-    def _log_samples_to_wandb(self, inputs, completions, rewards, step):
-        """Log sample prompts, completions, images (if available), and rewards to wandb."""
-        if not is_wandb_available() or wandb.run is None:
-            return
+    # def _log_samples_to_wandb(self, inputs, completions, rewards, step):
+    #     """Log sample prompts, completions, images (if available), and rewards to wandb."""
+    #     if not is_wandb_available() or wandb.run is None:
+    #         return
         
-        # 只在主进程上记录
-        if not self.is_world_process_zero():
-            return
+    #     # 只在主进程上记录
+    #     if not self.is_world_process_zero():
+    #         return
         
 
-        num_to_log = min(2, len(completions))
-        indices = torch.randperm(len(completions))[:num_to_log].tolist()
+    #     num_to_log = min(2, len(completions))
+    #     indices = torch.randperm(len(completions))[:num_to_log].tolist()
         
-        #samples = self.wandb_table
-        for i in indices:
-            prompt_text = maybe_apply_chat_template(inputs[i], self.processing_class)["prompt"]
-            problem = inputs[i]["problem"]
-            solution = inputs[i]["solution"]
-            # 处理不同格式的 completion
-            completion_text = completions[i]
-            if isinstance(completion_text, list):  # 适用于对话格式
-                completion_text = completion_text[0]["content"] if completion_text else ""
+    #     #samples = self.wandb_table
+    #     for i in indices:
+    #         prompt_text = maybe_apply_chat_template(inputs[i], self.processing_class)["prompt"]
+    #         problem = inputs[i]["problem"]
+    #         solution = inputs[i]["solution"]
+    #         # 处理不同格式的 completion
+    #         completion_text = completions[i]
+    #         if isinstance(completion_text, list):  # 适用于对话格式
+    #             completion_text = completion_text[0]["content"] if completion_text else ""
     
-            images = []
-            for key in ["image", "image1", "image2"]:
-                image_data = inputs[i].get(key, None)
-                if image_data is not None:
-                    images.append(wandb.Image(image_data))
+    #         images = []
+    #         for key in ["image", "image1", "image2"]:
+    #             image_data = inputs[i].get(key, None)
+    #             if image_data is not None:
+    #                 images.append(wandb.Image(image_data))
 
-            sample = {
-                "step": step,
-                "prompt": prompt_text,
-                "completion": completion_text,
-                "reward": rewards[i].item(),
-                "problem": problem,
-                "solution": solution,
-            }
+    #         sample = {
+    #             "step": step,
+    #             "prompt": prompt_text,
+    #             "completion": completion_text,
+    #             "reward": rewards[i].item(),
+    #             "problem": problem,
+    #             "solution": solution,
+    #         }
 
-            # Add images dynamically to the sample
-            for idx, image in enumerate(images):
-                sample[f"image{idx}"] = image
+    #         # Add images dynamically to the sample
+    #         for idx, image in enumerate(images):
+    #             sample[f"image{idx}"] = image
 
-            self.wandb_table.append(sample)
+    #         self.wandb_table.append(sample)
 
-        # Log to wandb
-        wandb.log({
-            "samples": wandb.Table(
-                data=[[
-                    s["step"], s["prompt"], s["problem"], s["completion"], s["solution"], s["reward"]
-                ] + [s.get(f"image{idx}") for idx in range(len(images))] for s in self.wandb_table],
-                columns=["step", "prompt", "problem", "completion", "solution", "reward"] +
-                        [f"image{idx}" for idx in range(len(images))]
-            )
-        }, step=step)
+    #     # Log to wandb
+    #     wandb.log({
+    #         "samples": wandb.Table(
+    #             data=[[
+    #                 s["step"], s["prompt"], s["problem"], s["completion"], s["solution"], s["reward"]
+    #             ] + [s.get(f"image{idx}") for idx in range(len(images))] for s in self.wandb_table],
+    #             columns=["step", "prompt", "problem", "completion", "solution", "reward"] +
+    #                     [f"image{idx}" for idx in range(len(images))]
+    #         )
+    #     }, step=step)
 
     def update_temperature_by_reward(self, step, reward_avg, min_temp=0.5, max_temp=1.0, k=1.0, x0=0.5):
         """
@@ -606,7 +606,7 @@ class Qwen2VLGRPOTrainer(Trainer):
             # Use the average reward from recent batches
             reward_avg = sum(self._metrics["reward"][-50:]) / len(self._metrics["reward"][-5:])
             #self.update_temperature_by_reward(self.state.global_step, reward_avg)
-            current_temp= self.update_temperature_by_reward(self.state.global_step, reward_avg)
+            #current_temp= self.update_temperature_by_reward(self.state.global_step, reward_avg)
         
         device = self.accelerator.device
         prompts = [x["prompt"] for x in inputs]
@@ -741,9 +741,13 @@ class Qwen2VLGRPOTrainer(Trainer):
         
         # Sum the rewards from all reward functions
         rewards = rewards_per_func.sum(dim=1)
+        print('prompts:', prompts)
+        print('completions:', completions)
+        print('rewards_per_func:', rewards_per_func)
+        
 
 ######## Log samples to wandb (add this line)############################################
-        self._log_samples_to_wandb(inputs, completions, rewards, self.state.global_step)
+        #self._log_samples_to_wandb(inputs, completions, rewards, self.state.global_step)
 ########add this line####################################################################
 
         # Compute grouped-wise rewards
