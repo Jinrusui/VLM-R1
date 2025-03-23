@@ -357,6 +357,7 @@
     "example_id": 0,
     "image": "frozenlake/task-main/example/level3/img/0.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 3x3 map.\nThe player is at: row 1, column 1;\nThe hole(s) are at: Row 3, Column 2; Row 3, Column 3;\nThe goal is at: Row 2, Column 2.",
     "solution": "Action plan: R,D"
   },
   {
@@ -365,6 +366,7 @@
     "example_id": 1,
     "image": "frozenlake/task-main/example/level3/img/1.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 3x3 map.\nThe player is at: row 1, column 3;\nThe hole(s) are at: Row 3, Column 2;\nThe goal is at: Row 2, Column 1.",
     "solution": "Action plan: L,D,L"
   },
   {
@@ -373,6 +375,7 @@
     "example_id": 2,
     "image": "frozenlake/task-main/example/level3/img/2.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 3x3 map.\nThe player is at: row 3, column 1;\nThere is no holes in this map;\nThe goal is at: Row 2, Column 3.",
     "solution": "Action plan: R,R,U"
   },
   {
@@ -381,6 +384,7 @@
     "example_id": 3,
     "image": "frozenlake/task-main/example/level3/img/3.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 3x3 map.\nThe player is at: row 3, column 2;\nThere is no holes in this map;\nThe goal is at: Row 2, Column 1.",
     "solution": "Action plan: U,L"
   },
   {
@@ -389,6 +393,7 @@
     "example_id": 4,
     "image": "frozenlake/task-main/example/level3/img/4.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 3x3 map.\nThe player is at: row 2, column 2;\nThe hole(s) are at: Row 1, Column 1; Row 2, Column 1; Row 2, Column 3;\nThe goal is at: Row 3, Column 2.",
     "solution": "Action plan: D"
   },
   {
@@ -397,6 +402,7 @@
     "example_id": 5,
     "image": "frozenlake/task-main/example/level3/img/5.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 3x3 map.\nThe player is at: row 2, column 1;\nThe hole(s) are at: Row 2, Column 3;\nThe goal is at: Row 3, Column 2.",
     "solution": "Action plan: R,D"
   },
   {
@@ -405,6 +411,7 @@
     "example_id": 6,
     "image": "frozenlake/task-main/example/level3/img/6.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 3x3 map.\nThe player is at: row 3, column 2;\nThe hole(s) are at: Row 1, Column 2; Row 3, Column 1; Row 3, Column 3;\nThe goal is at: Row 1, Column 1.",
     "solution": "Action plan: U,L,U"
   },
   {
@@ -413,6 +420,7 @@
     "example_id": 7,
     "image": "frozenlake/task-main/example/level3/img/7.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 3x3 map.\nThe player is at: row 2, column 3;\nThe hole(s) are at: Row 1, Column 3;\nThe goal is at: Row 1, Column 2.",
     "solution": "Action plan: L,U"
   },
   {
@@ -421,6 +429,7 @@
     "example_id": 0,
     "image": "frozenlake/task-main/example/level4/img/0.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 4x4 map.\nThe player is at: row 4, column 1;\nThe hole(s) are at: Row 1, Column 3;\nThe goal is at: Row 1, Column 2.",
     "solution": "Action plan: R,U,U,U"
   },
   {
@@ -429,6 +438,7 @@
     "example_id": 1,
     "image": "frozenlake/task-main/example/level4/img/1.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 4x4 map.\nThe player is at: row 2, column 4;\nThe hole(s) are at: Row 1, Column 4; Row 2, Column 1; Row 3, Column 1; Row 3, Column 3; Row 4, Column 3;\nThe goal is at: Row 3, Column 2.",
     "solution": "Action plan: L,L,D"
   },
   {
@@ -437,6 +447,7 @@
     "example_id": 2,
     "image": "frozenlake/task-main/example/level4/img/2.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 4x4 map.\nThe player is at: row 1, column 1;\nThe hole(s) are at: Row 1, Column 2; Row 2, Column 2; Row 3, Column 3; Row 4, Column 4;\nThe goal is at: Row 3, Column 2.",
     "solution": "Action plan: D,D,R"
   },
   {
@@ -445,6 +456,7 @@
     "example_id": 3,
     "image": "frozenlake/task-main/example/level4/img/3.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 4x4 map.\nThe player is at: row 3, column 1;\nThe hole(s) are at: Row 3, Column 3; Row 4, Column 4;\nThe goal is at: Row 2, Column 1.",
     "solution": "Action plan: U"
   },
   {
@@ -453,6 +465,7 @@
     "example_id": 4,
     "image": "frozenlake/task-main/example/level4/img/4.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 4x4 map.\nThe player is at: row 1, column 3;\nThe hole(s) are at: Row 1, Column 2; Row 4, Column 2; Row 4, Column 4;\nThe goal is at: Row 4, Column 3.",
     "solution": "Action plan: D,D,D"
   },
   {
@@ -461,6 +474,7 @@
     "example_id": 5,
     "image": "frozenlake/task-main/example/level4/img/5.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 4x4 map.\nThe player is at: row 3, column 3;\nThe hole(s) are at: Row 2, Column 2; Row 3, Column 1; Row 3, Column 4;\nThe goal is at: Row 1, Column 4.",
     "solution": "Action plan: U,U,R"
   },
   {
@@ -469,6 +483,7 @@
     "example_id": 6,
     "image": "frozenlake/task-main/example/level4/img/6.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 4x4 map.\nThe player is at: row 2, column 1;\nThe hole(s) are at: Row 1, Column 3; Row 3, Column 2;\nThe goal is at: Row 3, Column 4.",
     "solution": "Action plan: R,R,R,D"
   },
   {
@@ -477,6 +492,7 @@
     "example_id": 7,
     "image": "frozenlake/task-main/example/level4/img/7.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 4x4 map.\nThe player is at: row 4, column 1;\nThe hole(s) are at: Row 2, Column 3; Row 2, Column 4; Row 3, Column 2; Row 3, Column 4;\nThe goal is at: Row 3, Column 3.",
     "solution": "Action plan: R,R,U"
   },
   {
@@ -485,6 +501,7 @@
     "example_id": 0,
     "image": "frozenlake/task-main/example/level5/img/0.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 5x5 map.\nThe player is at: row 5, column 1;\nThe hole(s) are at: Row 3, Column 2; Row 4, Column 1;\nThe goal is at: Row 4, Column 3.",
     "solution": "Action plan: R,R,U"
   },
   {
@@ -493,6 +510,7 @@
     "example_id": 1,
     "image": "frozenlake/task-main/example/level5/img/1.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 5x5 map.\nThe player is at: row 1, column 3;\nThe hole(s) are at: Row 1, Column 5; Row 2, Column 3; Row 3, Column 2; Row 3, Column 5; Row 4, Column 5;\nThe goal is at: Row 4, Column 1.",
     "solution": "Action plan: L,L,D,D,D"
   },
   {
@@ -501,6 +519,7 @@
     "example_id": 2,
     "image": "frozenlake/task-main/example/level5/img/2.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 5x5 map.\nThe player is at: row 4, column 2;\nThe hole(s) are at: Row 2, Column 2; Row 3, Column 2; Row 3, Column 5; Row 5, Column 4;\nThe goal is at: Row 3, Column 3.",
     "solution": "Action plan: R,U"
   },
   {
@@ -509,6 +528,7 @@
     "example_id": 3,
     "image": "frozenlake/task-main/example/level5/img/3.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 5x5 map.\nThe player is at: row 2, column 4;\nThe hole(s) are at: Row 1, Column 4; Row 2, Column 1; Row 2, Column 2; Row 2, Column 5; Row 3, Column 1; Row 3, Column 2; Row 3, Column 3; Row 3, Column 4;\nThe goal is at: Row 1, Column 1.",
     "solution": "Action plan: L,U,L,L"
   },
   {
@@ -517,6 +537,7 @@
     "example_id": 4,
     "image": "frozenlake/task-main/example/level5/img/4.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 5x5 map.\nThe player is at: row 4, column 3;\nThe hole(s) are at: Row 1, Column 2; Row 3, Column 4; Row 3, Column 5; Row 4, Column 1; Row 4, Column 2; Row 5, Column 1;\nThe goal is at: Row 2, Column 2.",
     "solution": "Action plan: U,L,U"
   },
   {
@@ -525,6 +546,7 @@
     "example_id": 5,
     "image": "frozenlake/task-main/example/level5/img/5.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 5x5 map.\nThe player is at: row 2, column 1;\nThe hole(s) are at: Row 1, Column 2; Row 2, Column 4; Row 3, Column 5; Row 4, Column 1; Row 4, Column 3; Row 5, Column 1; Row 5, Column 2;\nThe goal is at: Row 2, Column 5.",
     "solution": "Action plan: R,R,U,R,R,D"
   },
   {
@@ -533,6 +555,7 @@
     "example_id": 6,
     "image": "frozenlake/task-main/example/level5/img/6.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 5x5 map.\nThe player is at: row 2, column 2;\nThe hole(s) are at: Row 1, Column 2; Row 2, Column 3; Row 2, Column 4; Row 4, Column 1; Row 4, Column 3; Row 5, Column 2;\nThe goal is at: Row 3, Column 5.",
     "solution": "Action plan: D,R,R,R"
   },
   {
@@ -541,6 +564,7 @@
     "example_id": 7,
     "image": "frozenlake/task-main/example/level5/img/7.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 5x5 map.\nThe player is at: row 1, column 5;\nThe hole(s) are at: Row 1, Column 3; Row 2, Column 3; Row 5, Column 4;\nThe goal is at: Row 1, Column 1.",
     "solution": "Action plan: L,D,D,L,L,L,U,U"
   },
   {
@@ -549,6 +573,7 @@
     "example_id": 0,
     "image": "frozenlake/task-main/example/level6/img/0.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 6x6 map.\nThe player is at: row 4, column 2;\nThe hole(s) are at: Row 1, Column 6; Row 3, Column 1; Row 3, Column 2; Row 4, Column 5;\nThe goal is at: Row 4, Column 6.",
     "solution": "Action plan: R,R,D,R,R,U"
   },
   {
@@ -557,6 +582,7 @@
     "example_id": 1,
     "image": "frozenlake/task-main/example/level6/img/1.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 6x6 map.\nThe player is at: row 1, column 6;\nThe hole(s) are at: Row 1, Column 3; Row 3, Column 3; Row 4, Column 3; Row 4, Column 4; Row 5, Column 2; Row 6, Column 3;\nThe goal is at: Row 1, Column 2.",
     "solution": "Action plan: L,L,D,L,L,U"
   },
   {
@@ -565,6 +591,7 @@
     "example_id": 2,
     "image": "frozenlake/task-main/example/level6/img/2.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 6x6 map.\nThe player is at: row 3, column 3;\nThe hole(s) are at: Row 1, Column 1; Row 1, Column 3; Row 2, Column 1; Row 6, Column 3;\nThe goal is at: Row 6, Column 6.",
     "solution": "Action plan: R,R,R,D,D,D"
   },
   {
@@ -573,6 +600,7 @@
     "example_id": 3,
     "image": "frozenlake/task-main/example/level6/img/3.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 6x6 map.\nThe player is at: row 5, column 6;\nThe hole(s) are at: Row 1, Column 6; Row 2, Column 1; Row 2, Column 6; Row 4, Column 4; Row 6, Column 3; Row 6, Column 5;\nThe goal is at: Row 5, Column 4.",
     "solution": "Action plan: L,L"
   },
   {
@@ -581,6 +609,7 @@
     "example_id": 4,
     "image": "frozenlake/task-main/example/level6/img/4.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 6x6 map.\nThe player is at: row 6, column 1;\nThe hole(s) are at: Row 1, Column 5; Row 2, Column 3; Row 3, Column 1; Row 3, Column 4; Row 4, Column 4; Row 5, Column 1; Row 5, Column 2; Row 5, Column 6; Row 6, Column 5;\nThe goal is at: Row 1, Column 1.",
     "solution": "Action plan: R,R,U,U,U,L,U,U,L"
   },
   {
@@ -589,6 +618,7 @@
     "example_id": 5,
     "image": "frozenlake/task-main/example/level6/img/5.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 6x6 map.\nThe player is at: row 6, column 5;\nThe hole(s) are at: Row 1, Column 3; Row 1, Column 6; Row 2, Column 1; Row 2, Column 6; Row 3, Column 3; Row 5, Column 1; Row 5, Column 4; Row 5, Column 5; Row 6, Column 6;\nThe goal is at: Row 1, Column 4.",
     "solution": "Action plan: L,L,U,U,R,U,U,U"
   },
   {
@@ -597,6 +627,7 @@
     "example_id": 6,
     "image": "frozenlake/task-main/example/level6/img/6.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 6x6 map.\nThe player is at: row 6, column 6;\nThe hole(s) are at: Row 1, Column 3; Row 2, Column 4; Row 3, Column 2; Row 3, Column 4; Row 5, Column 5; Row 5, Column 6; Row 6, Column 3;\nThe goal is at: Row 4, Column 1.",
     "solution": "Action plan: L,L,U,U,L,L,L"
   },
   {
@@ -605,6 +636,7 @@
     "example_id": 7,
     "image": "frozenlake/task-main/example/level6/img/7.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 6x6 map.\nThe player is at: row 6, column 5;\nThe hole(s) are at: Row 1, Column 1; Row 4, Column 2; Row 4, Column 4; Row 6, Column 1;\nThe goal is at: Row 4, Column 3.",
     "solution": "Action plan: L,L,U,U"
   },
   {
@@ -613,6 +645,7 @@
     "example_id": 0,
     "image": "frozenlake/task-main/example/level7/img/0.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 7x7 map.\nThe player is at: row 2, column 1;\nThe hole(s) are at: Row 2, Column 4; Row 3, Column 3; Row 4, Column 5; Row 4, Column 7; Row 6, Column 1; Row 6, Column 2; Row 6, Column 4; Row 6, Column 7;\nThe goal is at: Row 4, Column 4.",
     "solution": "Action plan: D,D,R,R,R"
   },
   {
@@ -621,6 +654,7 @@
     "example_id": 1,
     "image": "frozenlake/task-main/example/level7/img/1.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 7x7 map.\nThe player is at: row 1, column 1;\nThe hole(s) are at: Row 1, Column 6; Row 2, Column 1; Row 2, Column 5; Row 2, Column 7; Row 3, Column 4; Row 3, Column 5; Row 3, Column 7; Row 4, Column 1; Row 5, Column 1; Row 6, Column 6;\nThe goal is at: Row 5, Column 4.",
     "solution": "Action plan: R,R,D,D,D,D,R"
   },
   {
@@ -629,6 +663,7 @@
     "example_id": 2,
     "image": "frozenlake/task-main/example/level7/img/2.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 7x7 map.\nThe player is at: row 3, column 6;\nThe hole(s) are at: Row 1, Column 5; Row 2, Column 1; Row 2, Column 3; Row 3, Column 3; Row 3, Column 7; Row 4, Column 5; Row 6, Column 5; Row 7, Column 6;\nThe goal is at: Row 3, Column 2.",
     "solution": "Action plan: L,L,D,L,L,U"
   },
   {
@@ -637,6 +672,7 @@
     "example_id": 3,
     "image": "frozenlake/task-main/example/level7/img/3.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 7x7 map.\nThe player is at: row 2, column 2;\nThe hole(s) are at: Row 1, Column 4; Row 2, Column 1; Row 2, Column 4; Row 3, Column 5; Row 6, Column 1; Row 7, Column 4;\nThe goal is at: Row 4, Column 7.",
     "solution": "Action plan: R,D,D,R,R,R,R"
   },
   {
@@ -645,6 +681,7 @@
     "example_id": 4,
     "image": "frozenlake/task-main/example/level7/img/4.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 7x7 map.\nThe player is at: row 6, column 6;\nThe hole(s) are at: Row 1, Column 4; Row 2, Column 1; Row 2, Column 7; Row 3, Column 1; Row 6, Column 4; Row 7, Column 3;\nThe goal is at: Row 2, Column 4.",
     "solution": "Action plan: U,U,U,U,L,L"
   },
   {
@@ -653,6 +690,7 @@
     "example_id": 5,
     "image": "frozenlake/task-main/example/level7/img/5.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 7x7 map.\nThe player is at: row 1, column 4;\nThe hole(s) are at: Row 3, Column 1; Row 3, Column 3; Row 3, Column 4; Row 5, Column 6; Row 6, Column 4; Row 7, Column 2;\nThe goal is at: Row 4, Column 5.",
     "solution": "Action plan: R,D,D,D"
   },
   {
@@ -661,6 +699,7 @@
     "example_id": 6,
     "image": "frozenlake/task-main/example/level7/img/6.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 7x7 map.\nThe player is at: row 7, column 4;\nThe hole(s) are at: Row 1, Column 5; Row 2, Column 3; Row 3, Column 5; Row 3, Column 7; Row 4, Column 7; Row 7, Column 6;\nThe goal is at: Row 5, Column 1.",
     "solution": "Action plan: U,U,L,L,L"
   },
   {
@@ -669,6 +708,7 @@
     "example_id": 7,
     "image": "frozenlake/task-main/example/level7/img/7.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 7x7 map.\nThe player is at: row 3, column 7;\nThe hole(s) are at: Row 2, Column 1; Row 3, Column 1; Row 3, Column 5; Row 4, Column 1; Row 4, Column 6; Row 6, Column 2; Row 6, Column 4; Row 6, Column 5; Row 7, Column 2; Row 7, Column 7;\nThe goal is at: Row 5, Column 3.",
     "solution": "Action plan: D,D,L,L,L,L"
   },
   {
@@ -677,6 +717,7 @@
     "example_id": 0,
     "image": "frozenlake/task-main/example/level8/img/0.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 8x8 map.\nThe player is at: row 3, column 6;\nThe hole(s) are at: Row 2, Column 2; Row 6, Column 2; Row 7, Column 1; Row 8, Column 3; Row 8, Column 4; Row 8, Column 6;\nThe goal is at: Row 2, Column 6.",
     "solution": "Action plan: U"
   },
   {
@@ -685,6 +726,7 @@
     "example_id": 1,
     "image": "frozenlake/task-main/example/level8/img/1.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 8x8 map.\nThe player is at: row 8, column 2;\nThe hole(s) are at: Row 2, Column 7; Row 2, Column 8; Row 3, Column 4; Row 3, Column 5; Row 4, Column 1; Row 4, Column 3; Row 4, Column 7; Row 5, Column 1; Row 5, Column 2; Row 5, Column 4; Row 6, Column 1; Row 6, Column 2; Row 7, Column 2; Row 7, Column 3; Row 8, Column 4; Row 8, Column 7;\nThe goal is at: Row 7, Column 1.",
     "solution": "Action plan: L,U"
   },
   {
@@ -693,6 +735,7 @@
     "example_id": 2,
     "image": "frozenlake/task-main/example/level8/img/2.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 8x8 map.\nThe player is at: row 5, column 3;\nThe hole(s) are at: Row 1, Column 1; Row 1, Column 6; Row 1, Column 8; Row 3, Column 5; Row 3, Column 7; Row 4, Column 3; Row 6, Column 2; Row 7, Column 1; Row 8, Column 1;\nThe goal is at: Row 3, Column 8.",
     "solution": "Action plan: R,R,R,R,R,U,U"
   },
   {
@@ -701,6 +744,7 @@
     "example_id": 3,
     "image": "frozenlake/task-main/example/level8/img/3.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 8x8 map.\nThe player is at: row 5, column 4;\nThe hole(s) are at: Row 1, Column 1; Row 1, Column 4; Row 1, Column 6; Row 3, Column 2; Row 3, Column 7; Row 5, Column 3; Row 5, Column 8; Row 7, Column 3; Row 7, Column 7; Row 8, Column 4; Row 8, Column 5;\nThe goal is at: Row 1, Column 8.",
     "solution": "Action plan: R,R,R,U,R,U,U,U"
   },
   {
@@ -709,6 +753,7 @@
     "example_id": 4,
     "image": "frozenlake/task-main/example/level8/img/4.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 8x8 map.\nThe player is at: row 8, column 3;\nThe hole(s) are at: Row 1, Column 1; Row 2, Column 5; Row 4, Column 2; Row 4, Column 3; Row 4, Column 7; Row 4, Column 8; Row 5, Column 2; Row 5, Column 6; Row 7, Column 1; Row 7, Column 8; Row 8, Column 1; Row 8, Column 4; Row 8, Column 8;\nThe goal is at: Row 4, Column 1.",
     "solution": "Action plan: U,U,L,L,U,U"
   },
   {
@@ -717,6 +762,7 @@
     "example_id": 5,
     "image": "frozenlake/task-main/example/level8/img/5.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 8x8 map.\nThe player is at: row 6, column 8;\nThe hole(s) are at: Row 1, Column 5; Row 2, Column 4; Row 2, Column 8; Row 3, Column 1; Row 4, Column 2; Row 5, Column 1; Row 5, Column 2; Row 6, Column 6; Row 7, Column 2; Row 7, Column 8; Row 8, Column 2;\nThe goal is at: Row 5, Column 8.",
     "solution": "Action plan: U"
   },
   {
@@ -725,6 +771,7 @@
     "example_id": 6,
     "image": "frozenlake/task-main/example/level8/img/6.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 8x8 map.\nThe player is at: row 7, column 3;\nThe hole(s) are at: Row 3, Column 8; Row 4, Column 2; Row 5, Column 4; Row 6, Column 4; Row 6, Column 5; Row 6, Column 6; Row 8, Column 2; Row 8, Column 5; Row 8, Column 6;\nThe goal is at: Row 7, Column 5.",
     "solution": "Action plan: R,R"
   },
   {
@@ -733,6 +780,7 @@
     "example_id": 7,
     "image": "frozenlake/task-main/example/level8/img/7.png",
     "problem": "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:",
+    "env": "This is a 8x8 map.\nThe player is at: row 6, column 2;\nThe hole(s) are at: Row 1, Column 7; Row 2, Column 4; Row 2, Column 6; Row 4, Column 2; Row 4, Column 4; Row 5, Column 3; Row 5, Column 4; Row 5, Column 7; Row 6, Column 3; Row 6, Column 4; Row 7, Column 5; Row 7, Column 6; Row 7, Column 7; Row 7, Column 8; Row 8, Column 3; Row 8, Column 6;\nThe goal is at: Row 5, Column 6.",
     "solution": "Action plan: L,U,U,U,R,R,R,R,R,D,D"
   }
 ]

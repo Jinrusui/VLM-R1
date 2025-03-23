@@ -1,26 +1,52 @@
+# Copyright 2025 The HuggingFace Team. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import os
 import re
+import pathlib
 from datetime import datetime
 from dataclasses import dataclass, field
 from typing import Optional
-
-from PIL import Image
-from torch.utils.data import Dataset
+from babel.numbers import parse_decimal
+from utils.math import compute_score
+from datasets import load_dataset, load_from_disk
 from transformers import Qwen2VLForConditionalGeneration
 
 from math_verify import parse, verify
 from open_r1.trainer import Qwen2VLGRPOTrainer, GRPOConfig
 from trl import ModelConfig, ScriptArguments, TrlParser, get_peft_config
-from transformers import TrainingArguments
-import yaml
+import PIL
+from Levenshtein import ratio
+from open_r1.utils.pycocotools.coco import COCO
+from open_r1.utils.pycocotools.cocoeval import COCOeval
 import json
-import random
-import math
 
 # ----------------------- Fix the flash attention bug in the current version of transformers -----------------------
 from transformers.models.qwen2_5_vl.modeling_qwen2_5_vl import Qwen2_5_VLVisionFlashAttention2, apply_rotary_pos_emb_flashatt, flash_attn_varlen_func
 import torch
 from typing import Tuple
+from transformers.utils import logging
+
+from openai import OpenAI
+
+logger = logging.get_logger(__name__)
+
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY", "sk-proj-1234567890"),
+    base_url=os.getenv("OPENAI_API_BASE", "https://api.openai.com/v1")
+)
+
 def custom_forward(
         self,
         hidden_states: torch.Tensor,
@@ -59,18 +85,27 @@ def custom_forward(
 
 Qwen2_5_VLVisionFlashAttention2.forward = custom_forward
 
-
-# ----------------------- Main Script -----------------------
 @dataclass
 class GRPOScriptArguments(ScriptArguments):
     """
     Script arguments for the GRPO training script.
-
-    Args:
-        reward_funcs (`list[str]`):
-            List of reward functions. Possible values: 'accuracy', 'format'.
     """
-
+    data_file_paths: str = field(
+        default=None,
+        metadata={"help": "Paths to data files, separated by ':'"},
+    )
+    image_folders: str = field(
+        default=None,
+        metadata={"help": "Paths to image folders, separated by ':'"},
+    )
+    arrow_cache_dir: str = field(
+        default=None,
+        metadata={"help": "Path to arrow cache directory"},
+    )
+    val_split_ratio: float = field(
+        default=0.0,
+        metadata={"help": "Ratio of validation split, default 0.0"},
+    )
     reward_funcs: list[str] = field(
         default_factory=lambda: ["accuracy", "format"],
         metadata={"help": "List of reward functions. Possible values: 'accuracy', 'format'"},
@@ -83,244 +118,397 @@ class GRPOScriptArguments(ScriptArguments):
         default=3136,
         metadata={"help": "Minimum number of pixels for the image"},
     )
-    image_root: Optional[str] = field(
+    vlm_trainer: Optional[str] = field(
+        default="default",
+        metadata={
+            "help": "Choose VLM trainer type: 'default', 'modified', 'modified_bf16', or 'modified_optimized_bf16'",
+            "choices": ["default", "modified", "modified_bf16", "modified_optimized_bf16"]
+        },
+    )
+    reward_method: Optional[str] = field(
         default=None,
-        metadata={"help": "Root directory of the image"},
+        metadata={
+            "help": "Choose reward method: 'default', 'mcp', ..."
+        },
     )
 
-@dataclass
-class GRPOModelConfig(ModelConfig):
-    freeze_vision_modules: bool = False
+def extract_choice(text):
+    # 1. Clean and normalize text
+    text = text.upper()  # Convert to uppercase
+    text = re.sub(r'\s+', ' ', text)  # Normalize spaces
 
+    # 2. Choice should not have uppercase letters before or after
+    choices = re.findall(r'(?<![A-Z])([A-Z])(?=[\.\,\?\!\:\;]|$)', text)
 
-SYSTEM_PROMPT = (
-    "A conversation between User and Assistant. The user asks a question, and the Assistant solves it. The assistant "
-    "first thinks about the reasoning process in the mind and then provides the user with the answer. The reasoning "
-    "process and answer are enclosed within <think> </think> and <answer> </answer> tags, respectively, i.e., "
-    "<think> reasoning process here </think><answer> answer here </answer>"
-)
-# SYSTEM_PROMPT = """You are an assistant designed to perform visual reasoning tasks and provide structured, detailed responses to the user's questions. You should carefully read and understand the questions, and your responses must always include:
+    if not choices:
+        return None
 
-# - A clear and high-level reasoning introduction enclosed within `<think>` tags that outlines your initial understanding of the problem without revealing the final solution.
-# - A neutral and objective description of the visual information or graphical content enclosed within `<presentation>` tags inside the `<think>` section.
-# - A detailed, step-by-step logical analysis enclosed within the `<think>` tags after `<presentation>`, clearly showing how you derive your conclusion from the presented visual or textual information.
-# - Your concise final answer enclosed within `<answer>` tags.
+    # 3. If only one choice, return it directly
+    if len(choices) == 1:
+        return choices[0]
 
-# Always follow this general structure for your responses:
+    # 4. If multiple choices, use heuristic rules
+    choice_scores = {choice: 0 for choice in choices}
 
-# <think>
-# Begin with high-level reasoning, identifying the key aspects or considerations of the task, without directly stating your final solution yet.
+    # 4.1 Keywords around choices get points
+    keywords = [
+        '答案', '选择', '正确', '是', '对',
+        'answer', 'correct', 'choose', 'select', 'right',
+        '认为', '应该', '觉得', 'think', 'believe', 'should'
+    ]
 
-# <presentation>
-# Clearly and objectively describe the visual information or graphical content, highlighting relevant features or key points necessary to understand the question or task, but without explicitly stating the final answer or solution.
-# </presentation>
+    # Get context for each choice (20 chars before and after)
+    for choice in choices:
+        pos = text.find(choice)
+        context = text[max(0, pos-20):min(len(text), pos+20)]
 
-# Now, carefully outline your detailed reasoning steps here. Provide clear, logical analysis, explicitly showing how you reach the conclusion from the presented visual or textual information.
-# </think>
+        # Add points for keywords
+        for keyword in keywords:
+            if keyword.upper() in context:
+                choice_scores[choice] += 1
 
-# <answer>
-# Present a concise, accurate, and final answer derived from your detailed reasoning.
-# </answer>"""
+        # Add points if choice is near the end (usually final answer)
+        if pos > len(text) * 0.7:  # In last 30% of text
+            choice_scores[choice] += 2
 
-class LazySupervisedDataset(Dataset):
-    def __init__(self, data_path: str, script_args: GRPOScriptArguments):
-        super(LazySupervisedDataset, self).__init__()
-        self.script_args = script_args
-        self.list_data_dict = []
+        # Add points if followed by punctuation
+        if pos < len(text) - 1 and text[pos+1] in '。.!！,，':
+            choice_scores[choice] += 1
 
-        if data_path.endswith(".yaml"):
-            with open(data_path, "r") as file:
-                yaml_data = yaml.safe_load(file)
-                datasets = yaml_data.get("datasets")
-                # file should be in the format of:
-                # datasets:
-                #   - json_path: xxxx1.json
-                #     sampling_strategy: first:1000
-                #   - json_path: xxxx2.json
-                #     sampling_strategy: end:3000
-                #   - json_path: xxxx3.json
-                #     sampling_strategy: random:999
+    # Return highest scoring choice
+    return max(choice_scores.items(), key=lambda x: x[1])[0]
 
-                for data in datasets:
-                    json_path = data.get("json_path")
-                    sampling_strategy = data.get("sampling_strategy", "all")
-                    sampling_number = None
-
-                    if json_path.endswith(".jsonl"):
-                        cur_data_dict = []
-                        with open(json_path, "r") as json_file:
-                            for line in json_file:
-                                cur_data_dict.append(json.loads(line.strip()))
-                    elif json_path.endswith(".json"):
-                        with open(json_path, "r") as json_file:
-                            cur_data_dict = json.load(json_file)
-                    else:
-                        raise ValueError(f"Unsupported file type: {json_path}")
-
-                    if ":" in sampling_strategy:
-                        sampling_strategy, sampling_number = sampling_strategy.split(":")
-                        if "%" in sampling_number:
-                            sampling_number = math.ceil(int(sampling_number.split("%")[0]) * len(cur_data_dict) / 100)
-                        else:
-                            sampling_number = int(sampling_number)
-
-                    # Apply the sampling strategy
-                    if sampling_strategy == "first" and sampling_number is not None:
-                        cur_data_dict = cur_data_dict[:sampling_number]
-                    elif sampling_strategy == "end" and sampling_number is not None:
-                        cur_data_dict = cur_data_dict[-sampling_number:]
-                    elif sampling_strategy == "random" and sampling_number is not None:
-                        random.shuffle(cur_data_dict)
-                        cur_data_dict = cur_data_dict[:sampling_number]
-                    print(f"Loaded {len(cur_data_dict)} samples from {json_path}")
-                    self.list_data_dict.extend(cur_data_dict)
-        else:
-            raise ValueError(f"Unsupported file type: {data_path}")
-
-    def __len__(self):
-        return len(self.list_data_dict)
-
-    def __getitem__(self, i):
-        # Format into conversation
-        def make_conversation(example):
-            return {
-                "prompt": [
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": example["problem"]},
-                ],
-            }
-        # This is only for Grounding task
-        QUESTION_TEMPLATE = "{Question} \n\nFirst output the thinking or analyzing process in <think> </think> tags and then output the final answer in <answer> </answer> tags. Output the final answer in JSON format."
-        
-
-        def make_conversation_image(example):
-            return {
-                "prompt": [
-                    # {"role": "system", "content": [{"type": "text", "text": SYSTEM_PROMPT}]},
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "image"},
-                            {"type": "text", "text": QUESTION_TEMPLATE.format(Question=example["problem"])},
-                        ],
-                    },
-                ],
-            }
-        
-
-
-        def make_conversation_multi_image(example):
-            return {
-                "prompt": [
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "image1"},
-                            {"type": "image2"},
-                            {"type": "text", "text": QUESTION_TEMPLATE.format(Question=example["problem"])},
-                        ],
-                    },
-                ], }
-
-        example = self.list_data_dict[i]
-        image_root = self.script_args.image_root
-        # Check if example['image'] is a list first
-        if 'image' in example and isinstance(example['image'], list):
-            # Handle multi-image case
-            try:
-                return {
-                    'image1': Image.open(os.path.join(image_root, example['image'][0])).convert("RGB"),
-                    'image2': Image.open(os.path.join(image_root, example['image'][1])).convert("RGB"),
-                    'task_name': example["task_name"],
-                    'problem': example['problem'],
-                    'solution': example['solution'],
-                    'prompt': make_conversation_multi_image(example)['prompt'],
+def evaluate_answer_similarity(student_answer, ground_truth):
+    """Use llm to evaluate answer similarity."""
+    try:
+        response = client.chat.completions.create(
+            model="qwen2.5:7b",
+            messages=[
+                {
+                    "role": "user",
+                    "content": "You are a evaluation expert. First, analyze the student's response to identify and extract their final answer. Then, compare the extracted answer with the correct solution. Output ONLY '1.0' if the extracted answer matches the correct solution in meaning, or '0.0' if the student's response does not contain a clear or correct answer. No other output is allowed."
+                },
+                {
+                    "role": "user",
+                    "content": f"Student's response: {student_answer}\nCorrect solution: {ground_truth}\nOutput only 1.0 or 0.0:"
                 }
-            except Exception as e:
-                print(f"Error loading multi-image: {e}")
-                # Fallback to randomly selecting another example
-                return self.__getitem__(random.randint(0, len(self.list_data_dict)-1))
-        elif 'image' in example:
-            # Handle single image case
-            image_path = os.path.join(image_root, example['image'])
-            # In case the image is not found
-            while not os.path.exists(image_path):
-                print(f"Warning: Image {image_path} not found, randomly selecting another image")
-                new_index = random.randint(0, len(self.list_data_dict)-1)
-                example = self.list_data_dict[new_index]
-                # Check again if the new example has a list of images
-                if isinstance(example['image'], list):
-                    return self.__getitem__(new_index)
-                image_path = os.path.join(image_root, example['image'])
-            image = Image.open(image_path).convert("RGB")
-            return {
-                'image': image,
-                'task_name': example["task_name"],
-                'problem': example['problem'],
-                'solution': example['solution'],
-                'prompt': make_conversation_image(example)['prompt'],
-            }
+            ],
+            temperature=0
+        )
+        result = response.choices[0].message.content.strip()
+        return float(result)
+    
+    except Exception as e:
+        print(f"Error in GPT evaluation: {e}")
+        # If API call fails, fall back to simple text matching
+        return 1.0 if student_answer ==ground_truth else 0.0
+
+def llm_reward(content, sol, **kwargs):
+    # Extract answer from content if it has think/answer tags
+    sol_match = re.search(r'<answer>(.*?)</answer>', sol)
+    ground_truth = sol_match.group(1).strip() if sol_match else sol.strip()
+    
+    # Extract answer from content if it has think/answer tags
+    content_matches = re.findall(r'<answer>(.*?)</answer>', content, re.DOTALL)
+    student_answer = content_matches[-1].strip() if content_matches else content.strip()
+    return evaluate_answer_similarity(student_answer, ground_truth)
+
+def mcq_reward(content, sol, **kwargs):
+    # For multiple choice, extract and compare choices
+    has_choices = extract_choice(sol)
+    correct_choice = has_choices.upper() if has_choices else sol.strip()
+
+    # Extract answer from content if it has think/answer tags
+    content_match = re.search(r'<answer>(.*?)</answer>', content, re.DOTALL)
+    student_answer = content_match.group(1).strip() if content_match else content.strip()
+    student_choice = extract_choice(student_answer)
+    if student_choice:
+        reward = 1.0 if student_choice == correct_choice else 0.0
+    else:
+        reward = 0.0
+
+    return reward
+
+
+def yes_no_reward(content, sol, **kwargs):
+    content = content.lower()
+    sol = sol.lower()
+
+    # Extract answer from solution if it has think/answer tags
+    sol_match = re.search(r'<answer>(.*?)</answer>', sol)
+    ground_truth = sol_match.group(1).strip() if sol_match else sol.strip()
+
+    # Extract answer from content if it has think/answer tags
+    content_match = re.search(r'<answer>(.*?)</answer>', content, re.DOTALL)
+    student_answer = content_match.group(1).strip() if content_match else content.strip()
+
+    ground_yes_no = re.search(r'(yes|no)', ground_truth)
+    ground_yes_no = ground_yes_no.group(1) if ground_yes_no else ''
+    student_yes_no = re.search(r'(yes|no)', student_answer)
+    student_yes_no = student_yes_no.group(1) if student_yes_no else ''
+
+    reward = 1.0 if ground_yes_no == student_yes_no else 0.0
+
+    return reward
+
+def calculate_map(pred_bbox_list, gt_bbox_list):
+    # Calculate mAP
+
+    # Initialize COCO object for ground truth
+    gt_json = {"annotations": [], "images": [], "categories": []}
+    gt_json["images"] = [{
+        "id": 0,
+        "width": 2048,
+        "height": 2048,
+        "file_name": "image_0.jpg"
+    }]
+
+    gt_json["categories"] = []
+
+    cats2id = {}
+    cat_count = 0
+    for idx, gt_bbox in enumerate(gt_bbox_list):
+        if gt_bbox["label"] not in cats2id:
+            cats2id[gt_bbox["label"]] = cat_count
+            gt_json["categories"].append({
+                "id": cat_count,
+                "name": gt_bbox["label"]
+            })
+            cat_count += 1
+        
+        gt_json["annotations"].append({
+            "id": idx+1,
+            "image_id": 0,
+            "category_id": cats2id[gt_bbox["label"]],
+            "bbox": [gt_bbox["bbox_2d"][0], gt_bbox["bbox_2d"][1], gt_bbox["bbox_2d"][2] - gt_bbox["bbox_2d"][0], gt_bbox["bbox_2d"][3] - gt_bbox["bbox_2d"][1]],
+            "area": (gt_bbox["bbox_2d"][2] - gt_bbox["bbox_2d"][0]) * (gt_bbox["bbox_2d"][3] - gt_bbox["bbox_2d"][1]),
+            "iscrowd": 0
+        })
+    coco_gt = COCO(gt_json)
+
+    dt_json = []
+    for idx, pred_bbox in enumerate(pred_bbox_list):
+        try:
+            dt_json.append({
+                "image_id": 0,
+                "category_id": cats2id[pred_bbox["label"]],
+                "bbox": [pred_bbox["bbox_2d"][0], pred_bbox["bbox_2d"][1], pred_bbox["bbox_2d"][2] - pred_bbox["bbox_2d"][0], pred_bbox["bbox_2d"][3] - pred_bbox["bbox_2d"][1]],
+                "score": 1.0,
+                "area": (pred_bbox["bbox_2d"][2] - pred_bbox["bbox_2d"][0]) * (pred_bbox["bbox_2d"][3] - pred_bbox["bbox_2d"][1])
+            })
+        except:
+            pass
+    
+    if len(dt_json) == 0:
+        return 0.0
+    
+    coco_dt = coco_gt.loadRes(dt_json)
+    coco_eval = COCOeval(coco_gt, coco_dt, "bbox")
+
+    coco_eval.evaluate()
+    coco_eval.accumulate()
+    coco_eval.summarize()
+    return coco_eval.stats[1]
+
+def map_reward(content, sol, **kwargs):
+    """
+    Calculate mean average precision (mAP) reward between predicted and ground truth bounding boxes
+    
+    Args:
+        content: String containing predicted bounding boxes in JSON format
+        sol: String containing ground truth bounding boxes in JSON format
+        
+    Returns:
+        float: mAP reward score between 0 and 1
+    """
+    # Extract JSON content between ```json tags
+    pattern = r'```json(.*?)```'
+    json_match = re.search(pattern, sol, re.DOTALL)
+    bbox_json = json_match.group(1).strip() if json_match else None
+
+    # Parse ground truth JSON to get bbox list
+    gt_bbox_list = []
+    if bbox_json:
+        bbox_data = json.loads(bbox_json)
+        gt_bbox_list = [item for item in bbox_data]
+    
+    # Parse predicted JSON to get bbox list
+    pred_bbox_list = []
+    json_match = re.search(pattern, content, re.DOTALL)
+    if json_match:
+        try:
+            bbox_data = json.loads(json_match.group(1).strip())
+            pred_bbox_list = [item for item in bbox_data]
+        except:
+            # Return empty list if JSON parsing fails
+            pred_bbox_list = []
+
+    # Calculate mAP if both prediction and ground truth exist
+    if len(pred_bbox_list) > 0 and len(gt_bbox_list) > 0:
+        bbox_reward = calculate_map(pred_bbox_list, gt_bbox_list)
+    else:
+        bbox_reward = 0.0
+    
+    return bbox_reward
+
+
+def numeric_reward(content, sol, **kwargs):
+    content = clean_text(content)
+    sol = clean_text(sol)
+    try:
+        content, sol = float(content), float(sol)
+        return 1.0 if content == sol else 0.0
+    except:
+        return None
+def math_reward(content, sol, **kwargs):
+    content = clean_text(content)
+    sol = clean_text(sol)
+    return compute_score(content, sol)
+def clean_text(text, exclue_chars=['\n', '\r']):
+    # Extract content between <answer> and </answer> if present
+    answer_matches = re.findall(r'<answer>(.*?)</answer>', text, re.DOTALL)
+    if answer_matches:
+        # Use the last match
+        text = answer_matches[-1]
+    
+    for char in exclue_chars:
+        if char in ['\n', '\r']:
+            # If there is a space before the newline, remove the newline
+            text = re.sub(r'(?<=\s)' + re.escape(char), '', text)
+            # If there is no space before the newline, replace it with a space
+            text = re.sub(r'(?<!\s)' + re.escape(char), ' ', text)
         else:
-            # Handle text-only case
-            return {
-                'task_name': example["task_name"],
-                'problem': example['problem'],
-                'solution': example['solution'],
-                'prompt': make_conversation(example)['prompt'],
-            }
+            text = text.replace(char, ' ')
+    
+    # Remove leading and trailing spaces and convert to lowercase
+    return text.strip().rstrip('.').lower()
 
-'''
-    If the iou of the bbox predicted by the model and the ground truth is greater than 0.5, the reward is 1.0, otherwise 0.0 .
-    This is a hard reward, maybe the soft reward is better and could be used in the future .
-'''
+def default_accuracy_reward(content, sol, **kwargs):
+    reward = 0.0
+        # Extract answer from solution if it has think/answer tags
+    sol_match = re.search(r'<answer>(.*?)</answer>', sol)
+    ground_truth = sol_match.group(1).strip() if sol_match else sol.strip()
+    
+    # Extract answer from content if it has think/answer tags
+    content_matches = re.findall(r'<answer>(.*?)</answer>', content, re.DOTALL)
+    student_answer = content_matches[-1].strip() if content_matches else content.strip()
+    
+    # Try symbolic verification first for numeric answers
+    try:
+        answer = parse(student_answer)
+        if float(verify(answer, parse(ground_truth))) > 0:
+            reward = 1.0
+    except Exception:
+        pass  # Continue to next verification method if this fails
 
+    # If symbolic verification failed, try string matching or fuzzy matching
+    if reward == 0.0:
+        try: 
+            # Check if ground truth contains numbers
+            has_numbers = bool(re.search(r'\d', ground_truth))
+            # Check if it's a multiple choice question
+            has_choices = extract_choice(ground_truth)
+            
+            if has_numbers:
+                # For numeric answers, use exact matching
+                reward = numeric_reward(student_answer, ground_truth)
+                if reward is None:
+                    reward = ratio(clean_text(student_answer), clean_text(ground_truth))
+            elif has_choices:
+                # For multiple choice, extract and compare choices
+                correct_choice = has_choices.upper()
+                student_choice = extract_choice(student_answer)
+                if student_choice:
+                    reward = 1.0 if student_choice == correct_choice else 0.0
+            else:
+                # For text answers, use fuzzy matching
+                reward = ratio(clean_text(student_answer), clean_text(ground_truth))
+        except Exception:
+            pass  # Keep reward as 0.0 if all methods fail
 
+    return reward
+
+def accuracy_reward(completions, solution, **kwargs):
+    """Reward function that checks if the completion is correct using symbolic verification, exact string matching, or fuzzy matching."""
+    contents = [completion[0]["content"] for completion in completions]
+    rewards = []
+    for content, sol, accu_reward_method in zip(contents, solution, kwargs.get("accu_reward_method")):
+        # if accu_reward_method is defined, use the corresponding reward function, otherwise use the default reward function
+        if accu_reward_method == "mcq":
+            reward = mcq_reward(content, sol)
+        elif accu_reward_method == 'yes_no':
+            reward = yes_no_reward(content, sol)
+        elif accu_reward_method == 'llm':
+            reward = llm_reward(content, sol)
+        elif accu_reward_method == 'map':
+            reward = map_reward(content, sol)
+        elif accu_reward_method == 'math':
+            reward = math_reward(content, sol)
+        else:
+            reward = default_accuracy_reward(content, sol)  
+        rewards.append(reward)
+        
+        if os.getenv("DEBUG_MODE") == "true":
+            log_path = os.getenv("LOG_PATH")
+            current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
+            image_path = kwargs.get("image_path")[0] if "image_path" in kwargs else None
+            problem = kwargs.get("problem")[0]
+            if reward <= 1.0:  # this condition can be changed for debug
+                with open(log_path, "a", encoding='utf-8') as f:
+                    f.write(f"------------- {current_time} Accuracy reward: {reward} -------------\n")
+                    f.write(f"accu_reward_method: {accu_reward_method}\n")
+                    f.write(f"image_path: {image_path}\n")
+                    f.write(f"problem: {problem}\n")
+                    f.write(f"Content: {content}\n")
+                    f.write(f"Solution: {sol}\n")     
+
+        
+    return rewards
 
 def plan_reward(completions, solution, **kwargs):
-    def block_verifier(env_config, plan):
-        # This function verifies if a block movement plan correctly transforms
-        # the initial state to the desired end state
+    """
+    Reward function for planning tasks such as block movement and maze navigation.
+    Evaluates if the completion contains a valid plan that achieves the goal.
+    """
+    contents = [completion[0]["content"] for completion in completions]
+    rewards = []
+    
+    def parse_maze_description(description):
+        """Parse a textual maze description into an environment configuration."""
+        env_config = {
+            "map_size": 0,
+            "start_position": [0, 0],
+            "lake_positions": [],
+            "gift_position": [0, 0]
+        }
         
-        # For block tasks, the solution is typically a string with step-by-step moves
-        # We'll parse the solution and the predicted plan, then check if they achieve the same result
+        # Extract map size
+        size_match = re.search(r'(\d+)x(\d+)', description)
+        if size_match:
+            env_config["map_size"] = int(size_match.group(1))
         
-        if isinstance(solution, str):
-            # If solution is directly provided as a string of moves
-            correct_solution = solution.strip()
-            
-            # Compare directly if the plans match
-            if plan.strip() == correct_solution:
-                return "success"
-            
-            # For more advanced verification, we could implement state simulation
-            # to check if different plans achieve the same end state
-            return "failed"
-        else:
-            # If solution is given as a number of steps
-            try:
-                # Parse the predicted plan steps
-                plan_steps = re.findall(r'move\(([^,]+),([^)]+)\)', plan)
-                
-                # If solution specifies the number of steps or exact moves
-                if isinstance(solution, int) or hasattr(solution, '__len__'):
-                    expected_length = solution if isinstance(solution, int) else len(solution)
-                    
-                    # Check if the plan has the expected number of steps
-                    if len(plan_steps) == expected_length:
-                        return "success"
-                    return "failed"
-                
-                # If we have a specific solution to compare with
-                if solution == plan:
-                    return "success"
-                
-                return "failed"
-            except Exception as e:
-                return "invalid_format"
-
+        # Extract player position (start position)
+        player_match = re.search(r'player is at: row (\d+), column (\d+)', description, re.IGNORECASE)
+        if player_match:
+            # Note: Converting to 0-indexed for internal processing
+            env_config["start_position"] = [int(player_match.group(1))-1, int(player_match.group(2))-1]
+        
+        # Extract hole positions (lake positions)
+        hole_matches = re.findall(r'Row (\d+), Column (\d+)', description)
+        for match in hole_matches:
+            # Convert to 0-indexed
+            env_config["lake_positions"].append([int(match[0])-1, int(match[1])-1])
+        
+        # Extract goal position (gift position)
+        goal_match = re.search(r'goal is at: Row (\d+), Column (\d+)', description, re.IGNORECASE)
+        if goal_match:
+            # Convert to 0-indexed
+            env_config["gift_position"] = [int(goal_match.group(1))-1, int(goal_match.group(2))-1]
+        
+        return env_config
+    
     def path_verifier(env_config, path):
-        # 保持原有验证逻辑不变
-
+        """Verify if a path is valid in the given environment."""
         map_size = env_config["map_size"]
         start_position = env_config["start_position"]
         lake_positions = set(map(tuple, env_config["lake_positions"]))
@@ -342,185 +530,117 @@ def plan_reward(completions, solution, **kwargs):
             dx, dy = moves[move]
             new_position = (position[0] + dx, position[1] + dy)
             
+            # Check if we're staying on the map (if not, position doesn't change)
             if not (0 <= new_position[0] < map_size and 0 <= new_position[1] < map_size):
-                return "out_of_bounds"
+                continue  # Player stays in same position when trying to move off the grid
             
             position = new_position
             
+            # Check if we fell into a hole
             if position in lake_positions:
                 return "failed"
             
+            # Check if we reached the goal
             if position == gift_position:
                 return "success"
         
+        # If we completed the path but didn't reach the goal
         return "incomplete"
-
-    # Handle different types of tasks
-    contents = [completion[0]["content"] for completion in completions]
-    rewards = []
-    current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
     
-    # Extract answers from the completions
-    answer_tag_pattern = r'<answer>(.*?)</answer>'
-   
     for content, sol in zip(contents, solution):
         reward = 0.0
-        task_type = "path"  # Default task type
         
-        # Check if this is a block task by looking at the solution format
-        if isinstance(sol, str) and "move" in sol:
-            task_type = "block"
-        elif isinstance(sol, dict) and "task_name" in sol and "task-main" in sol["task_name"]:
-            task_type = "block"
-            sol = sol.get("solution", "")
-
-        try:
-            content_answer_match = re.search(answer_tag_pattern, content, re.DOTALL)
+        # Extract answer from content if it has think/answer tags
+        content_match = re.search(r'<answer>(.*?)</answer>', content, re.DOTALL)
+        answer = content_match.group(1).strip() if content_match else content.strip()
+        
+        # Determine if this is a block movement task or maze path task
+        if "move" in answer and "(" in answer and ")" in answer:
+            # This is likely a block movement task
+            # Parse the step-by-step plan from the answer
+            steps = re.findall(r'move\([^)]+\)', answer)
             
-            if content_answer_match:
-                answer_text = content_answer_match.group(1).strip()
-                
-                if task_type == "path":
-                    # Handle path planning tasks
-                    try:
-                        answer_json = json.loads(answer_text)
-                        path = answer_json.get("path", [])
-                        result = path_verifier(sol, path)
-                        if result == "success":
-                            reward = 1.0
-                    except json.JSONDecodeError:
-                        # Not a valid JSON, try to extract path directly
-                        pass
-                
-                elif task_type == "block":
-                    # Handle block movement tasks
-                    try:
-                        # Try parsing as JSON first
-                        answer_json = json.loads(answer_text)
-                        plan = answer_json.get("answer", "")
-                    except json.JSONDecodeError:
-                        # If not valid JSON, use the text directly
-                        plan = answer_text
+            # Compare with solution (which could be the expected number of steps or exact plan)
+            if isinstance(sol, int):
+                # If solution specifies the expected number of steps
+                reward = 1.0 if len(steps) == sol else 0.0
+            else:
+                # Compare the exact plans (ignoring whitespace)
+                sol_steps = re.findall(r'move\([^)]+\)', sol)
+                if len(steps) == len(sol_steps):
+                    # Check if all steps match
+                    all_match = True
+                    for step, expected_step in zip(steps, sol_steps):
+                        if step.replace(" ", "").lower() != expected_step.replace(" ", "").lower():
+                            all_match = False
+                            break
+                    reward = 1.0 if all_match else 0.0
                     
-                    # Verify the block movement plan
-                    result = block_verifier(sol, plan)
+        elif any(direction in answer.upper() for direction in ["U", "D", "L", "R"]):
+            # This is likely a maze path task
+            # Extract movement directions from the answer
+            directions = []
+            for c in answer.upper():
+                if c in "UDLR":
+                    directions.append(c)
+            
+            # Process the solution based on its format
+            if isinstance(sol, dict) and "map_size" in sol and "start_position" in sol:
+                # If the solution is a maze configuration with start/end positions
+                result = path_verifier(sol, directions)
+                if result == "success":
+                    reward = 1.0
+            
+            elif isinstance(sol, str):
+                # Check if the solution is a maze description that needs parsing
+                if "map" in sol.lower() and "player" in sol.lower() and "goal" in sol.lower():
+                    env_config = parse_maze_description(sol)
+                    result = path_verifier(env_config, directions)
                     if result == "success":
                         reward = 1.0
-                        
-        except Exception as e:
-            # Error in parsing or verification
-            pass
+                else:
+                    # If solution is provided as a string of directions
+                    sol_directions = []
+                    for c in sol.upper():
+                        if c in "UDLR":
+                            sol_directions.append(c)
+                    
+                    reward = 1.0 if directions == sol_directions else 0.0
+            
+            elif isinstance(sol, int):
+                # If solution specifies the expected number of steps
+                reward = 1.0 if len(directions) == sol else 0.0
 
         rewards.append(reward)
         
-        # Log debugging information if enabled
+        # Log for debugging if enabled
         if os.getenv("DEBUG_MODE") == "true":
             log_path = os.getenv("LOG_PATH")
+            current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
             with open(log_path, "a", encoding='utf-8') as f:
-                f.write(f"------------- {current_time} Task reward: {reward} -------------\n")
+                f.write(f"------------- {current_time} Plan reward: {reward} -------------\n")
                 f.write(f"Content: {content}\n")
-                f.write(f"Solution: {json.dumps(sol) if isinstance(sol, dict) else sol}\n")
-    
+                f.write(f"Answer: {answer}\n")
+                f.write(f"Solution: {sol}\n")
+                f.write(f"Directions: {directions if 'directions' in locals() else ''}\n")
+                
     return rewards
-# def plan_reward(completions, solution, **kwargs):
-
-#     def path_verifier(env_config, path):
-#         # 保持原有验证逻辑不变
-
-#         map_size = env_config["map_size"]
-#         start_position = env_config["start_position"]
-#         lake_positions = set(map(tuple, env_config["lake_positions"]))
-#         gift_position = tuple(env_config["gift_position"])
-        
-#         position = tuple(start_position)
-
-#         moves = {
-#             "L": (0, -1),
-#             "R": (0, 1),
-#             "U": (-1, 0),
-#             "D": (1, 0)
-#         }
-        
-#         for move in path:
-#             if move not in moves:
-#                 return "invalid_move"
-            
-#             dx, dy = moves[move]
-#             new_position = (position[0] + dx, position[1] + dy)
-            
-#             if not (0 <= new_position[0] < map_size and 0 <= new_position[1] < map_size):
-#                 return "out_of_bounds"
-            
-#             position = new_position
-            
-#             if position in lake_positions:
-#                 return "failed"
-            
-#             if position == gift_position:
-#                 return "success"
-        
-#         return "incomplete"
-
-#     # 保持与iou_reward一致的输入处理
-#     contents = [completion[0]["content"] for completion in completions]
-#     rewards = []
-#     current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
-    
-#     # 解析<answer>标签中的路径
-#     answer_tag_pattern = r'<answer>(.*?)</answer>'
-   
-#     for content, sol in zip(contents, solution):
-#         reward = 0.0
-
-#         try:
-
-#             content_answer_match = re.search(answer_tag_pattern, content, re.DOTALL)
-
-#             if content_answer_match:
-#                 answer_json = json.loads(content_answer_match.group(1).strip())
-#                 path = answer_json.get("path", [])
-#                 result = path_verifier(sol, path)
-#                 if result == "success":
-#                     reward = 1.0
-#         except Exception as e:
-#             # 调试时可打印错误信息
-#             #print(f"Error parsing path: {e}")
-#             pass
-
-#         rewards.append(reward)
-        
-#         # 保持与iou_reward一致的日志格式
-#         if os.getenv("DEBUG_MODE") == "true":
-#             log_path = os.getenv("LOG_PATH")
-#             with open(log_path, "a", encoding='utf-8') as f:
-#                 f.write(f"------------- {current_time} Path reward: {reward} -------------\n")
-#                 f.write(f"Content: {content}\n")
-#                 f.write(f"Solution: {json.dumps(sol)}\n")
-    
-#     return rewards
-
-
-
-# def format_reward(completions, **kwargs):
-#     """Reward function that checks if the completion has a specific format."""
-#     # pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
-#     pattern = r"<think>.*?</think>\s*<answer>\s*\{\s*\"path\"\s*:\s*\[.*\]\s*\}.*?</answer>"
-#     completion_contents = [completion[0]["content"] for completion in completions]
-#     matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
-#     return [1.0 if match else 0.0 for match in matches]
 
 def format_reward(completions, **kwargs):
-    """Reward function that checks if the completion has a specific format.
-    It is compatible with both escaped and unescaped answer strings.
-    """
-    # Regular expression matches <think>...</think> followed by <answer>{ "answer": ... }</answer>
-    pattern = r"<think>[\s\S]*?</think>\s*<answer>\s*\{\s*\"answer\"\s*:\s*(?:\[[\s\S]*?\]|\"[\s\S]*?\")\s*\}[\s\S]*?</answer>"
-    
-    # Extract content and replace escaped quotes (replace \" with ")
+    """Reward function that checks if the completion has a specific format."""
+    pattern = r"<think>.*?</think>\s*<answer>.*?</answer>"
     completion_contents = [completion[0]["content"] for completion in completions]
-    processed_contents = [content.replace('\\"', '"') for content in completion_contents]
-    
-    matches = [re.fullmatch(pattern, content, re.DOTALL) for content in processed_contents]
+    matches = [re.fullmatch(pattern, content, re.DOTALL) for content in completion_contents]
+
+    current_time = datetime.now().strftime("%d-%H-%M-%S-%f")
+    if os.getenv("DEBUG_MODE") == "true":
+        log_path = os.getenv("LOG_PATH")
+        with open(log_path.replace(".txt", "_format.txt"), "a", encoding='utf-8') as f:
+            f.write(f"------------- {current_time} Format reward -------------\n")
+            for content, match in zip(completion_contents, matches):
+                f.write(f"Content: {content}\n")
+                f.write(f"Has format: {bool(match)}\n")
+
     return [1.0 if match else 0.0 for match in matches]
 
 
@@ -529,37 +649,138 @@ reward_funcs_registry = {
     "format": format_reward,
 }
 
+@dataclass
+class GRPOModelConfig(ModelConfig):
+    freeze_vision_modules: bool = False
+
+SYSTEM_PROMPT = (
+    "A conversation between User and Assistant. The user asks a question, and the Assistant solves it. The assistant "
+    "first thinks about the reasoning process in the mind and then provides the user with the answer. The reasoning "
+    "process and answer are enclosed within <think> </think> and <answer> </answer> tags, respectively, i.e., "
+    "<think> reasoning process here </think><answer> answer here </answer>"
+)
+
 
 def main(script_args, training_args, model_args):
+    # Get reward functions
     reward_funcs = [reward_funcs_registry[func] for func in script_args.reward_funcs]
     print("reward_funcs:", reward_funcs)
 
-    # Load the dataset
-    dataset = LazySupervisedDataset(script_args.dataset_name, script_args)
+    # Load the JSONL datasets
+    import json
+    from datasets import Dataset
+    
+    data_files = script_args.data_file_paths.split(":")
+    image_folders = script_args.image_folders.split(":")
+    
+    if len(data_files) != len(image_folders):
+        raise ValueError("Number of data files must match number of image folders")
+    
+    if script_args.reward_method is None:
+        accu_reward_methods = ["default"] * len(data_files)
+    else:
+        accu_reward_methods = script_args.reward_method.split(":")
+        assert len(accu_reward_methods) == len(data_files), f"Number of reward methods must match number of data files: {len(accu_reward_methods)} != {len(data_files)}"
 
+    
+    if len(data_files) != len(image_folders):
+        raise ValueError("Number of data files must match number of image folders")
+    
+    all_data = []
+    for data_file, image_folder, accu_reward_method in zip(data_files, image_folders, accu_reward_methods):
+        with open(data_file, 'r') as f:
+            for line in f:
+                item = json.loads(line)
+                if 'image' in item:
+                    # Store image path instead of loading the image
+                    item['image_path'] = os.path.join(image_folder, item['image'])
+                    del item['image'] # remove the image column so that it can be loaded later
+                # Remove immediate image loading
+                item['problem'] = item['conversations'][0]['value'].replace('<image>', '')
+                
+                # Handle solution that could be a float or string
+                solution_value = item['conversations'][1]['value']
+                if isinstance(solution_value, str):
+                    item['solution'] = solution_value.replace('<answer>', '').replace('</answer>', '').strip()
+                else:
+                    # If it's a float or other non-string type, keep it as is
+                    item['solution'] = str(solution_value)
+                
+                del item['conversations']
+                item['accu_reward_method'] = item.get('accu_reward_method', accu_reward_method) # if accu_reward_method is in the data jsonl, use the value in the data jsonl, otherwise use the defined value
+                all_data.append(item)
+
+    dataset = Dataset.from_list(all_data)
+
+    def make_conversation_from_jsonl(example):
+        if 'image_path' in example and example['image_path'] is not None:
+            # Don't load image here, just store the path
+            return {
+                'image_path': example['image_path'],  # Store path instead of loaded image
+                'problem': example['problem'],
+                'solution': f"<answer> {example['solution']} </answer>",
+                'accu_reward_method': example['accu_reward_method'],
+                'prompt': [{
+                    'role': 'user',
+                    'content': [
+                        {'type': 'image', 'text': None},
+                        {'type': 'text', 'text': example['problem'] +  '  Output the thinking process in <think> </think> and final answer in <answer> </answer> tags.'}
+                    ]
+                }]
+            }
+        else:
+            return {
+                'problem': example['problem'],
+                'solution': f"<answer> {example['solution']} </answer>",
+                'accu_reward_method': example['accu_reward_method'],
+                'prompt': [{
+                    'role': 'user',
+                    'content': [
+                        {'type': 'text', 'text': example['problem'] + '  Output the thinking process in <think> </think> and final answer in <answer> </answer> tags.'}
+                    ]
+                }]
+            }
+
+    # Map the conversations
+    dataset = dataset.map(make_conversation_from_jsonl, num_proc=8)
+
+    # Split dataset for validation if requested
+    splits = {'train': dataset}
+    if script_args.val_split_ratio > 0:
+        train_val_split = dataset.train_test_split(
+            test_size=script_args.val_split_ratio
+        )
+        splits['train'] = train_val_split['train']
+        splits['validation'] = train_val_split['test']
+
+    # Select trainer class based on vlm_trainer argument
     trainer_cls = Qwen2VLGRPOTrainer
+    print("using trainer:", trainer_cls.__name__)
+
     # Initialize the GRPO trainer
     trainer = trainer_cls(
         model=model_args.model_name_or_path,
         reward_funcs=reward_funcs,
         args=training_args,
-        train_dataset=dataset,
-        eval_dataset=None,
+        train_dataset=splits['train'],
+        eval_dataset=splits.get('validation') if training_args.eval_strategy != "no" else None,
         peft_config=get_peft_config(model_args),
         freeze_vision_modules=model_args.freeze_vision_modules,
         attn_implementation=model_args.attn_implementation,
         max_pixels=script_args.max_pixels,
         min_pixels=script_args.min_pixels,
-        torch_dtype=model_args.torch_dtype,
     )
 
     # Train and push the model to the Hub
-    trainer.train()
+    if list(pathlib.Path(training_args.output_dir).glob("checkpoint-*")):
+        trainer.train(resume_from_checkpoint=True)
+    else:
+        trainer.train()
 
     # Save and push to hub
     trainer.save_model(training_args.output_dir)
     if training_args.push_to_hub:
-        trainer.push_to_hub(dataset_name=script_args.dataset_name)
+        trainer.push_to_hub()
 
 
 if __name__ == "__main__":

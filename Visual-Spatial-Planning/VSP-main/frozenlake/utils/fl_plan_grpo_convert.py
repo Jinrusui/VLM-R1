@@ -33,7 +33,7 @@ for item in data:
     # Configure each task according to the text file
     if task_name == "task-main":
         new_item["problem"] = "As a professional maze solver, your task is to analyze a grid-based map and devise an action plan that enables a player to reach the goal from the starting point without falling into any holes, using the fewest possible moves. Since coding is not within your skill set, your approach relies on logical reasoning of the map.\n\n## Game Setup\n- The game presents a fully observable grid-based map.\n- The player starts at a specified grid square, with the goal located elsewhere on the map.\n- Each grid square is either safe or contains a hole.\n- Your goal is to guide the player to the goal while avoiding holes.\n\n## Moving Rules\n- The action plan involves a series of moves: 'L' (left), 'R' (right), 'U' (up), or 'D' (down).\n- Each move transfers the player to the adjacent square in that direction, provided it is a safe square. The player cannot move more than one square at a time.\n- Moving off the edge of the map has no effect. The player will remain at the same square.\n- DO NOT MOVE INTO A HOLE! Falling into a hole results in defeat.\n- Locating at the grid containing the goal results in victory.\n\nPlease generate action plan for the given maze:"
-
+        new_item["env"] = item['pure_text']
         #"Analyze the given grid-based maze and devise the shortest action plan for the player (@) to reach the goal (*) without stepping into any holes (#) \nRules:\nAllowed moves: 'L' (left), 'R' (right), 'U' (up), 'D' (down)\nMoving into a hole results in failure.\nMoving off the grid has no effect.\nReaching the goal means success.\nProcedure:\nIdentify the positions of the player, goal, and holes.\nGenerate the shortest  step-by-step action plan to reach the goal safely.\nVerify the plan and output it as:\nAction plan: <PLAN> (e.g., Action plan: R,D,R,U).\nSolve the provided maze and generate the correct action plan"
         # Extract from answer field after <Output> tag
         if "answer" in item:
@@ -62,7 +62,7 @@ for item in data:
         new_data.append(new_item)
 
 # Write the new JSON file
-with open("plan_grpo.json", "w", encoding="utf-8") as file:
+with open("fl_plan_grpo.json", "w", encoding="utf-8") as file:
     json.dump(new_data, file, indent=4)
 
 print("Conversion completed successfully!")
