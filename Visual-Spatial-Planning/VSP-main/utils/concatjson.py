@@ -75,7 +75,7 @@ print(f"Total of {len(combined_data)} elements written to {output_file}")
 # Define input file paths
 input_file1 = 'VSP-main/blocks/b_percive_sft.json'
 input_file2 = 'VSP-main/frozenlake/fl_percive_sft.json'
-output_file = 'plan_percive.json'
+output_file = 'percive_sft.json'
 
 # Read the first JSON file
 with open(input_file1, 'r') as f:

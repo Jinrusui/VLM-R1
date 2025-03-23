@@ -307,23 +307,6 @@ class Qwen2VLGRPOTrainer(Trainer):
                 peft_config.target_modules = target_modules
                 model = get_peft_model(model, peft_config)
                 print(f"🚀Created new adapter for {model_id}")
-        # if peft_config is not None:
-        #     def find_all_linear_names(model, multimodal_keywords):
-        #         cls = torch.nn.Linear
-        #         lora_module_names = set()
-        #         for name, module in model.named_modules():
-        #             # LoRA is not applied to the vision modules
-        #             if any(mm_keyword in name for mm_keyword in multimodal_keywords):
-        #                 continue
-        #             if isinstance(module, cls):
-        #                 lora_module_names.add(name)
-        #         for m in lora_module_names:  # needed for 16-bit
-        #             if "embed_tokens" in m:
-        #                 lora_module_names.remove(m)
-        #         return list(lora_module_names)
-        #     target_modules = find_all_linear_names(model, self.vision_modules_keywords)
-        #     peft_config.target_modules = target_modules
-        #     model = get_peft_model(model, peft_config)
 
         if freeze_vision_modules:
             print("Freezing vision modules...")
@@ -545,7 +528,7 @@ class Qwen2VLGRPOTrainer(Trainer):
         if not self.is_world_process_zero():
             return
         
-        # 选择最多 5 个样本记录
+
         num_to_log = min(2, len(completions))
         indices = torch.randperm(len(completions))[:num_to_log].tolist()
         
