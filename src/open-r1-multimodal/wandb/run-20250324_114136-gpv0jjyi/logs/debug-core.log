@@ -1,0 +1,7 @@
+{"time":"2025-03-24T11:41:36.085832821Z","level":"INFO","msg":"started logging, with flags","port-filename":"/tmp/tmpakg21di8/port-3940.txt","pid":3940,"debug":false,"disable-analytics":false}
+{"time":"2025-03-24T11:41:36.08591205Z","level":"INFO","msg":"FeatureState","shutdownOnParentExitEnabled":false}
+{"time":"2025-03-24T11:41:36.086767897Z","level":"INFO","msg":"Will exit if parent process dies.","ppid":3940}
+{"time":"2025-03-24T11:41:36.086784668Z","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":45019,"Zone":""}}
+{"time":"2025-03-24T11:41:36.276377758Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:35228"}
+{"time":"2025-03-24T11:41:36.611447257Z","level":"INFO","msg":"handleInformInit: received","streamId":"gpv0jjyi","id":"127.0.0.1:35228"}
+{"time":"2025-03-24T11:41:36.630301497Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"gpv0jjyi","id":"127.0.0.1:35228"}

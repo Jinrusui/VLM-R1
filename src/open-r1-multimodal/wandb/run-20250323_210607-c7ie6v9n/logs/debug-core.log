@@ -1,0 +1,15 @@
+{"time":"2025-03-23T21:06:06.796251537Z","level":"INFO","msg":"started logging, with flags","port-filename":"/tmp/tmpbd8rpg6k/port-4803.txt","pid":4803,"debug":false,"disable-analytics":false}
+{"time":"2025-03-23T21:06:06.796299487Z","level":"INFO","msg":"FeatureState","shutdownOnParentExitEnabled":false}
+{"time":"2025-03-23T21:06:06.7972019Z","level":"INFO","msg":"Will exit if parent process dies.","ppid":4803}
+{"time":"2025-03-23T21:06:06.797199626Z","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":39083,"Zone":""}}
+{"time":"2025-03-23T21:06:06.986445265Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:45290"}
+{"time":"2025-03-23T21:06:07.316350151Z","level":"INFO","msg":"handleInformInit: received","streamId":"c7ie6v9n","id":"127.0.0.1:45290"}
+{"time":"2025-03-23T21:06:07.340102948Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"c7ie6v9n","id":"127.0.0.1:45290"}
+{"time":"2025-03-23T21:06:07.757663382Z","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:45290"}
+{"time":"2025-03-23T21:06:07.757766155Z","level":"INFO","msg":"connection: Close: initiating connection closure","id":"127.0.0.1:45290"}
+{"time":"2025-03-23T21:06:07.757844222Z","level":"INFO","msg":"connection: Close: connection successfully closed","id":"127.0.0.1:45290"}
+{"time":"2025-03-23T21:06:07.757776785Z","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-03-23T21:06:07.99835541Z","level":"ERROR","msg":"processOutgoingData: flush error","error":"write tcp 127.0.0.1:39083->127.0.0.1:45290: use of closed network connection","id":"127.0.0.1:45290"}
+{"time":"2025-03-23T21:06:09.202827734Z","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:45290"}
+{"time":"2025-03-23T21:06:09.202915268Z","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:45290"}
+{"time":"2025-03-23T21:06:09.202943882Z","level":"INFO","msg":"server is closed"}

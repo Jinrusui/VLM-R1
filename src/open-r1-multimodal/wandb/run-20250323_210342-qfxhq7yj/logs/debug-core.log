@@ -1,0 +1,15 @@
+{"time":"2025-03-23T21:03:41.737172821Z","level":"INFO","msg":"started logging, with flags","port-filename":"/tmp/tmp5nt_57_0/port-4442.txt","pid":4442,"debug":false,"disable-analytics":false}
+{"time":"2025-03-23T21:03:41.737217144Z","level":"INFO","msg":"FeatureState","shutdownOnParentExitEnabled":false}
+{"time":"2025-03-23T21:03:41.738119326Z","level":"INFO","msg":"Will exit if parent process dies.","ppid":4442}
+{"time":"2025-03-23T21:03:41.738134625Z","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":46457,"Zone":""}}
+{"time":"2025-03-23T21:03:41.92789369Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:36412"}
+{"time":"2025-03-23T21:03:42.25541987Z","level":"INFO","msg":"handleInformInit: received","streamId":"qfxhq7yj","id":"127.0.0.1:36412"}
+{"time":"2025-03-23T21:03:42.275811514Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"qfxhq7yj","id":"127.0.0.1:36412"}
+{"time":"2025-03-23T21:03:42.70540855Z","level":"INFO","msg":"handleInformTeardown: server teardown initiated","id":"127.0.0.1:36412"}
+{"time":"2025-03-23T21:03:42.70548859Z","level":"INFO","msg":"connection: Close: initiating connection closure","id":"127.0.0.1:36412"}
+{"time":"2025-03-23T21:03:42.70555253Z","level":"INFO","msg":"server is shutting down"}
+{"time":"2025-03-23T21:03:42.705677885Z","level":"INFO","msg":"connection: Close: connection successfully closed","id":"127.0.0.1:36412"}
+{"time":"2025-03-23T21:03:42.955065836Z","level":"ERROR","msg":"processOutgoingData: flush error","error":"write tcp 127.0.0.1:46457->127.0.0.1:36412: use of closed network connection","id":"127.0.0.1:36412"}
+{"time":"2025-03-23T21:03:44.440474504Z","level":"INFO","msg":"handleInformTeardown: server shutdown complete","id":"127.0.0.1:36412"}
+{"time":"2025-03-23T21:03:44.440499951Z","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"127.0.0.1:36412"}
+{"time":"2025-03-23T21:03:44.4405154Z","level":"INFO","msg":"server is closed"}

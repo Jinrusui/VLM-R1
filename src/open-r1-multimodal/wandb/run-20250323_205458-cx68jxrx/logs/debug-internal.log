@@ -1,0 +1,18 @@
+{"time":"2025-03-23T20:54:58.646832092Z","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2025-03-23T20:54:58.646847822Z","level":"INFO","msg":"created symlink","path":"/jinru/VLM-R1/src/open-r1-multimodal/wandb/run-20250323_205458-cx68jxrx/logs/debug-core.log"}
+{"time":"2025-03-23T20:54:58.69889105Z","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2025-03-23T20:54:58.70674274Z","level":"INFO","msg":"created new stream","id":"cx68jxrx"}
+{"time":"2025-03-23T20:54:58.706763819Z","level":"INFO","msg":"stream: started","id":"cx68jxrx"}
+{"time":"2025-03-23T20:54:58.70677485Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"cx68jxrx"}}
+{"time":"2025-03-23T20:54:58.706792744Z","level":"INFO","msg":"handler: started","stream_id":{"value":"cx68jxrx"}}
+{"time":"2025-03-23T20:54:58.706794266Z","level":"INFO","msg":"sender: started","stream_id":{"value":"cx68jxrx"}}
+{"time":"2025-03-23T20:54:59.011907556Z","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-03-23T20:54:59.01302159Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-23T20:54:59.13933014Z","level":"INFO","msg":"stream: closing","id":"cx68jxrx"}
+{"time":"2025-03-23T20:54:59.139362331Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-23T20:54:59.203194149Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-23T20:55:00.388395723Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-23T20:55:00.612735217Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"cx68jxrx"}}
+{"time":"2025-03-23T20:55:00.612811461Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"cx68jxrx"}}
+{"time":"2025-03-23T20:55:00.612818183Z","level":"INFO","msg":"sender: closed","stream_id":{"value":"cx68jxrx"}}
+{"time":"2025-03-23T20:55:00.612925224Z","level":"INFO","msg":"stream: closed","id":"cx68jxrx"}

@@ -1,0 +1,32 @@
+  0%|                                                                                                                                                  | 0/210 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/jinru/VLM-R1/src/open-r1-multimodal/src/open_r1/grpo_plan.py", line 437, in <module>
+    main(script_args, training_args, model_args)
+  File "/jinru/VLM-R1/src/open-r1-multimodal/src/open_r1/grpo_plan.py", line 426, in main
+    trainer.train()
+  File "/opt/conda/envs/vlm-r1/lib/python3.10/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/opt/conda/envs/vlm-r1/lib/python3.10/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/opt/conda/envs/vlm-r1/lib/python3.10/site-packages/transformers/trainer.py", line 3698, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/jinru/VLM-R1/src/open-r1-multimodal/src/open_r1/trainer/grpo_trainer.py", line 808, in compute_loss
+    inputs = self._generate_and_score_completions(inputs, model)
+  File "/jinru/VLM-R1/src/open-r1-multimodal/src/open_r1/trainer/grpo_trainer.py", line 620, in _generate_and_score_completions
+    imgs = [PIL.Image.open(p) for p in self._get_key_from_inputs(x, "image_path")]
+AttributeError: 'Qwen2VLGRPOTrainer' object has no attribute '_get_key_from_inputs'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/jinru/VLM-R1/src/open-r1-multimodal/src/open_r1/grpo_plan.py", line 437, in <module>
+[rank0]:     main(script_args, training_args, model_args)
+[rank0]:   File "/jinru/VLM-R1/src/open-r1-multimodal/src/open_r1/grpo_plan.py", line 426, in main
+[rank0]:     trainer.train()
+[rank0]:   File "/opt/conda/envs/vlm-r1/lib/python3.10/site-packages/transformers/trainer.py", line 2241, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/opt/conda/envs/vlm-r1/lib/python3.10/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:   File "/opt/conda/envs/vlm-r1/lib/python3.10/site-packages/transformers/trainer.py", line 3698, in training_step
+[rank0]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank0]:   File "/jinru/VLM-R1/src/open-r1-multimodal/src/open_r1/trainer/grpo_trainer.py", line 808, in compute_loss
+[rank0]:     inputs = self._generate_and_score_completions(inputs, model)
+[rank0]:   File "/jinru/VLM-R1/src/open-r1-multimodal/src/open_r1/trainer/grpo_trainer.py", line 620, in _generate_and_score_completions
+[rank0]:     imgs = [PIL.Image.open(p) for p in self._get_key_from_inputs(x, "image_path")]
+[rank0]: AttributeError: 'Qwen2VLGRPOTrainer' object has no attribute '_get_key_from_inputs'

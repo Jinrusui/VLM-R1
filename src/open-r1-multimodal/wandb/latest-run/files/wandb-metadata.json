@@ -1,0 +1,102 @@
+{
+  "os":  "Linux-6.8.0-49-generic-x86_64-with-glibc2.35",
+  "python":  "3.10.16",
+  "startedAt":  "2025-03-24T11:41:36.609750Z",
+  "args":  [
+    "--deepspeed",
+    "local_scripts/zero2.json",
+    "--output_dir",
+    "output/Qwen2.5-VL-3B-GRPO-PRE-lora-continued",
+    "--model_name_or_path",
+    "Qwen/Qwen2.5-VL-3B-Instruct",
+    "--dataset_name",
+    "none",
+    "--data_file_paths",
+    "/jinru/VLM-R1/Visual-Spatial-Planning/plan_grpo_train.jsonl",
+    "--image_folders",
+    "/jinru/VLM-R1/Visual-Spatial-Planning/VSP-main",
+    "--max_prompt_length",
+    "4096",
+    "--num_generations",
+    "2",
+    "--per_device_train_batch_size",
+    "2",
+    "--gradient_accumulation_steps",
+    "1",
+    "--logging_steps",
+    "1",
+    "--bf16",
+    "--torch_dtype",
+    "bfloat16",
+    "--data_seed",
+    "42",
+    "--report_to",
+    "wandb",
+    "--gradient_checkpointing",
+    "true",
+    "--attn_implementation",
+    "flash_attention_2",
+    "--num_train_epochs",
+    "5",
+    "--run_name",
+    "Qwen2.5-VL-3B-GRPO-PRE-lora-continued",
+    "--save_steps",
+    "100",
+    "--save_only_model",
+    "true",
+    "--learning_rate",
+    "1e-5",
+    "--use_peft",
+    "true",
+    "--lora_r",
+    "16",
+    "--lora_alpha",
+    "32",
+    "--lora_dropout",
+    "0.05",
+    "--lora_task_type",
+    "CAUSAL_LM",
+    "--freeze_vision_modules",
+    "false",
+    "--adapter_path",
+    "/jinru/MLP-CW3/checkpoint-160"
+  ],
+  "program":  "/jinru/VLM-R1/src/open-r1-multimodal/src/open_r1/grpo_plan.py",
+  "codePath":  "src/open-r1-multimodal/src/open_r1/grpo_plan.py",
+  "git":  {
+    "remote":  "https://github.com/Jinrusui/VLM-R1",
+    "commit":  "c865235c94ac572bcdab3a509db1fc142cd84128"
+  },
+  "email":  "sjr116757@gmail.com",
+  "root":  "/jinru/VLM-R1/src/open-r1-multimodal",
+  "host":  "4f8626ca0af4",
+  "username":  "root",
+  "executable":  "/opt/conda/envs/vlm-r1/bin/python3.10",
+  "codePathLocal":  "src/open_r1/grpo_plan.py",
+  "cpu_count":  64,
+  "cpu_count_logical":  128,
+  "gpu":  "[NVIDIA A100-SXM4-80GB]",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "56908316672",
+      "used":  "44310646784"
+    }
+  },
+  "memory":  {
+    "total":  "540590485504"
+  },
+  "cpu":  {
+    "count":  64,
+    "countLogical":  128
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100-SXM4-80GB",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.6"
+}

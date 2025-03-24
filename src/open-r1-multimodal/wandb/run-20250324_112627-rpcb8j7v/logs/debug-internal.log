@@ -1,0 +1,10 @@
+{"time":"2025-03-24T11:26:27.999839291Z","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2025-03-24T11:26:27.999864759Z","level":"INFO","msg":"created symlink","path":"/jinru/VLM-R1/src/open-r1-multimodal/wandb/run-20250324_112627-rpcb8j7v/logs/debug-core.log"}
+{"time":"2025-03-24T11:26:28.010694834Z","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2025-03-24T11:26:28.019020738Z","level":"INFO","msg":"created new stream","id":"rpcb8j7v"}
+{"time":"2025-03-24T11:26:28.019053349Z","level":"INFO","msg":"stream: started","id":"rpcb8j7v"}
+{"time":"2025-03-24T11:26:28.019078216Z","level":"INFO","msg":"handler: started","stream_id":{"value":"rpcb8j7v"}}
+{"time":"2025-03-24T11:26:28.019081051Z","level":"INFO","msg":"sender: started","stream_id":{"value":"rpcb8j7v"}}
+{"time":"2025-03-24T11:26:28.019070631Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"rpcb8j7v"}}
+{"time":"2025-03-24T11:26:28.285289757Z","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-03-24T11:26:28.285969303Z","level":"INFO","msg":"Starting system monitor"}

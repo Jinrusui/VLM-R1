@@ -1,0 +1,18 @@
+{"time":"2025-03-24T10:55:01.579409223Z","level":"INFO","msg":"using version","core version":"0.18.3"}
+{"time":"2025-03-24T10:55:01.579425344Z","level":"INFO","msg":"created symlink","path":"/jinru/VLM-R1/src/open-r1-multimodal/wandb/run-20250324_105501-4kbabt0o/logs/debug-core.log"}
+{"time":"2025-03-24T10:55:01.590113301Z","level":"ERROR","msg":"dialing: google: could not find default credentials. See https://cloud.google.com/docs/authentication/external/set-up-adc for more information"}
+{"time":"2025-03-24T10:55:01.600734442Z","level":"INFO","msg":"created new stream","id":"4kbabt0o"}
+{"time":"2025-03-24T10:55:01.600767414Z","level":"INFO","msg":"stream: started","id":"4kbabt0o"}
+{"time":"2025-03-24T10:55:01.600795096Z","level":"INFO","msg":"sender: started","stream_id":{"value":"4kbabt0o"}}
+{"time":"2025-03-24T10:55:01.600776832Z","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"4kbabt0o"}}
+{"time":"2025-03-24T10:55:01.600786831Z","level":"INFO","msg":"handler: started","stream_id":{"value":"4kbabt0o"}}
+{"time":"2025-03-24T10:55:01.942590382Z","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-03-24T10:55:01.943311707Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-24T10:55:02.080680312Z","level":"INFO","msg":"stream: closing","id":"4kbabt0o"}
+{"time":"2025-03-24T10:55:02.080769109Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-24T10:55:02.145619088Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-24T10:55:03.386049952Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-24T10:55:03.586040243Z","level":"INFO","msg":"handler: closed","stream_id":{"value":"4kbabt0o"}}
+{"time":"2025-03-24T10:55:03.586127226Z","level":"INFO","msg":"sender: closed","stream_id":{"value":"4kbabt0o"}}
+{"time":"2025-03-24T10:55:03.586110935Z","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"4kbabt0o"}}
+{"time":"2025-03-24T10:55:03.586240098Z","level":"INFO","msg":"stream: closed","id":"4kbabt0o"}

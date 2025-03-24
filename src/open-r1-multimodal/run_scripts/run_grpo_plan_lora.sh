@@ -16,7 +16,7 @@ torchrun --nproc_per_node="1" \
     --output_dir output/$RUN_NAME \
     --model_name_or_path Qwen/Qwen2.5-VL-3B-Instruct \
     --dataset_name none\
-    --data_file_paths /jinru/VLM-R1/Visual-Spatial-Planning\plan_grpo_train.jsonl \
+    --data_file_paths /jinru/VLM-R1/Visual-Spatial-Planning/plan_grpo_train.jsonl \
     --image_folders /jinru/VLM-R1/Visual-Spatial-Planning/VSP-main \
     --max_prompt_length 4096 \
     --num_generations 2 \
@@ -40,4 +40,4 @@ torchrun --nproc_per_node="1" \
     --lora_dropout 0.05 \
     --lora_task_type CAUSAL_LM \
     --freeze_vision_modules false \
-    --adapter_path path/to/your/existing/adapter
+    --adapter_path /jinru/MLP-CW3/checkpoint-160
