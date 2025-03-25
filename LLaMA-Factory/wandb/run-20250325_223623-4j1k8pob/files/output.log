@@ -1,0 +1,138 @@
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [06:12<00:00, 10.15s/it][INFO|trainer.py:3942] 2025-03-25 22:42:36,151 >> Saving model checkpoint to /jinru/saves/qwen2_5_vl-3b-sft/percive/checkpoint-32
+{'loss': 1.3975, 'grad_norm': 2.1907520294189453, 'learning_rate': 8.90915741234015e-06, 'epoch': 0.62}
+{'loss': 1.0575, 'grad_norm': 1.2479947805404663, 'learning_rate': 3.887395330218429e-06, 'epoch': 1.25}
+{'loss': 0.9779, 'grad_norm': 1.050803542137146, 'learning_rate': 1.253604390908819e-07, 'epoch': 1.88}
+[INFO|configuration_utils.py:699] 2025-03-25 22:42:36,496 >> loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-3B-Instruct/snapshots/319ccfdc6cd974fab8373cb598dfe77ad93dedd3/config.json
+[INFO|configuration_utils.py:771] 2025-03-25 22:42:36,499 >> Model config Qwen2_5_VLConfig {
+  "architectures": [
+    "Qwen2_5_VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 128000,
+  "max_window_layers": 70,
+  "model_type": "qwen2_5_vl",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.49.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "hidden_size": 1280,
+    "in_chans": 3,
+    "model_type": "qwen2_5_vl",
+    "out_hidden_size": 2048,
+    "spatial_patch_size": 14,
+    "tokens_per_second": 2
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2500] 2025-03-25 22:42:36,846 >> tokenizer config file saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/checkpoint-32/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-25 22:42:36,846 >> Special tokens file saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/checkpoint-32/special_tokens_map.json
+[INFO|image_processing_base.py:261] 2025-03-25 22:42:37,693 >> Image processor saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/checkpoint-32/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2500] 2025-03-25 22:42:37,694 >> tokenizer config file saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/checkpoint-32/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-25 22:42:37,695 >> Special tokens file saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/checkpoint-32/special_tokens_map.json
+[INFO|processing_utils.py:638] 2025-03-25 22:42:38,197 >> chat template saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/checkpoint-32/chat_template.json
+[INFO|trainer.py:2657] 2025-03-25 22:42:38,198 >>
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 32/32 [06:14<00:00, 11.69s/it]
+{'train_runtime': 384.4647, 'train_samples_per_second': 1.311, 'train_steps_per_second': 0.083, 'train_loss': 1.1343770697712898, 'epoch': 2.0}
+[INFO|image_processing_base.py:261] 2025-03-25 22:42:38,206 >> Image processor saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/preprocessor_config.json
+[INFO|tokenization_utils_base.py:2500] 2025-03-25 22:42:38,206 >> tokenizer config file saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-25 22:42:38,207 >> Special tokens file saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/special_tokens_map.json
+[INFO|processing_utils.py:638] 2025-03-25 22:42:38,690 >> chat template saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/chat_template.json
+[INFO|trainer.py:3942] 2025-03-25 22:42:38,691 >> Saving model checkpoint to /jinru/saves/qwen2_5_vl-3b-sft/percive
+[INFO|configuration_utils.py:699] 2025-03-25 22:42:38,988 >> loading configuration file config.json from cache at /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-3B-Instruct/snapshots/319ccfdc6cd974fab8373cb598dfe77ad93dedd3/config.json
+[INFO|configuration_utils.py:771] 2025-03-25 22:42:38,990 >> Model config Qwen2_5_VLConfig {
+  "architectures": [
+    "Qwen2_5_VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 128000,
+  "max_window_layers": 70,
+  "model_type": "qwen2_5_vl",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.49.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "hidden_size": 1280,
+    "in_chans": 3,
+    "model_type": "qwen2_5_vl",
+    "out_hidden_size": 2048,
+    "spatial_patch_size": 14,
+    "tokens_per_second": 2
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2500] 2025-03-25 22:42:39,248 >> tokenizer config file saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-25 22:42:39,248 >> Special tokens file saved in /jinru/saves/qwen2_5_vl-3b-sft/percive/special_tokens_map.json
+***** train metrics *****
+  epoch                    =        2.0
+  total_flos               = 12799648GF
+  train_loss               =     1.1344
+  train_runtime            = 0:06:24.46
+  train_samples_per_second =      1.311
+  train_steps_per_second   =      0.083
+Figure saved at: /jinru/saves/qwen2_5_vl-3b-sft/percive/training_loss.png
+[WARNING|2025-03-25 22:42:39] llamafactory.extras.ploting:148 >> No metric eval_loss to plot.
+[WARNING|2025-03-25 22:42:39] llamafactory.extras.ploting:148 >> No metric eval_accuracy to plot.
+[INFO|modelcard.py:449] 2025-03-25 22:42:39,566 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}

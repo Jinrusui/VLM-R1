@@ -1,0 +1,354 @@
+[
+    {
+        "task_name": "task-main",
+        "level": "1",
+        "example_id": 0,
+        "image": [
+            "blocks/task-main/example/level1/begin/0.jpg",
+            "blocks/task-main/example/level1/end/0.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(yellow,purple)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "1",
+        "example_id": 1,
+        "image": [
+            "blocks/task-main/example/level1/begin/1.jpg",
+            "blocks/task-main/example/level1/end/1.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(yellow,table)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "1",
+        "example_id": 2,
+        "image": [
+            "blocks/task-main/example/level1/begin/2.jpg",
+            "blocks/task-main/example/level1/end/2.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(blue,purple)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "1",
+        "example_id": 3,
+        "image": [
+            "blocks/task-main/example/level1/begin/3.jpg",
+            "blocks/task-main/example/level1/end/3.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,orange)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "1",
+        "example_id": 4,
+        "image": [
+            "blocks/task-main/example/level1/begin/4.jpg",
+            "blocks/task-main/example/level1/end/4.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,table)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "1",
+        "example_id": 5,
+        "image": [
+            "blocks/task-main/example/level1/begin/5.jpg",
+            "blocks/task-main/example/level1/end/5.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,table)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "1",
+        "example_id": 6,
+        "image": [
+            "blocks/task-main/example/level1/begin/6.jpg",
+            "blocks/task-main/example/level1/end/6.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,table)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "1",
+        "example_id": 7,
+        "image": [
+            "blocks/task-main/example/level1/begin/7.jpg",
+            "blocks/task-main/example/level1/end/7.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(orange,yellow)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "3",
+        "example_id": 0,
+        "image": [
+            "blocks/task-main/example/level3/begin/0.jpg",
+            "blocks/task-main/example/level3/end/0.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(purple,table)\n2. move(red,purple)\n3. move(yellow,red)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "3",
+        "example_id": 1,
+        "image": [
+            "blocks/task-main/example/level3/begin/1.jpg",
+            "blocks/task-main/example/level3/end/1.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(purple,orange)\n2. move(green,blue)\n3. move(red,green)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "3",
+        "example_id": 2,
+        "image": [
+            "blocks/task-main/example/level3/begin/2.jpg",
+            "blocks/task-main/example/level3/end/2.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(purple,green)\n2. move(red,orange)\n3. move(blue,red)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "3",
+        "example_id": 3,
+        "image": [
+            "blocks/task-main/example/level3/begin/3.jpg",
+            "blocks/task-main/example/level3/end/3.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(blue,orange)\n2. move(purple,green)\n3. move(yellow,blue)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "3",
+        "example_id": 4,
+        "image": [
+            "blocks/task-main/example/level3/begin/4.jpg",
+            "blocks/task-main/example/level3/end/4.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(green,purple)\n2. move(orange,green)\n3. move(red,orange)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "3",
+        "example_id": 5,
+        "image": [
+            "blocks/task-main/example/level3/begin/5.jpg",
+            "blocks/task-main/example/level3/end/5.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(purple,table)\n2. move(orange,table)\n3. move(yellow,table)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "3",
+        "example_id": 6,
+        "image": [
+            "blocks/task-main/example/level3/begin/6.jpg",
+            "blocks/task-main/example/level3/end/6.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(yellow,table)\n2. move(red,blue)\n3. move(yellow,red)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "3",
+        "example_id": 7,
+        "image": [
+            "blocks/task-main/example/level3/begin/7.jpg",
+            "blocks/task-main/example/level3/end/7.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,blue)\n2. move(yellow,green)\n3. move(purple,yellow)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "5",
+        "example_id": 0,
+        "image": [
+            "blocks/task-main/example/level5/begin/0.jpg",
+            "blocks/task-main/example/level5/end/0.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,table)\n2. move(yellow,table)\n3. move(purple,table)\n4. move(green,table)\n5. move(yellow,purple)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "5",
+        "example_id": 1,
+        "image": [
+            "blocks/task-main/example/level5/begin/1.jpg",
+            "blocks/task-main/example/level5/end/1.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(orange,table)\n2. move(purple,table)\n3. move(blue,table)\n4. move(green,table)\n5. move(purple,blue)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "5",
+        "example_id": 2,
+        "image": [
+            "blocks/task-main/example/level5/begin/2.jpg",
+            "blocks/task-main/example/level5/end/2.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(green,table)\n2. move(purple,red)\n3. move(blue,purple)\n4. move(green,blue)\n5. move(orange,green)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "5",
+        "example_id": 3,
+        "image": [
+            "blocks/task-main/example/level5/begin/3.jpg",
+            "blocks/task-main/example/level5/end/3.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(purple,table)\n2. move(green,red)\n3. move(blue,green)\n4. move(orange,blue)\n5. move(purple,orange)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "5",
+        "example_id": 4,
+        "image": [
+            "blocks/task-main/example/level5/begin/4.jpg",
+            "blocks/task-main/example/level5/end/4.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(yellow,table)\n2. move(red,table)\n3. move(orange,table)\n4. move(red,green)\n5. move(yellow,orange)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "5",
+        "example_id": 5,
+        "image": [
+            "blocks/task-main/example/level5/begin/5.jpg",
+            "blocks/task-main/example/level5/end/5.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(yellow,table)\n2. move(purple,table)\n3. move(red,table)\n4. move(yellow,blue)\n5. move(purple,red)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "5",
+        "example_id": 6,
+        "image": [
+            "blocks/task-main/example/level5/begin/6.jpg",
+            "blocks/task-main/example/level5/end/6.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(green,table)\n2. move(yellow,purple)\n3. move(blue,yellow)\n4. move(orange,blue)\n5. move(green,orange)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "5",
+        "example_id": 7,
+        "image": [
+            "blocks/task-main/example/level5/begin/7.jpg",
+            "blocks/task-main/example/level5/end/7.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,table)\n2. move(purple,table)\n3. move(orange,blue)\n4. move(yellow,orange)\n5. move(red,yellow)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "7",
+        "example_id": 0,
+        "image": [
+            "blocks/task-main/example/level7/begin/0.jpg",
+            "blocks/task-main/example/level7/end/0.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(orange,table)\n2. move(blue,table)\n3. move(green,table)\n4. move(orange,green)\n5. move(blue,orange)\n6. move(yellow,blue)\n7. move(red,yellow)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "7",
+        "example_id": 1,
+        "image": [
+            "blocks/task-main/example/level7/begin/1.jpg",
+            "blocks/task-main/example/level7/end/1.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,table)\n2. move(green,red)\n3. move(purple,table)\n4. move(yellow,purple)\n5. move(orange,yellow)\n6. move(green,orange)\n7. move(red,green)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "7",
+        "example_id": 2,
+        "image": [
+            "blocks/task-main/example/level7/begin/2.jpg",
+            "blocks/task-main/example/level7/end/2.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,table)\n2. move(purple,table)\n3. move(orange,table)\n4. move(green,table)\n5. move(red,green)\n6. move(purple,orange)\n7. move(yellow,purple)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "7",
+        "example_id": 3,
+        "image": [
+            "blocks/task-main/example/level7/begin/3.jpg",
+            "blocks/task-main/example/level7/end/3.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,table)\n2. move(yellow,table)\n3. move(purple,table)\n4. move(orange,purple)\n5. move(blue,orange)\n6. move(red,blue)\n7. move(yellow,red)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "7",
+        "example_id": 4,
+        "image": [
+            "blocks/task-main/example/level7/begin/4.jpg",
+            "blocks/task-main/example/level7/end/4.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(orange,table)\n2. move(blue,table)\n3. move(green,table)\n4. move(purple,table)\n5. move(blue,red)\n6. move(orange,purple)\n7. move(green,orange)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "7",
+        "example_id": 5,
+        "image": [
+            "blocks/task-main/example/level7/begin/5.jpg",
+            "blocks/task-main/example/level7/end/5.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(purple,table)\n2. move(green,table)\n3. move(red,table)\n4. move(orange,table)\n5. move(yellow,orange)\n6. move(purple,red)\n7. move(green,purple)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "7",
+        "example_id": 6,
+        "image": [
+            "blocks/task-main/example/level7/begin/6.jpg",
+            "blocks/task-main/example/level7/end/6.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(red,table)\n2. move(green,table)\n3. move(purple,table)\n4. move(orange,table)\n5. move(green,blue)\n6. move(orange,green)\n7. move(purple,orange)"
+    },
+    {
+        "task_name": "task-main",
+        "level": "7",
+        "example_id": 7,
+        "image": [
+            "blocks/task-main/example/level7/begin/7.jpg",
+            "blocks/task-main/example/level7/end/7.jpg"
+        ],
+        "problem": "You are a robot that sorts and organizes colored blocks by adding and removing them to stacks.\nYou can move them between stacks to produce a desired end state.\n\nIn this task, you will see two photos of blocks showing the beginning and end states. Your goal is to find the shortest movement plan to transition between these states.\n\n### Game Rules\n- Each block has a unique color (blue, yellow, purple, orange, red, green).\n- Blocks are stacked vertically, and you can only move the top block of a stack.\n- Moves can:\n - Place the top block onto the top of another stack, or\n - Place the top block on the table to create a new stack.\n- Invalid moves: Attempting to move non-top blocks.\n- Order of stacks does not matter. Configurations are equivalent if stacks contain the same blocks, regardless of their arrangement.\n\n### Output Format\nList moves step-by-step using the format move(SOURCE, TARGET), where:\n- SOURCE is the color of the block being moved (always the top block of a stack).\n- TARGET is either a destination stack (specified by the color of its top block) or table (to create a new stack).\n\n### Task\nGenerate the shortest plan to transform the beginning state into the end state shown in the images.\n\n",
+        "solution": "1. move(purple,table)\n2. move(green,table)\n3. move(blue,table)\n4. move(red,blue)\n5. move(orange,red)\n6. move(green,orange)\n7. move(purple,green)"
+    }
+]

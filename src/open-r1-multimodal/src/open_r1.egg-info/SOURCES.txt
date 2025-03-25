@@ -11,7 +11,6 @@ src/open_r1/grpo_jsonl.py
 src/open_r1/grpo_plan.py
 src/open_r1/grpo_pre.py
 src/open_r1/grpo_rec.py
-src/open_r1/test_reward.py
 src/open_r1.egg-info/PKG-INFO
 src/open_r1.egg-info/SOURCES.txt
 src/open_r1.egg-info/dependency_links.txt
@@ -22,6 +21,7 @@ src/open_r1/trainer/__init__.py
 src/open_r1/trainer/grpo_config.py
 src/open_r1/trainer/grpo_trainer.py
 src/open_r1/trainer/grpo_trainer1.py
+src/open_r1/trainer/grpo_trainer2.py
 src/open_r1/trainer/vllm_grpo_trainer.py
 src/open_r1/utils/__init__.py
 src/open_r1/utils/callbacks.py
